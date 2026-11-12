@@ -255,6 +255,26 @@ select{font:inherit;background:var(--paper);color:var(--ink);border:0;border-bot
 .shelfcard{display:block;text-decoration:none;border-block:1px solid var(--rule);padding-block:.8rem;margin-top:1.2rem}
 .shelfcard b{display:block;font-family:var(--display);font-weight:500;font-size:1.3rem}
 .shelfcard span{font-style:italic;color:var(--ink-soft)}
+.sec{border-top:1px solid var(--hair);padding-block:1rem}
+.sec .ref{font-size:.74rem;letter-spacing:.14em;color:var(--spot);font-variant-numeric:lining-nums}
+.sec .gr{font-size:1.32rem;line-height:1.6;margin-top:.2rem}
+.sec .tr,.sec .trf{font-size:1.05rem;color:var(--ink-soft);margin-top:.6rem;border-left:1px solid var(--rule);padding-left:.8rem}
+.sec .trf{color:var(--ink);font-style:italic}
+.trbar{display:flex;gap:.5rem;margin-top:.6rem;flex-wrap:wrap}
+.trbar button,.alltr{font:inherit;font-style:italic;font-size:.92rem;background:transparent;color:var(--ink-soft);border:1px solid var(--hair);border-radius:0;padding:.25rem .7rem;cursor:pointer}
+.salle{border-top:1px solid var(--rule);margin-top:0}
+.salle summary{list-style:none;padding-block:.9rem;font-style:normal;color:var(--ink);display:grid;grid-template-columns:2.4rem 1fr;gap:.2rem .6rem;align-items:baseline}
+.salle summary::-webkit-details-marker{display:none}
+.salle summary i{font-family:var(--display);font-style:normal;font-size:1.1rem;color:var(--spot)}
+.salle summary b{font-family:var(--display);font-weight:500;font-size:1.45rem;line-height:1.12}
+.salle summary span{grid-column:2;font-style:italic;color:var(--ink-soft)}
+.salle .intro{margin-bottom:.8rem}
+.work{margin:1.4rem 0 0}
+.work img{display:block;width:100%;height:auto;background:var(--wash)}
+.work .ph{display:block;width:100%;background:var(--wash)}
+.work figcaption{font-size:1rem;margin-top:.5rem;line-height:1.35}
+.work figcaption b{font-family:var(--display);font-weight:500;font-size:1.18rem;display:block}
+.work figcaption span{color:var(--ink-soft);font-style:italic;display:block}
 .next{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;text-decoration:none;border-block:1px solid var(--rule);padding-block:.9rem;margin-top:2.4rem}
 .next .t{font-family:var(--display);font-size:1.25rem;text-align:right}
 .fin{text-align:center;margin-top:2.6rem;border-top:3px double var(--rule);padding-top:1.1rem}
@@ -284,19 +304,19 @@ select{font:inherit;background:var(--paper);color:var(--ink);border:0;border-bot
 <audio id="tsf" preload="none"></audio>
 <div class="slip" id="slip" hidden><div><p id="slip-t"></p><button id="slip-x" aria-label="Fermer la glose">×</button></div></div>
 <div class="tabs" id="tabs" hidden><nav aria-label="Rubriques">
-  <a href="#une" data-tab="une"><i>I</i>Une</a>
-  <a href="#lecture" data-tab="lecture"><i>II</i>Lecture</a>
-  <a href="#portugais" data-tab="langues"><i>III</i>Langues</a>
-  <a href="#livres" data-tab="livres"><i>IV</i>Flâner</a>
-  <a href="#cabinet" data-tab="cabinet"><i>V</i>Cabinet</a>
-  <a href="#radio" data-tab="radio"><i>VI</i>Radio</a>
+  <a href="#une" data-tab="une"><i>I</i>Savoir</a>
+  <a href="#lecture" data-tab="lecture"><i>II</i>Lire</a>
+  <a href="#portugais" data-tab="langues"><i>III</i>Étudier</a>
+  <a href="#musee" data-tab="regarder"><i>IV</i>Regarder</a>
+  <a href="#livres" data-tab="livres"><i>V</i>Flâner</a>
+  <a href="#radio" data-tab="radio"><i>VI</i>Écouter</a>
 </nav></div>
 
 <script>
 (function(){
 "use strict";
-var $ed=document.getElementById("edition"), sample=null, db=null, E=null, lieu="", PILE=[], pileReady=false, IMG=null, CAT=[], catReady=false, BODY={}, BF={l:"",g:""};
-var VIEWS={une:["une","La une"],lecture:["lecture","La grande lecture"],portugais:["langues","Em português"],italien:["langues","In italiano"],grec:["langues","En grec attique"],livres:["livres","La flânerie"],radio:["radio","La T.S.F."],oeuvre:["une","Histoire de l’art"],pile:["lecture","Ma pile"],lire:["lecture","La bibliothèque"],bibliotheque:["lecture","La bibliothèque"],cabinet:["cabinet","Le cabinet"],carnet:["cabinet","Le carnet"]};
+var $ed=document.getElementById("edition"), sample=null, db=null, E=null, lieu="", PILE=[], pileReady=false, IMG=null, MUS=[], SALLE={}, CAT=[], catReady=false, BODY={}, BF={l:"",g:""};
+var VIEWS={une:["une","Savoir"],lecture:["lecture","Lire"],bibliotheque:["lecture","La bibliothèque"],lire:["lecture","La bibliothèque"],pile:["lecture","Ma pile"],portugais:["langues","Em português"],italien:["langues","In italiano"],grec:["langues","En grec attique"],cabinet:["langues","Le cabinet"],carnet:["langues","Le carnet"],musee:["regarder","Le musée"],oeuvre:["regarder","Histoire de l’art"],livres:["livres","Flâner"],radio:["radio","Écouter"]};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function fr(s){return esc(s).replace(/&#39;/g,"’").replace(/ ([:;!?»%$])/g," $1").replace(/« /g,"« ")}
 function ty(s){return esc(s).replace(/&#39;/g,"’")}
@@ -385,7 +405,7 @@ function markSeen(v){var s=seen();if(v&&s.indexOf(v)<0){s.push(v);store("loisir:
 
 function vhead(label,title,lang){return '<div class="vhead"><div class="label">'+label+"</div><h2"+(lang?' lang="'+lang+'"':"")+">"+title+"</h2></div>"}
 function next(href,title){return '<a class="next" href="#'+href+'"><span class="label">Suite</span><span class="t">'+title+" →</span></a>"}
-function seg(cur){return '<div class="seg" role="navigation" aria-label="Langues">'+[["portugais","Português"],["italien","Italiano"],["grec","Ἑλληνική"]].map(function(x){return '<a href="#'+x[0]+'"'+(x[0]===cur?' aria-current="true"':"")+">"+x[1]+"</a>"}).join("")+"</div>"}
+function seg(cur){return '<div class="seg" role="navigation" aria-label="Langues">'+[["portugais","Português"],["italien","Italiano"],["grec","Ἑλληνική"],["cabinet","Cabinet"]].map(function(x){return '<a href="#'+x[0]+'"'+(x[0]===cur?' aria-current="true"':"")+">"+x[1]+"</a>"}).join("")+"</div>"}
 function words(p){return ty(p).replace(/[A-Za-zÀ-ÖØ-öø-ÿ]+(?:-[A-Za-zÀ-ÖØ-öø-ÿ]+)*/g,function(w){return '<span class="w" tabindex="0" role="button">'+w+"</span>"})}
 function parsed(mots){return (mots||[]).map(function(m){return '<div class="pw"><span class="g" lang="grc">'+esc(m.mot)+(m.forge?'<span class="dag"> †</span>':"")+'</span><span class="lem" lang="grc">'+esc(m.lemme)+'</span><span class="an">'+fr(m.analyse)+'</span><span class="se">'+fr(m.sens)+"</span></div>"}).join("")}
 
@@ -428,11 +448,14 @@ function render(){
     if(O.terme)h+='<div class="blk"><div class="label">Le terme</div><p class="hw" style="font-size:1.6rem">'+fr(O.terme.mot)+"</p><p>"+fr(O.terme.definition)+"</p></div>";
     if(O.suite)h+='<p class="how" style="margin-top:1.2rem">'+fr(O.suite)+"</p>";
     h+=taste("Histoire de l’art : "+O.periode,O.titre)}
-  h+=next("une","Retour à la une")+"</section>";
+  h+=next("musee","Le musée")+"</section>";
+
+  /* ---- LE MUSÉE ---- */
+  h+='<section class="view" id="v-musee" hidden>'+vhead("Le musée","Seize salles, des Cyclades aux avant-gardes")+(O?'<a class="frontis" href="#oeuvre" style="border-top:1px solid var(--rule)"><img class="oeuvre-img" alt="'+esc(O.titre)+'" hidden><span class="label">La leçon du jour · no '+esc(O.etape)+'</span><span class="t">'+fr(O.titre)+'</span><span class="l">'+fr(O.artiste)+", "+fr(O.date)+"</span></a>":"")+'<p class="how" style="text-align:center;margin-block:1rem">Entrez dans une salle : une période, ce qu’il faut en savoir, ses mots, et ses œuvres à regarder de près.</p><div id="mus-list"></div></section>';
 
   /* ---- MA PILE ---- */
   h+='<section class="view" id="v-pile" hidden>'+vhead("Ma pile","Articles gardés pour plus tard")+'<p class="how">Collez ici le texte entier d’un article auquel vous êtes abonné : il reste dans votre pile privée, se lit dans cette page, et chaque mot se laisse gloser.</p><div class="blk" style="margin-top:1rem"><ul class="stack" id="pile-list"></ul></div><div class="blk"><div class="label">Ajouter un article</div><div class="field"><label for="p-titre">Titre</label><input type="text" id="p-titre" autocomplete="off"></div><div class="field"><label for="p-source">Publication</label><input type="text" id="p-source" autocomplete="off" placeholder="The New Yorker, Piauí, Le Monde"></div><div class="field"><label for="p-langue">Langue</label><select id="p-langue"><option value="en">anglais</option><option value="fr">français</option><option value="pt">portugais</option><option value="it">italien</option></select></div><div class="field"><label for="p-texte">Texte de l’article</label><textarea id="p-texte" rows="8"></textarea></div><button class="act" id="p-add">Ranger dans la pile</button><div class="reply err" id="p-msg"></div></div>'+next("lecture","Retour à la lecture")+"</section>";
-  h+='<section class="view" id="v-bibliotheque" hidden>'+vhead("La bibliothèque","Pour lire longtemps")+'<p class="how" style="text-align:center">Des textes entiers : des classiques du domaine public, chapitre par chapitre, et de longs articles d’aujourd’hui publiés sous licence libre. Chaque matin en apporte de nouveaux ; rien ne disparaît.</p><div class="chips" id="bib-l"><button data-l="" class="on">Tout</button><button data-l="fr">Français</button><button data-l="pt">Português</button><button data-l="it">Italiano</button><button data-l="en">English</button></div><div class="chips" id="bib-g"><button data-g="" class="on">Tous les genres</button><button data-g="Classique">Classiques</button><button data-g="Aujourd’hui">Aujourd’hui</button></div><div class="bibl" id="bib-list" style="margin-top:1.2rem"></div>'+next("pile","Ma pile personnelle")+"</section>";
+  h+='<section class="view" id="v-bibliotheque" hidden>'+vhead("La bibliothèque","Pour lire longtemps")+'<p class="how" style="text-align:center">Des textes entiers : des classiques du domaine public, chapitre par chapitre, et de longs articles d’aujourd’hui publiés sous licence libre. Chaque matin en apporte de nouveaux ; rien ne disparaît.</p><div class="chips" id="bib-l"><button data-l="" class="on">Tout</button><button data-l="fr">Français</button><button data-l="pt">Português</button><button data-l="it">Italiano</button><button data-l="en">English</button><button data-l="grc">Ἑλληνικά</button></div><div class="chips" id="bib-g"><button data-g="" class="on">Tous les genres</button><button data-g="Classique">Classiques</button><button data-g="Aujourd’hui">Aujourd’hui</button></div><div class="bibl" id="bib-list" style="margin-top:1.2rem"></div>'+next("pile","Ma pile personnelle")+"</section>";
   h+='<section class="view" id="v-lire" hidden><div id="lire-body"></div>'+next("bibliotheque","Retour à la bibliothèque")+"</section>";
 
   /* ---- LECTURE ---- */
@@ -470,7 +493,8 @@ function render(){
     if(a)h+='<div class="anchor"><div class="label">Une ligne authentique</div><p class="gr" lang="grc">'+esc(a.texte)+'</p><p class="label ref">'+fr(a.reference)+'</p><p class="tr">'+fr(a.fr)+'</p><p class="nb">'+fr(a.note)+"</p></div>";
     var o=G.moderne;
     if(o)h+='<div class="modern"><div class="label" style="text-align:center">Les modernes en attique</div><p class="orig">'+fr(o.original)+'</p><p class="label who">'+fr(o.source)+'</p><p class="gr" lang="grc">'+esc(o.texte)+"</p>"+parsed(o.mots)+(o.note?'<p class="fnote" style="border-top-color:var(--hair)">'+fr(o.note)+"</p>":"")+"</div>"}
-  h+=next("livres","La librairie")+"</section>";
+  h+='<a class="shelfcard" href="#bibliotheque" id="grc-shelf"><span class="label">Les classiques grecs</span><b>Platon, Lysias, Xénophon →</b><span>le texte entier, section par section, avec la traduction à la demande</span></a>';
+  h+=next("cabinet","Le cabinet")+"</section>";
 
   /* ---- LIVRES ---- */
   h+='<section class="view" id="v-livres" hidden>';
@@ -490,7 +514,7 @@ function render(){
   h+=next("cabinet","Le cabinet")+"</section>";
 
   /* ---- CABINET ---- */
-  h+='<section class="view" id="v-cabinet" hidden>'+vhead("Le cabinet","Mots, vers et vieilles pierres");
+  h+='<section class="view" id="v-cabinet" hidden>'+seg("cabinet")+vhead("Le cabinet","Mots, vers et vieilles pierres");
   if(M)h+='<div class="cab"><div class="label">Le mot du jour</div><p class="hw">'+fr(M.mot)+'</p><p class="nat">'+fr(M.nature)+"</p><p>"+fr(M.definition)+'</p><p class="ety">'+fr(M.etymologie)+"</p>"+(M.citation?"<blockquote>"+fr(M.citation)+'<p class="att">'+fr(M.auteur)+"</p></blockquote>":"")+'<button class="act" id="mot-keep">Garder ce mot dans le carnet</button></div>';
   if(V)h+='<div class="cab"><div class="label">Quelques vers</div><blockquote class="verse">'+V.lignes.map(fr).join("<br>")+'<p class="att">'+fr(V.auteur)+", "+fr(V.oeuvre)+"</p></blockquote></div>";
   h+='<div class="cab"><div class="label">Éphéméride · un '+fr((E.dateline||"").split(" ").slice(1,3).join(" "))+'</div><dl class="eph">';
@@ -505,7 +529,7 @@ function render(){
   h+='<div class="fin"><p class="end">Fin de l’édition. À demain.</p><p>Vous pouvez poser le téléphone.</p></div></section>';
 
   /* ---- RADIO ---- */
-  h+='<section class="view" id="v-radio" hidden>'+vhead("La T.S.F.","Les ondes du matin")+'<div class="poste"><div class="grille" aria-hidden="true"></div><div class="cadran" aria-hidden="true"><div class="villes">'+["Paris","Montréal","Lisboa","S. Paulo","Roma","Athènes","N. York","Londres"].map(function(v){return "<span>"+v+"</span>"}).join("")+'</div><div class="ticks"></div><div class="band"><span>GO 150</span><span>200</span><span>PO 550</span><span>800</span><span>1200</span><span>OC 49 m</span><span>31 m</span><span>FM 100</span></div><div class="aiguille" id="aiguille"></div></div><div class="voyant" id="voyant"><span class="lampe"></span><p id="tsf-now">Le poste est éteint. Choisissez une station.</p><button id="tsf-off" hidden>Éteindre</button></div></div><div class="ondes" id="ondes">';
+  h+='<section class="view" id="v-radio" hidden>'+vhead("La T.S.F.","Les ondes du matin")+(E.disque?'<div class="blk" style="border-top:0;margin-top:0;padding-top:0;margin-bottom:1.2rem"><div class="label">Le disque du jour</div><h3 style="font-family:var(--display);font-size:1.4rem;line-height:1.15;margin:.2rem 0 .1rem">'+fr(E.disque.oeuvre)+'</h3><p class="how">'+fr(E.disque.compositeur)+"</p><p>"+fr(E.disque.texte)+"</p></div>":"")+'<div class="poste"><div class="grille" aria-hidden="true"></div><div class="cadran" aria-hidden="true"><div class="villes">'+["Paris","Montréal","Lisboa","S. Paulo","Roma","Athènes","N. York","Londres"].map(function(v){return "<span>"+v+"</span>"}).join("")+'</div><div class="ticks"></div><div class="band"><span>GO 150</span><span>200</span><span>PO 550</span><span>800</span><span>1200</span><span>OC 49 m</span><span>31 m</span><span>FM 100</span></div><div class="aiguille" id="aiguille"></div></div><div class="voyant" id="voyant"><span class="lampe"></span><p id="tsf-now">Le poste est éteint. Choisissez une station.</p><button id="tsf-off" hidden>Éteindre</button></div></div><div class="ondes" id="ondes">';
   var last="";STATIONS.forEach(function(s,i){if(s.pays!==last){last=s.pays;h+="<h3>"+fr(s.pays)+"</h3>"}h+='<a href="'+esc(s.url)+'" target="_blank" rel="noopener" data-i="'+i+'"><b>'+ty(s.nom)+"</b><span>"+fr(s.quoi)+"</span></a>"});
   h+='</div><p class="how" style="margin-top:1.2rem">Des radios publiques en direct, telles qu’elles s’écoutent chez elles. Si le son ne vient pas dans cette page, touchez la station une seconde fois : elle s’ouvre dans une page à part et continue de jouer pendant que vous lisez.</p></section>';
 
@@ -525,7 +549,7 @@ function route(keep){
   if(!VIEWS[v])v="une";
   document.querySelectorAll(".view").forEach(function(s){s.hidden=(s.id!=="v-"+v)});
   var tab=VIEWS[v][0];
-  if(tab==="langues")store("loisir:langue",v);
+  if(tab==="langues"&&v!=="carnet")store("loisir:langue",v);
   document.querySelectorAll(".tabs a").forEach(function(a){var on=a.getAttribute("data-tab")===tab;if(on)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");
     if(a.getAttribute("data-tab")==="langues")a.setAttribute("href","#"+(store("loisir:langue")||"portugais"))});
   $("running").hidden=(v==="une");$("run-sec").textContent=VIEWS[v][1];
@@ -547,13 +571,14 @@ function wire(){
   var pt=$("pt"), slip=$("slip"), slipT=$("slip-t"), cur=null;
   function showSlip(word,text){slipT.innerHTML="<b>"+esc(word)+"</b><br>"+text;slip.hidden=false}
   $("slip-x").onclick=function(){slip.hidden=true;if(cur)cur.classList.remove("now")};
-  (function(){var box=$("lire-body"), memo2={}, names={pt:"portugais",it:"italien",en:"anglais",fr:"français"};
+  (function(){var box=$("lire-body"), memo2={}, names={pt:"portugais",it:"italien",en:"anglais",fr:"français",grc:"grec"};
     var go=function(span){var raw=span.textContent, word=raw.toLowerCase(), lang=box.getAttribute("data-lang")||"en";
       if(cur)cur.classList.remove("now");cur=span;span.classList.add("on","now");
       if(memo2[lang+word]){showSlip(word,fr(memo2[lang+word]));return}
       if(!sample){showSlip(word,"<i>glose indisponible dans cette vue</i>");return}
       showSlip(word,"<i>…</i>");
-      sample((lang==="fr"?"Explique en français, en douze mots au plus, le sens du mot « "+raw+" » tel qu'il est employé dans ce passage.":"Donne en français le sens du mot "+names[lang]+" « "+raw+" » tel qu'il est employé dans ce passage.")+" Réponds par la glose seule, sans guillemets ni point final.\n\nPassage : "+span.parentNode.textContent.slice(0,700),{modelTier:"quick"})
+      if(span.parentNode.getAttribute("data-lang"))lang=span.parentNode.getAttribute("data-lang");
+      (lang==="grc"?sample("Analyse le mot de grec ancien « "+raw+" » tel qu'il apparaît dans ce passage. Réponds en français, en deux lignes au plus, sous la forme : lemme (avec article ou temps primitifs utiles) ; analyse morphologique complète ; sens dans ce contexte. Rien d'autre.\n\nPassage : "+span.parentNode.textContent.slice(0,900)):sample((lang==="fr"?"Explique en français, en douze mots au plus, le sens du mot « "+raw+" » tel qu'il est employé dans ce passage.":"Donne en français le sens du mot "+names[lang]+" « "+raw+" » tel qu'il est employé dans ce passage.")+" Réponds par la glose seule, sans guillemets ni point final.\n\nPassage : "+span.parentNode.textContent.slice(0,700),{modelTier:"quick"}))
         .then(function(r){var t=r.text.trim();memo2[lang+word]=t;if(cur===span)showSlip(word,fr(t));addCarnet(word,t,lang)})
         .catch(function(e){if(cur===span)showSlip(word,"<i>"+fr(errCopy(e))+"</i>")})};
     box.addEventListener("click",function(ev){if(ev.target.classList.contains("w"))go(ev.target)});
@@ -574,7 +599,8 @@ function wire(){
   $("pile-list").addEventListener("click",function(ev){var b=ev.target;if(b.tagName!=="BUTTON"||!db)return;
     if(b.getAttribute("data-sure")){db.doc("pile/"+b.getAttribute("data-id")).delete().catch(function(){})}
     else{b.setAttribute("data-sure","1");b.textContent="Confirmer"}});
-  drawPile();drawImage();tsfWire();drawBib();
+  drawPile();drawImage();tsfWire();drawBib();drawMus();
+  var gs=$("grc-shelf");if(gs)gs.onclick=function(){BF.l="grc";BF.g="";setTimeout(function(){var c=$("bib-l");if(c)c.querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x.getAttribute("data-l")==="grc")});var g=$("bib-g");if(g)g.querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x.getAttribute("data-g")==="")});drawBib()},30)};
   ["bib-l","bib-g"].forEach(function(cid){var c=$(cid);if(c)c.onclick=function(ev){var b=ev.target;if(b.tagName!=="BUTTON")return;
     if(cid==="bib-l")BF.l=b.getAttribute("data-l");else BF.g=b.getAttribute("data-g");
     c.querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x===b)});drawBib()}});
@@ -666,8 +692,8 @@ function drawBib(){
   var el=$("bib-list");if(!el)return;
   if(!db){el.innerHTML='<p class="how">La bibliothèque s’ouvre quand la page est reliée à votre compte Claude.</p>';return}
   if(!catReady){el.innerHTML='<p class="how">On ouvre les rayons…</p>';return}
-  var L=lus(), ok=function(x){return (!BF.l||x.langue===BF.l)&&(!BF.g||x.genre===BF.g)}, names={fr:"français",pt:"português",it:"italiano",en:"English"};
-  var item=function(x){return '<li><a href="#lire" data-t="'+esc(x.id)+'"'+(L.indexOf(x.id)>=0?' class="lu"':"")+"><b>"+ty(x.titre)+"</b><span>"+ty([x.auteur,x.source,(x.minutes||1)+" min"].filter(Boolean).join(" · "))+"</span>"+(x.genre==="Classique"?(x.soustitre?'<span class="ex">'+ty(x.soustitre)+"</span>":""):'<span class="ex">'+ty((x.extrait||"").slice(0,150))+"…</span>")+"</a></li>"};
+  var L=lus(), ok=function(x){return (!BF.l||x.langue===BF.l)&&(!BF.g||x.genre===BF.g)}, names={fr:"français",pt:"português",it:"italiano",en:"English",grc:"grec ancien"};
+  var item=function(x){return '<li><a href="#lire" data-t="'+esc(x.id)+'"'+(L.indexOf(x.id)>=0?' class="lu"':"")+"><b>"+ty(x.titre)+"</b><span>"+ty([x.auteur,x.source,(x.minutes||1)+" min"].filter(Boolean).join(" · "))+"</span>"+(x.serie?(x.soustitre?'<span class="ex">'+ty(x.soustitre)+"</span>":""):'<span class="ex">'+ty((x.extrait||"").slice(0,150))+"…</span>")+"</a></li>"};
   var series={}, order=[], arts=[];
   CAT.filter(ok).forEach(function(x){if(x.serie){if(!series[x.serie]){series[x.serie]=[];order.push(x.serie)}series[x.serie].push(x)}else arts.push(x)});
   var h="";
@@ -678,20 +704,43 @@ function drawBib(){
   el.innerHTML=h||'<p class="how">Rien dans ce rayon pour l’instant.</p>';
   el.querySelectorAll("a[data-t]").forEach(function(a){a.onclick=function(){store("loisir:lire","t:"+a.getAttribute("data-t"))}});
 }
+function wordsG(p){return esc(p).replace(/[Ͱ-Ͽἀ-῿̀-ͯʼ’᾽]+/g,function(w){return '<span class="w" tabindex="0" role="button">'+w+"</span>"})}
 function drawTexte(id){
   var box=$("lire-body"), m=null;CAT.forEach(function(x){if(x.id===id)m=x});
   if(!m){box.innerHTML='<p class="wait">'+(catReady?"Ce texte n’est plus au catalogue.":"On cherche le texte…")+"</p>";return}
-  var L={en:"en",fr:"fr",pt:"pt",it:"it"}[m.langue]||"fr";box.setAttribute("lang",L);box.setAttribute("data-lang",L);
-  var head=vhead(ty(m.serie||m.source||""),ty(m.titre))+(m.soustitre?'<p class="deck">'+ty(m.soustitre)+"</p>":"")+'<p class="how" style="text-align:center;margin-bottom:1.1rem">'+ty(m.auteur||"")+" · "+(m.minutes||1)+" min · touchez un mot pour sa glose</p>";
-  var show=function(t){
+  var L={en:"en",fr:"fr",pt:"pt",it:"it",grc:"grc"}[m.langue]||"fr";box.setAttribute("lang",L);box.setAttribute("data-lang",L);
+  var head=vhead(ty(m.serie||m.source||""),ty(m.titre))+(m.soustitre?'<p class="deck">'+ty(m.soustitre)+"</p>":"")+'<p class="how" style="text-align:center;margin-bottom:1.1rem">'+ty(m.auteur||"")+" · "+(m.minutes||1)+" min · touchez un mot pour "+(L==="grc"?"son analyse":"sa glose")+"</p>";
+  var show=function(d){
     var nxt=null;if(m.serie)CAT.forEach(function(x){if(x.serie===m.serie&&x.ordre===m.ordre+1)nxt=x});
-    box.innerHTML=head+'<div class="body cap">'+String(t).split(/\n+/).filter(function(p){return p.trim()}).map(function(p){return p.indexOf("## ")===0?"<h3>"+ty(p.slice(3))+"</h3>":"<p>"+words(p.trim())+"</p>"}).join("")+'</div><p class="credit">'+ty(m.auteur||"")+" · "+ty(m.source||"")+" · "+ty(m.licence||"")+(/^https:\/\//.test(m.url||"")?' · <a href="'+esc(m.url)+'" target="_blank" rel="noopener">l’original</a>':"")+"</p>"+(nxt?'<a class="next" href="#lire" id="lire-next"><span class="label">Suite</span><span class="t">'+ty(nxt.titre)+" →</span></a>":"");
+    var body;
+    if(Array.isArray(d.sections)){
+      body='<p style="text-align:center"><button class="alltr" id="alltr">Montrer toutes les traductions</button></p>'+d.sections.map(function(s,i){return '<div class="sec"><div class="ref">'+esc(s.r)+'</div><p class="gr" lang="grc">'+wordsG(s.g)+'</p><div class="trbar">'+(s.t?'<button data-tr="'+i+'">Traduction</button>':"")+(sample?'<button data-fr="'+i+'">En français</button>':"")+'</div><p class="tr" lang="en" data-lang="en" id="tr-'+i+'" hidden>'+ty(s.t||"")+'</p><p class="trf" lang="fr" id="trf-'+i+'" hidden></p></div>'}).join("");
+    } else body='<div class="body cap">'+String(d.texte||"").split(/\n+/).filter(function(p){return p.trim()}).map(function(p){return p.indexOf("## ")===0?"<h3>"+ty(p.slice(3))+"</h3>":"<p>"+words(p.trim())+"</p>"}).join("")+"</div>";
+    box.innerHTML=head+body+'<p class="credit">'+ty(m.auteur||"")+" · "+ty(m.source||"")+" · "+ty(m.licence||"")+(/^https:\/\//.test(m.url||"")?' · <a href="'+esc(m.url)+'" target="_blank" rel="noopener">l’original</a>':"")+"</p>"+(nxt?'<a class="next" href="#lire" id="lire-next"><span class="label">Suite</span><span class="t">'+ty(nxt.titre)+" →</span></a>":"");
     var n=$("lire-next");if(n)n.onclick=function(ev){ev.preventDefault();store("loisir:lire","t:"+nxt.id);drawLire();window.scrollTo(0,0)};
+    var at=$("alltr");if(at)at.onclick=function(){var on=at.getAttribute("data-on")!=="1";at.setAttribute("data-on",on?"1":"0");at.textContent=on?"Cacher les traductions":"Montrer toutes les traductions";box.querySelectorAll(".tr").forEach(function(p){p.hidden=!on})};
+    box.querySelectorAll("button[data-tr]").forEach(function(b){b.onclick=function(){var p=$("tr-"+b.getAttribute("data-tr"));p.hidden=!p.hidden}});
+    box.querySelectorAll("button[data-fr]").forEach(function(b){b.onclick=function(){var i=+b.getAttribute("data-fr"), p=$("trf-"+i);
+      if(p.textContent){p.hidden=!p.hidden;return}
+      p.hidden=false;p.textContent="Le traducteur réfléchit…";b.disabled=true;
+      sample("Traduis en français ce passage de grec attique ("+(m.auteur||"")+", "+(m.serie||"")+", "+d.sections[i].r+"). Traduction fidèle, phrase par phrase, dans un français simple qui laisse voir la construction du grec. Donne la traduction seule.\n\n"+d.sections[i].g,{cache:{gcTime:86400000},onText:function(u){p.textContent=u.text}})
+        .then(function(r){p.textContent=r.text}).catch(function(e){p.textContent=errCopy(e)}).then(function(){b.disabled=false})}});
     var l=lus();if(l.indexOf(id)<0){l.push(id);store("loisir:lus",JSON.stringify(l.slice(-2000)))}};
   if(BODY[id]){show(BODY[id]);return}
   box.innerHTML=head+'<p class="wait">On va chercher le volume…</p>';
   if(!db)return;
-  db.doc("textes/"+id).get().then(function(s){if(store("loisir:lire")!=="t:"+id)return;if(!s.exists){box.innerHTML=head+'<p class="wait">Ce volume manque au rayon.</p>';return}BODY[id]=(s.data()||{}).texte||"";show(BODY[id])}).catch(function(){box.innerHTML=head+'<p class="wait">Le texte n’a pas pu être chargé. Réessayez.</p>'});
+  db.doc("textes/"+id).get().then(function(s){if(store("loisir:lire")!=="t:"+id)return;if(!s.exists){box.innerHTML=head+'<p class="wait">Ce volume manque au rayon.</p>';return}BODY[id]=s.data()||{};show(BODY[id])}).catch(function(){box.innerHTML=head+'<p class="wait">Le texte n’a pas pu être chargé. Réessayez.</p>'});
+}
+function drawMus(){
+  var el=$("mus-list");if(!el)return;
+  if(!db){el.innerHTML='<p class="how">Le musée s’ouvre quand la page est reliée à votre compte Claude.</p>';return}
+  if(!MUS.length){el.innerHTML='<p class="how">On allume les salles…</p>';return}
+  el.innerHTML=MUS.map(function(s){return '<details class="salle" data-s="'+esc(s.id)+'"><summary><i>'+numeral(s.ordre)+"</i><b>"+fr(s.titre)+"</b><span>"+fr(s.dates)+" · "+(s.oeuvres||[]).length+' œuvres</span></summary><div class="in"></div></details>'}).join("");
+  el.querySelectorAll("details").forEach(function(d){d.addEventListener("toggle",function(){if(!d.open)return;var s=null;MUS.forEach(function(x){if(x.id===d.getAttribute("data-s"))s=x});var box=d.querySelector(".in");
+    if(!box.innerHTML){box.innerHTML='<p class="intro">'+fr(s.texte)+"</p>"+((s.termes||[]).length?'<p class="how">Les mots de la salle : '+s.termes.map(fr).join(", ")+".</p>":"")+(s.oeuvres||[]).map(function(w,i){return '<figure class="work"><span class="ph" style="aspect-ratio:'+(w.ratio||1)+'" data-ph="'+esc(s.id)+":"+i+'"></span><img alt="'+esc(w.titre)+'" data-k="'+esc(s.id)+":"+i+'" hidden><figcaption><b>'+ty(w.titre)+"</b>"+ty([w.artiste,w.date].filter(Boolean).join(", "))+"<span>"+ty(w.technique||"")+"</span>"+(/^https:\/\//.test(w.url||"")?'<a href="'+esc(w.url)+'" target="_blank" rel="noopener">The Met, '+esc(w.cote)+"</a>":"")+"</figcaption></figure>"}).join("")+'<p class="credit">'+fr(s.credit||"")+"</p>"+taste("Musée",s.titre)}
+    var put=function(){box.querySelectorAll("img[data-k]").forEach(function(im){var src=SALLE[im.getAttribute("data-k")];if(src&&im.hidden){im.src=src;im.hidden=false;var ph=box.querySelector('[data-ph="'+im.getAttribute("data-k")+'"]');if(ph)ph.remove()}})};
+    put();
+    if(!s._loaded){s._loaded=true;for(var j=0;j<(s.pages||0);j++)db.doc("salles/"+s.id+"-"+j).get().then(function(x){if(!x.exists)return;var im=(x.data()||{}).imgs||{};Object.keys(im).forEach(function(k){SALLE[s.id+":"+k]=im[k]});put()}).catch(function(){})}})});
 }
 function drawLire(){
   var box=$("lire-body");if(!box)return;var id=store("loisir:lire"), a=null;
@@ -733,6 +782,7 @@ function start(){
     db=d;
     db.doc("reglages/lecteur").get().then(function(s){if(s.exists){lieu=(s.data()||{}).lieu||"";var el=$("lieu");if(el&&!el.value&&lieu){el.value=lieu;el.dispatchEvent(new Event("change"))}}}).catch(function(){});
     db.collection("pile").orderBy("ajoute","desc").limit(60).onSnapshot(function(s){pileReady=true;PILE=s.docs.map(function(x){var o=x.data()||{};return {id:x.id,titre:o.titre,source:o.source,langue:o.langue,texte:o.texte}});drawPile()},function(){pileReady=true;drawPile()});
+    db.collection("musee").orderBy("ordre").onSnapshot(function(s){MUS=s.docs.map(function(x){return x.data()||{}});drawMus()},function(){});
     db.collection("catalogue").onSnapshot(function(s){catReady=true;CAT=[];s.docs.forEach(function(x){((x.data()||{}).items||[]).forEach(function(i){CAT.push(i)})});drawBib();if($("v-lire")&&!$("v-lire").hidden)drawLire()},function(){catReady=true;drawBib()});
     drawPile();loadImage();
     db.collection("editions").orderBy("date","desc").limit(1).onSnapshot(function(snap){
