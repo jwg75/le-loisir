@@ -238,6 +238,23 @@ select{font:inherit;background:var(--paper);color:var(--ink);border:0;border-bot
 .ondes a span{font-style:italic;color:var(--ink-soft);font-size:.98rem;text-align:right}
 .ondes a.on b{color:#b3261e}
 @media (prefers-reduced-motion:reduce){.aiguille{transition:none}}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+.chips button{font:inherit;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;background:transparent;color:var(--ink);border:1px solid var(--rule);border-radius:0;padding:.4rem .7rem;cursor:pointer}
+.chips button.on{background:var(--ink);color:var(--paper)}
+.bibl li{display:block}
+.bibl a .ex{display:block;font-style:normal;font-size:1rem;color:var(--ink);margin-top:.2rem}
+.bibl a.lu b{color:var(--ink-soft)}
+.bibl a.lu b::after{content:" ✓";color:var(--spot);font-family:var(--text);font-size:.9rem}
+.bibl details{border-top:1px solid var(--rule);margin-top:0}
+.bibl summary{font-style:normal;color:var(--ink);padding-block:.8rem;list-style:none}
+.bibl summary::-webkit-details-marker{display:none}
+.bibl summary b{display:block;font-family:var(--display);font-weight:500;font-size:1.45rem;line-height:1.15}
+.bibl summary span{font-style:italic;color:var(--ink-soft)}
+.body h3{font-family:var(--display);font-size:1.3rem;line-height:1.2;margin:1.4rem 0 .5rem;text-indent:0}
+.credit{border-top:1px solid var(--rule);margin-top:1.6rem;padding-top:.8rem;font-size:.98rem;color:var(--ink-soft)}
+.shelfcard{display:block;text-decoration:none;border-block:1px solid var(--rule);padding-block:.8rem;margin-top:1.2rem}
+.shelfcard b{display:block;font-family:var(--display);font-weight:500;font-size:1.3rem}
+.shelfcard span{font-style:italic;color:var(--ink-soft)}
 .next{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;text-decoration:none;border-block:1px solid var(--rule);padding-block:.9rem;margin-top:2.4rem}
 .next .t{font-family:var(--display);font-size:1.25rem;text-align:right}
 .fin{text-align:center;margin-top:2.6rem;border-top:3px double var(--rule);padding-top:1.1rem}
@@ -278,8 +295,8 @@ select{font:inherit;background:var(--paper);color:var(--ink);border:0;border-bot
 <script>
 (function(){
 "use strict";
-var $ed=document.getElementById("edition"), sample=null, db=null, E=null, lieu="", PILE=[], pileReady=false, IMG=null;
-var VIEWS={une:["une","La une"],lecture:["lecture","La grande lecture"],portugais:["langues","Em português"],italien:["langues","In italiano"],grec:["langues","En grec attique"],livres:["livres","La flânerie"],radio:["radio","La T.S.F."],oeuvre:["une","Histoire de l’art"],pile:["lecture","Ma pile"],lire:["lecture","Ma pile"],cabinet:["cabinet","Le cabinet"],carnet:["cabinet","Le carnet"]};
+var $ed=document.getElementById("edition"), sample=null, db=null, E=null, lieu="", PILE=[], pileReady=false, IMG=null, CAT=[], catReady=false, BODY={}, BF={l:"",g:""};
+var VIEWS={une:["une","La une"],lecture:["lecture","La grande lecture"],portugais:["langues","Em português"],italien:["langues","In italiano"],grec:["langues","En grec attique"],livres:["livres","La flânerie"],radio:["radio","La T.S.F."],oeuvre:["une","Histoire de l’art"],pile:["lecture","Ma pile"],lire:["lecture","La bibliothèque"],bibliotheque:["lecture","La bibliothèque"],cabinet:["cabinet","Le cabinet"],carnet:["cabinet","Le carnet"]};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function fr(s){return esc(s).replace(/&#39;/g,"’").replace(/ ([:;!?»%$])/g," $1").replace(/« /g,"« ")}
 function ty(s){return esc(s).replace(/&#39;/g,"’")}
@@ -389,7 +406,7 @@ function render(){
   [["lecture",L?L.titre:"",(L&&L.rubrique)||"Lecture"],["portugais",(E.pt||{}).titre,"em português"],["italien",(E.it||{}).titre,"in italiano"],["grec",(G||{}).titre,"en grec attique"],["livres",E.flanerie&&E.flanerie.paris?E.flanerie.paris.titre:(B&&B.nouveautes&&B.nouveautes[0]?B.nouveautes[0].titre:""),"la flânerie"],["cabinet",(M?"« "+M.mot+" »":"Le cabinet")+(R&&R.escale?", escale à "+R.escale.lieu:""),"le cabinet"]]
     .forEach(function(x){if(x[1])h+='<li><a href="#'+x[0]+'"><span class="t">'+fr(x[1])+'</span><span class="l">'+fr(x[2])+"</span></a></li>"});
   if((E.kiosque||[]).length)h+='<li><a href="#une" onclick="setTimeout(function(){var k=document.getElementById(\'kiosque\');if(k)k.scrollIntoView()},60)"><span class="t">Le kiosque</span><span class="l">à lire ailleurs</span></a></li>';
-  h+='<li><a href="#pile"><span class="t">Ma pile de lecture</span><span class="l" id="pile-n"></span></a></li>';
+  h+='<li><a href="#bibliotheque"><span class="t">La bibliothèque</span><span class="l bib-n">pour lire longtemps</span></a></li>';
   h+="</ol></div>";
   if(U){h+='<article class="lead"><div class="label">À la une · '+fr(U.rubrique||"Monde")+"</div><h2>"+fr(U.titre)+'</h2><p class="deck">'+fr(U.chapeau)+'</p><div class="body">'+U.paragraphes.map(function(p){return "<p>"+fr(p)+"</p>"}).join("")+'</div><div class="aside">'+(U.precede?'<div class="label">Ce qui précède</div><p>'+fr(U.precede)+"</p>":"")+(U.importe?'<div class="label">Pourquoi cela compte</div><p>'+fr(U.importe)+"</p>":"")+"</div>"+taste("À la une : "+(U.rubrique||"Monde"),U.titre)+"</article>"}
   h+=vhead("Les nouvelles · en français","Ce qu’il faut savoir");
@@ -415,10 +432,11 @@ function render(){
 
   /* ---- MA PILE ---- */
   h+='<section class="view" id="v-pile" hidden>'+vhead("Ma pile","Articles gardés pour plus tard")+'<p class="how">Collez ici le texte entier d’un article auquel vous êtes abonné : il reste dans votre pile privée, se lit dans cette page, et chaque mot se laisse gloser.</p><div class="blk" style="margin-top:1rem"><ul class="stack" id="pile-list"></ul></div><div class="blk"><div class="label">Ajouter un article</div><div class="field"><label for="p-titre">Titre</label><input type="text" id="p-titre" autocomplete="off"></div><div class="field"><label for="p-source">Publication</label><input type="text" id="p-source" autocomplete="off" placeholder="The New Yorker, Piauí, Le Monde"></div><div class="field"><label for="p-langue">Langue</label><select id="p-langue"><option value="en">anglais</option><option value="fr">français</option><option value="pt">portugais</option><option value="it">italien</option></select></div><div class="field"><label for="p-texte">Texte de l’article</label><textarea id="p-texte" rows="8"></textarea></div><button class="act" id="p-add">Ranger dans la pile</button><div class="reply err" id="p-msg"></div></div>'+next("lecture","Retour à la lecture")+"</section>";
-  h+='<section class="view" id="v-lire" hidden><div id="lire-body"></div>'+next("pile","Retour à la pile")+"</section>";
+  h+='<section class="view" id="v-bibliotheque" hidden>'+vhead("La bibliothèque","Pour lire longtemps")+'<p class="how" style="text-align:center">Des textes entiers : des classiques du domaine public, chapitre par chapitre, et de longs articles d’aujourd’hui publiés sous licence libre. Chaque matin en apporte de nouveaux ; rien ne disparaît.</p><div class="chips" id="bib-l"><button data-l="" class="on">Tout</button><button data-l="fr">Français</button><button data-l="pt">Português</button><button data-l="it">Italiano</button><button data-l="en">English</button></div><div class="chips" id="bib-g"><button data-g="" class="on">Tous les genres</button><button data-g="Classique">Classiques</button><button data-g="Aujourd’hui">Aujourd’hui</button></div><div class="bibl" id="bib-list" style="margin-top:1.2rem"></div>'+next("pile","Ma pile personnelle")+"</section>";
+  h+='<section class="view" id="v-lire" hidden><div id="lire-body"></div>'+next("bibliotheque","Retour à la bibliothèque")+"</section>";
 
   /* ---- LECTURE ---- */
-  h+='<section class="view" id="v-lecture" hidden>';
+  h+='<section class="view" id="v-lecture" hidden><a class="shelfcard" href="#bibliotheque"><span class="label">Pour lire longtemps</span><b>La bibliothèque →</b><span class="bib-n">des romans entiers et de longs articles</span></a>';
   if(L){h+=vhead("La grande lecture · "+fr(L.rubrique||""),fr(L.titre))+'<p class="deck">'+fr(L.chapeau)+'</p><div class="body cap">';
     L.paragraphes.forEach(function(p){h+="<p>"+fr(p)+"</p>"});h+="</div>"+taste("Grande lecture : "+(L.rubrique||""),L.titre);
     var D=E.dimanche;
@@ -556,7 +574,10 @@ function wire(){
   $("pile-list").addEventListener("click",function(ev){var b=ev.target;if(b.tagName!=="BUTTON"||!db)return;
     if(b.getAttribute("data-sure")){db.doc("pile/"+b.getAttribute("data-id")).delete().catch(function(){})}
     else{b.setAttribute("data-sure","1");b.textContent="Confirmer"}});
-  drawPile();drawImage();tsfWire();
+  drawPile();drawImage();tsfWire();drawBib();
+  ["bib-l","bib-g"].forEach(function(cid){var c=$(cid);if(c)c.onclick=function(ev){var b=ev.target;if(b.tagName!=="BUTTON")return;
+    if(cid==="bib-l")BF.l=b.getAttribute("data-l");else BF.g=b.getAttribute("data-g");
+    c.querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x===b)});drawBib()}});
   if(pt){
     var memo={};
     var gloss=function(span){var raw=span.textContent, word=raw.toLowerCase();
@@ -638,8 +659,43 @@ function drawPile(){
   el.querySelectorAll("a").forEach(function(a){a.onclick=function(){store("loisir:lire",a.getAttribute("data-id"))}});
   drawLire();
 }
+function lus(){try{return JSON.parse(store("loisir:lus")||"[]")}catch(e){return []}}
+function drawBib(){
+  var hrs=0;CAT.forEach(function(x){hrs+=(x.minutes||0)});
+  document.querySelectorAll(".bib-n").forEach(function(n){n.textContent=CAT.length?CAT.length+" textes, "+Math.round(hrs/60)+" heures de lecture":(db?"pour lire longtemps":"")});
+  var el=$("bib-list");if(!el)return;
+  if(!db){el.innerHTML='<p class="how">La bibliothèque s’ouvre quand la page est reliée à votre compte Claude.</p>';return}
+  if(!catReady){el.innerHTML='<p class="how">On ouvre les rayons…</p>';return}
+  var L=lus(), ok=function(x){return (!BF.l||x.langue===BF.l)&&(!BF.g||x.genre===BF.g)}, names={fr:"français",pt:"português",it:"italiano",en:"English"};
+  var item=function(x){return '<li><a href="#lire" data-t="'+esc(x.id)+'"'+(L.indexOf(x.id)>=0?' class="lu"':"")+"><b>"+ty(x.titre)+"</b><span>"+ty([x.auteur,x.source,(x.minutes||1)+" min"].filter(Boolean).join(" · "))+"</span>"+(x.genre==="Classique"?(x.soustitre?'<span class="ex">'+ty(x.soustitre)+"</span>":""):'<span class="ex">'+ty((x.extrait||"").slice(0,150))+"…</span>")+"</a></li>"};
+  var series={}, order=[], arts=[];
+  CAT.filter(ok).forEach(function(x){if(x.serie){if(!series[x.serie]){series[x.serie]=[];order.push(x.serie)}series[x.serie].push(x)}else arts.push(x)});
+  var h="";
+  order.forEach(function(s){var c=series[s].sort(function(a,b){return (a.ordre||0)-(b.ordre||0)}), m=0, done=0;c.forEach(function(x){m+=x.minutes||0;if(L.indexOf(x.id)>=0)done++});
+    h+="<details><summary><b>"+ty(s)+"</b><span>"+ty(c[0].auteur)+" · "+names[c[0].langue]+" · "+c.length+" parties, "+Math.round(m/6)/10+" h"+(done?" · "+done+" lues":"")+'</span></summary><ul class="stack">'+c.map(item).join("")+"</ul></details>"});
+  arts.sort(function(a,b){return String(b.ajoute||"").localeCompare(String(a.ajoute||""))||String(a.langue).localeCompare(String(b.langue))});
+  if(arts.length)h+='<div class="label" style="margin-top:1.4rem;border-top:1px solid var(--rule);padding-top:.9rem">Articles et essais · '+arts.length+'</div><ul class="stack">'+arts.map(item).join("")+"</ul>";
+  el.innerHTML=h||'<p class="how">Rien dans ce rayon pour l’instant.</p>';
+  el.querySelectorAll("a[data-t]").forEach(function(a){a.onclick=function(){store("loisir:lire","t:"+a.getAttribute("data-t"))}});
+}
+function drawTexte(id){
+  var box=$("lire-body"), m=null;CAT.forEach(function(x){if(x.id===id)m=x});
+  if(!m){box.innerHTML='<p class="wait">'+(catReady?"Ce texte n’est plus au catalogue.":"On cherche le texte…")+"</p>";return}
+  var L={en:"en",fr:"fr",pt:"pt",it:"it"}[m.langue]||"fr";box.setAttribute("lang",L);box.setAttribute("data-lang",L);
+  var head=vhead(ty(m.serie||m.source||""),ty(m.titre))+(m.soustitre?'<p class="deck">'+ty(m.soustitre)+"</p>":"")+'<p class="how" style="text-align:center;margin-bottom:1.1rem">'+ty(m.auteur||"")+" · "+(m.minutes||1)+" min · touchez un mot pour sa glose</p>";
+  var show=function(t){
+    var nxt=null;if(m.serie)CAT.forEach(function(x){if(x.serie===m.serie&&x.ordre===m.ordre+1)nxt=x});
+    box.innerHTML=head+'<div class="body cap">'+String(t).split(/\n+/).filter(function(p){return p.trim()}).map(function(p){return p.indexOf("## ")===0?"<h3>"+ty(p.slice(3))+"</h3>":"<p>"+words(p.trim())+"</p>"}).join("")+'</div><p class="credit">'+ty(m.auteur||"")+" · "+ty(m.source||"")+" · "+ty(m.licence||"")+(/^https:\/\//.test(m.url||"")?' · <a href="'+esc(m.url)+'" target="_blank" rel="noopener">l’original</a>':"")+"</p>"+(nxt?'<a class="next" href="#lire" id="lire-next"><span class="label">Suite</span><span class="t">'+ty(nxt.titre)+" →</span></a>":"");
+    var n=$("lire-next");if(n)n.onclick=function(ev){ev.preventDefault();store("loisir:lire","t:"+nxt.id);drawLire();window.scrollTo(0,0)};
+    var l=lus();if(l.indexOf(id)<0){l.push(id);store("loisir:lus",JSON.stringify(l.slice(-2000)))}};
+  if(BODY[id]){show(BODY[id]);return}
+  box.innerHTML=head+'<p class="wait">On va chercher le volume…</p>';
+  if(!db)return;
+  db.doc("textes/"+id).get().then(function(s){if(store("loisir:lire")!=="t:"+id)return;if(!s.exists){box.innerHTML=head+'<p class="wait">Ce volume manque au rayon.</p>';return}BODY[id]=(s.data()||{}).texte||"";show(BODY[id])}).catch(function(){box.innerHTML=head+'<p class="wait">Le texte n’a pas pu être chargé. Réessayez.</p>'});
+}
 function drawLire(){
   var box=$("lire-body");if(!box)return;var id=store("loisir:lire"), a=null;
+  if(id&&id.indexOf("t:")===0){drawTexte(id.slice(2));return}
   PILE.forEach(function(x){if(x.id===id)a=x});
   if(!a){box.innerHTML='<p class="wait">Choisissez un article dans la pile.</p>';return}
   var L={en:"en",fr:"fr",pt:"pt",it:"it"}[a.langue]||"en";
@@ -677,6 +733,7 @@ function start(){
     db=d;
     db.doc("reglages/lecteur").get().then(function(s){if(s.exists){lieu=(s.data()||{}).lieu||"";var el=$("lieu");if(el&&!el.value&&lieu){el.value=lieu;el.dispatchEvent(new Event("change"))}}}).catch(function(){});
     db.collection("pile").orderBy("ajoute","desc").limit(60).onSnapshot(function(s){pileReady=true;PILE=s.docs.map(function(x){var o=x.data()||{};return {id:x.id,titre:o.titre,source:o.source,langue:o.langue,texte:o.texte}});drawPile()},function(){pileReady=true;drawPile()});
+    db.collection("catalogue").onSnapshot(function(s){catReady=true;CAT=[];s.docs.forEach(function(x){((x.data()||{}).items||[]).forEach(function(i){CAT.push(i)})});drawBib();if($("v-lire")&&!$("v-lire").hidden)drawLire()},function(){catReady=true;drawBib()});
     drawPile();loadImage();
     db.collection("editions").orderBy("date","desc").limit(1).onSnapshot(function(snap){
       if(snap.empty){if(!snap.metadata.fromCache){done=true;clearTimeout(timer)}return}
