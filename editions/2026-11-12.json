@@ -1,0 +1,1191 @@
+{
+ "date": "2026-11-12",
+ "numero": 1,
+ "format": 2,
+ "dateline": "Jeudi 12 novembre 2026",
+ "meteo": [
+  {
+   "ville": "New York",
+   "max": 16,
+   "min": 9,
+   "ciel": "pluie modérée"
+  },
+  {
+   "ville": "Montréal",
+   "max": 4,
+   "min": -1,
+   "ciel": "couvert"
+  },
+  {
+   "ville": "Los Angeles",
+   "max": 30,
+   "min": 14,
+   "ciel": "grand soleil"
+  },
+  {
+   "ville": "Paris",
+   "max": 12,
+   "min": 6,
+   "ciel": "brouillard"
+  }
+ ],
+ "marches": {
+  "note": "Clôture de mercredi, et ce matin avant l'ouverture",
+  "lignes": [
+   {
+    "nom": "S&P 500",
+    "valeur": "7 619,38",
+    "var": "+1,31 %"
+   },
+   {
+    "nom": "Nasdaq",
+    "valeur": "25 466,19",
+    "var": "+1,60 %"
+   },
+   {
+    "nom": "Dow Jones",
+    "valeur": "52 486,49",
+    "var": "+0,5 %"
+   },
+   {
+    "nom": "Contrats Nasdaq 100, ce matin",
+    "valeur": "−0,64 %",
+    "var": "à 5 h 30"
+   },
+   {
+    "nom": "Brent, le baril",
+    "valeur": "≈ 92 $",
+    "var": "−0,5 %"
+   }
+  ]
+ },
+ "mot": {
+  "mot": "nonchaloir",
+  "nature": "nom masculin, littéraire",
+  "definition": "Indolence heureuse, abandon de qui ne se soucie de rien. Plus rare et plus doux que nonchalance.",
+  "etymologie": "De non et de l'ancien verbe chaloir, « importer », du latin calere, « être chaud ». Il nous en reste « peu me chaut » et « nonchalant ».",
+  "citation": "Ô boucles ! Ô parfum chargé de nonchaloir !",
+  "auteur": "Baudelaire, « La Chevelure », Les Fleurs du mal"
+ },
+ "vers": {
+  "lignes": [
+   "Les sanglots longs",
+   "Des violons",
+   "De l'automne",
+   "Blessent mon cœur",
+   "D'une langueur",
+   "Monotone."
+  ],
+  "auteur": "Paul Verlaine",
+  "oeuvre": "« Chanson d'automne », Poèmes saturniens, 1866"
+ },
+ "ephemeride": [
+  {
+   "annee": "1840",
+   "texte": "Naissance d'Auguste Rodin à Paris, rue de l'Arbalète, dans le quartier Mouffetard. L'École des beaux-arts le refusera trois fois."
+  },
+  {
+   "annee": "1915",
+   "texte": "Naissance de Roland Barthes à Cherbourg. Il enseignera au Collège de France et écrira sur la tour Eiffel, le bifteck-frites et la DS."
+  }
+ ],
+ "fr": {
+  "breves": [
+   {
+    "rubrique": "Politique",
+    "titre": "La Maison-Blanche met en garde ceux qui veulent enquêter sur elle",
+    "texte": "Le conseiller juridique de la présidence, Will Scharf, a écrit à Robert Garcia, futur président de la commission de contrôle de la Chambre, que l'administration « surveille » les menaces d'enquête des démocrates, qu'il juge « abusives et capricieuses » et peut-être délictueuses. M. Garcia répond que le pouvoir d'enquête du Congrès vient de la Constitution ; Jamie Raskin parle d'une lettre « dénuée de sens et embarrassante ». Ce jeudi, M. Trump accuse à son tour les démocrates de « menacer illégalement » les républicains. Dans le Mississippi, après plus d'une semaine de dépouillement, le démocrate Scott Colom l'emporte de justesse : son parti comptera au moins 55 sénateurs en janvier."
+   },
+   {
+    "rubrique": "Intelligence artificielle",
+    "titre": "New York se donne un droit de regard sur les laboratoires",
+    "texte": "La loi de l'État de New York sur la sûreté de l'IA entre en vigueur, et place OpenAI comme Anthropic sous une surveillance nouvelle. OpenAI aurait par ailleurs enregistré au troisième trimestre une perte d'exploitation de 10,9 milliards de dollars. Google ouvre son modèle Gemini 4 Carbon aux abonnés payants, à un tarif d'appel qui doublera après le 30 novembre. Notion, enfin, reconnaît qu'un incident chez son prestataire Fireworks AI a exposé des transcriptions de conversations. Ces informations viennent de revues spécialisées et demandent confirmation."
+   },
+   {
+    "rubrique": "Québec",
+    "titre": "Santé Québec : abolir, ou seulement transformer ?",
+    "texte": "Le Parti québécois avait promis en campagne d'abolir l'agence Santé Québec. La ministre de la Santé, Marie-Karlynn Laflamme, a parlé ces jours-ci d'une simple « transformation », avant de préciser que l'engagement d'abolition demeure, rapporte Radio-Canada. Le gouvernement de Paul St-Pierre Plamondon dispose de 60 sièges, contre 39 aux libéraux, 19 aux conservateurs et 9 à Québec solidaire. La refonte de la Charte de la langue française, que prépare Pascal Bérubé, attendra la rentrée parlementaire."
+   },
+   {
+    "rubrique": "Paris",
+    "titre": "Un braquage chez De Beers, une grève dans les blocs",
+    "texte": "Des malfaiteurs ont attaqué ce jeudi la bijouterie De Beers, dans le 2e arrondissement ; la police a bouclé les abords de la diamanterie. Dans les hôpitaux de l'AP-HP, les infirmiers de bloc opératoire entament une grève illimitée à l'appel de Sud Santé, pour protester contre le manque d'effectifs. Sur France Inter, la climatologue Valérie Masson-Delmotte s'inquiète de voir le climat devenir une querelle de partis. Au Petit Palais, « Bruxelles 1900 » a ouvert mardi."
+   },
+   {
+    "rubrique": "Université",
+    "titre": "Du livre de poèmes au recueil de lettres",
+    "texte": "Roy Gibson, de l'université de Durham, parle aujourd'hui à Manchester du livre de poésie et du recueil de lettres, de l'époque classique à l'Antiquité tardive : comment un poète, puis un épistolier, ordonnaient leurs pièces pour qu'on les lise à la suite. À Leyde se tient jusqu'à demain la rencontre annuelle des jeunes chercheurs en archéologie chypriote."
+   }
+  ]
+ },
+ "lecture": {
+  "rubrique": "Lettres",
+  "titre": "Le Goncourt, la machine et le lecteur",
+  "chapeau": "Philippe Jaenada a reçu le plus convoité des prix français pour un roman où il reconnaît avoir laissé entrer, trois fois, l'intelligence artificielle. La République des lettres ne sait pas encore si elle doit en rire.",
+  "paragraphes": [
+   "Chez Drouant, le 3 novembre, tout s'est passé comme à l'ordinaire. Les jurés ont déjeuné, voté, et annoncé sur le perron que le prix Goncourt revenait à Philippe Jaenada pour L'Inconnue du quai de Javel, par six voix contre trois à Sylvain Prudhomme. Le lauréat succède à Laurent Mauvignier, dont La Maison vide s'est vendue à près de six cent quarante mille exemplaires. Il a reçu son chèque de dix euros, que nul n'encaisse jamais.",
+   "C'est le lendemain que l'affaire a pris un tour inattendu. Interrogé sur France Inter, l'écrivain a dit, sans se faire prier, qu'il avait eu recours à l'intelligence artificielle « trois fois » en écrivant son livre, et qu'une phrase au moins y avait été glissée pour « jouer avec le lecteur ». L'aveu avait la désinvolture de son auteur, qui a bâti son œuvre sur la digression et l'enquête, et dont le roman revient sur un meurtre parisien jamais élucidé.",
+   "Le sourire s'est figé parce que la saison avait déjà connu son procès. Quelques semaines plus tôt, le roman de Thélyson Orélien avait été retiré de la sélection du même prix, après que l'on eut soupçonné sa prose d'avoir été produite par une machine. D'un côté, un livre écarté sur un soupçon ; de l'autre, un livre couronné malgré un aveu. La différence tient-elle à la quantité, à la franchise, ou à la notoriété ?",
+   "On aurait tort d'y voir une querelle de techniciens. Ce que le lecteur achète avec un bandeau rouge, c'est la promesse qu'une voix lui parle, et que chacune des phrases a été voulue par quelqu'un. Qu'un romancier s'amuse à en confier une à un automate, puis le dise, relève peut-être du jeu littéraire le plus ancien, celui du pastiche et de la fausse attribution. Qu'il ne le dise pas serait une autre histoire.",
+   "Le jury, lui, a d'autres soucis. On lui reproche cette année encore le poids du groupe Madrigall, maison mère de Flammarion comme de Gallimard, dans ses sélections. Entre les éditeurs trop puissants et les machines trop habiles, l'académie Goncourt découvre qu'il lui faudra bientôt dire ce qu'elle récompense au juste : un texte, ou la main qui l'a écrit."
+  ],
+  "sujet": "« Ce que le lecteur achète, c'est la promesse qu'une voix lui parle. » Un roman cesse-t-il d'appartenir à son auteur dès lors qu'une machine y a mis une phrase ?"
+ },
+ "pt": {
+  "titre": "Cidades e negócios",
+  "articles": [
+   {
+    "titre": "Flatbush: oito mortos sob os escombros",
+    "paragraphes": [
+     "Subiu para oito o número de mortos no desabamento de um prédio em Flatbush, Brooklyn, na tarde de quarta-feira. Há pelo menos dezassete feridos, entre eles três bombeiros. O edifício, na esquina da Flatbush Avenue com a Bedford Avenue, caiu para dentro de uma escavação aberta no terreno vizinho, onde decorriam obras de fundações.",
+     "O promotor tinha licença válida para escavar, segundo o departamento de edifícios, que mandou parar todos os trabalhos enquanto se apura a causa. De acordo com um responsável municipal, todas as pessoas dadas como desaparecidas foram já retiradas dos escombros."
+    ]
+   },
+   {
+    "titre": "Um recorde na Madison Avenue",
+    "paragraphes": [
+     "O mercado de escritórios de Manhattan está de volta. A gestora Castle Hook Partners aceitou pagar até 21,2 milhões de dólares por ano por uma penthouse de escritórios no número 625 da Madison Avenue, propriedade da Related: será a renda mais alta alguma vez paga na ilha. Noutro negócio, de 750 milhões de dólares, cerca de 1700 apartamentos nova-iorquinos vão manter rendas acessíveis durante mais vinte anos."
+    ]
+   },
+   {
+    "titre": "Los Angeles: a nova presidente tem pressa",
+    "paragraphes": [
+     "Nithya Raman, que derrotou Karen Bass por margem estreita, toma posse a 14 de dezembro e promete mexer primeiro na habitação. Quer que a cidade tenha apenas sessenta dias para aprovar novos prédios de apartamentos e defende mais densidade junto aos transportes. Os promotores aplaudem; os senhorios, que temem as suas ideias sobre a proteção dos inquilinos, nem tanto. Falta convencer o conselho municipal, que até agora nunca a seguiu."
+    ]
+   },
+   {
+    "titre": "A Nvidia assusta Wall Street",
+    "paragraphes": [
+     "As ações da Nvidia caíam cerca de nove por cento antes da abertura, enquanto os investidores esperam para saber o destino do presidente executivo, Jensen Huang. O conselho de administração abriu no domingo uma investigação independente e reuniu-se na quarta-feira para decidir se o afasta. Alguns meios dão já a demissão como certa, mas os principais ainda não a confirmam.",
+     "Os futuros do Nasdaq recuavam 0,6 por cento, depois da forte subida da véspera. O barril de Brent negoceia perto dos 92 dólares."
+    ]
+   }
+  ],
+  "gloses": {
+   "subiu": "est monté (subir)",
+   "número": "nombre",
+   "mortos": "morts",
+   "desabamento": "effondrement",
+   "prédio": "immeuble",
+   "prédios": "immeubles",
+   "tarde": "après-midi",
+   "quarta-feira": "mercredi",
+   "há": "il y a",
+   "pelo": "pelo menos : au moins",
+   "menos": "moins ; pelo menos : au moins",
+   "dezassete": "dix-sept (au Brésil : dezessete)",
+   "feridos": "blessés",
+   "entre": "parmi, entre",
+   "bombeiros": "pompiers",
+   "edifício": "bâtiment",
+   "edifícios": "bâtiments",
+   "esquina": "angle, coin de rue",
+   "caiu": "est tombé (cair)",
+   "dentro": "para dentro de : à l'intérieur de",
+   "escavação": "excavation, fouille",
+   "aberta": "ouverte",
+   "terreno": "terrain",
+   "vizinho": "voisin",
+   "onde": "où",
+   "decorriam": "se déroulaient, étaient en cours",
+   "obras": "travaux",
+   "fundações": "fondations",
+   "promotor": "promoteur",
+   "promotores": "promoteurs",
+   "licença": "permis",
+   "válida": "valide",
+   "escavar": "creuser",
+   "segundo": "selon",
+   "mandou": "a ordonné (mandar parar : faire arrêter)",
+   "parar": "arrêter",
+   "trabalhos": "travaux",
+   "enquanto": "pendant que, tant que",
+   "apura": "apurar : établir, tirer au clair",
+   "causa": "cause",
+   "acordo": "de acordo com : d'après",
+   "responsável": "responsable",
+   "dadas": "dadas como : données pour, considérées comme",
+   "desaparecidas": "disparues",
+   "foram": "ont été",
+   "já": "déjà",
+   "retiradas": "retirées",
+   "escombros": "décombres",
+   "mercado": "marché",
+   "escritórios": "bureaux",
+   "volta": "estar de volta : être de retour",
+   "gestora": "société de gestion",
+   "aceitou": "a accepté",
+   "pagar": "payer",
+   "até": "jusqu'à",
+   "milhões": "millions",
+   "ano": "an",
+   "propriedade": "propriété",
+   "renda": "loyer",
+   "rendas": "loyers",
+   "alta": "élevée",
+   "alguma": "alguma vez : jamais (dans une comparaison)",
+   "vez": "fois",
+   "paga": "payée",
+   "ilha": "île",
+   "noutro": "dans une autre (em + outro)",
+   "negócio": "affaire, transaction",
+   "cerca": "cerca de : environ",
+   "nova-iorquinos": "new-yorkais",
+   "manter": "conserver",
+   "acessíveis": "abordables",
+   "durante": "pendant",
+   "vinte": "vingt",
+   "presidente": "ici : la maire (presidente da câmara)",
+   "derrotou": "a battu",
+   "margem": "marge",
+   "estreita": "étroite",
+   "toma": "tomar posse : prendre ses fonctions",
+   "posse": "entrée en fonctions",
+   "promete": "promet",
+   "mexer": "toucher à, remuer",
+   "primeiro": "d'abord",
+   "habitação": "logement",
+   "quer": "veut",
+   "cidade": "ville",
+   "tenha": "ait (ter, subjonctif)",
+   "apenas": "seulement",
+   "aprovar": "approuver",
+   "novos": "nouveaux",
+   "defende": "défend, plaide pour",
+   "densidade": "densité",
+   "junto": "junto a : près de",
+   "transportes": "transports",
+   "aplaudem": "applaudissent",
+   "senhorios": "propriétaires bailleurs",
+   "temem": "craignent",
+   "ideias": "idées",
+   "proteção": "protection",
+   "inquilinos": "locataires",
+   "nem": "nem tanto : pas tant que ça",
+   "tanto": "autant",
+   "falta": "il reste à",
+   "convencer": "convaincre",
+   "conselho": "conseil",
+   "agora": "maintenant ; até agora : jusqu'ici",
+   "nunca": "jamais",
+   "seguiu": "a suivie",
+   "ações": "actions",
+   "caíam": "chutaient (cair, imparfait)",
+   "abertura": "ouverture",
+   "investidores": "investisseurs",
+   "esperam": "attendent",
+   "saber": "savoir",
+   "destino": "sort",
+   "executivo": "presidente executivo : directeur général",
+   "administração": "conselho de administração : conseil d'administration",
+   "abriu": "a ouvert",
+   "domingo": "dimanche",
+   "investigação": "enquête",
+   "reuniu-se": "s'est réuni",
+   "decidir": "décider",
+   "afasta": "écarte (afastar)",
+   "alguns": "certains",
+   "meios": "médias",
+   "dão": "donnent ; dar como certa : tenir pour acquise",
+   "demissão": "démission",
+   "certa": "certaine",
+   "principais": "principaux",
+   "ainda": "encore",
+   "confirmam": "confirment",
+   "futuros": "contrats à terme",
+   "recuavam": "reculaient",
+   "depois": "après",
+   "forte": "forte",
+   "subida": "hausse",
+   "véspera": "veille",
+   "barril": "baril",
+   "negoceia": "se négocie (au Brésil : negocia)",
+   "perto": "perto de : près de"
+  }
+ },
+ "it": {
+  "titre": "Cultura e viaggi",
+  "articles": [
+   {
+    "titre": "Parigi guarda le fotografie",
+    "paragraphes": [
+     "Oggi apre al Grand Palais Paris Photo, la più importante fiera di fotografia del mondo. Resta aperta fino a domenica, sotto il grande tetto di vetro. Chi ama le immagini antiche può andare anche al Museo d'Orsay, dove c'è una mostra su Gustave Le Gray, uno dei primi grandi fotografi francesi. Nell'Ottocento Le Gray fotografava il mare e il cielo con una tecnica nuova."
+    ]
+   },
+   {
+    "titre": "In treno, di notte",
+    "paragraphes": [
+     "I treni notturni tornano di moda in Europa. Da marzo la compagnia European Sleeper collega Parigi e Berlino in una notte: si parte la sera e si arriva la mattina. Da metà dicembre un'altra linea cambierà percorso e passerà per Anversa, Breda ed Eindhoven. Le date possono cambiare, quindi è meglio controllare prima di comprare il biglietto."
+    ]
+   },
+   {
+    "titre": "Un museo nel garage",
+    "paragraphes": [
+     "A Bruxelles un vecchio garage della Citroën è diventato un museo. Si chiama KANAL e aprirà al pubblico il 28 novembre. L'edificio è enorme e luminoso: una volta ci riparavano le automobili, adesso ci saranno quadri, sculture e spettacoli."
+    ]
+   }
+  ],
+  "question": "Dove si trova Paris Photo, e fino a quando si può visitare?",
+  "reponse": "Paris Photo si trova al Grand Palais, a Parigi, e si può visitare fino a domenica.",
+  "feuilleton": {
+   "titre": "La biblioteca del professore",
+   "episode": 1,
+   "chapitre": "L'arrivo",
+   "paragraphes": [
+    "Luglio 1987. Il treno da Genova mi lasciò in una piccola stazione sul mare, alle quattro del pomeriggio. Faceva molto caldo e non c'era nessuno. Avevo una valigia, un dizionario di greco e una lettera della signora Marchetti: «Venga quando vuole. La biblioteca di mio marito La aspetta.»",
+    "Il professor Marchetti era morto in primavera. Aveva insegnato greco per quarant'anni e aveva lasciato undicimila libri in una villa sopra il paese. Io avevo ventidue anni, pochi soldi e un solo lavoro per l'estate: fare il catalogo.",
+    "Salii a piedi per una strada bianca, tra gli ulivi. La villa era gialla, con le persiane verdi chiuse. Nel giardino qualcuno suonava il pianoforte, sempre la stessa frase, e si fermava sempre nello stesso punto.",
+    "Una ragazza aprì il cancello. «Lei è il bibliotecario?» disse. «La avverto: manca un libro. Il più importante. E in questa casa nessuno vuole parlarne.»"
+   ],
+   "resume": "Luglio 1987. Il narratore, ventidue anni, arriva in una villa ligure sopra il mare per catalogare gli undicimila libri del professor Marchetti, grecista, morto in primavera. Qualcuno suona il pianoforte in giardino. Una ragazza gli apre il cancello e lo avverte: manca un libro, il più importante, e nessuno in casa vuole parlarne."
+  }
+ },
+ "grc": {
+  "titre": "Le détroit d'Ormuz",
+  "contexte": "Téhéran dément toute négociation et tient le détroit fermé. Les Gardiens de la révolution affirment que trois pétroliers y ont pris feu ; l'agence maritime britannique ne confirme que deux incidents. Selon le Wall Street Journal, le vice-président Vance envisagerait de rencontrer le chef de la sécurité iranienne.",
+  "phrases": [
+   {
+    "texte": "τρεῖς νῆες καίονται, ὡς λέγουσιν οἱ Πέρσαι.",
+    "fr": "Trois navires brûlent, à ce que disent les Perses.",
+    "mots": [
+     {
+      "mot": "τρεῖς",
+      "lemme": "τρεῖς, τρία",
+      "analyse": "adjectif numéral, nominatif féminin pluriel",
+      "sens": "trois"
+     },
+     {
+      "mot": "νῆες",
+      "lemme": "ναῦς, νεώς, ἡ",
+      "analyse": "nom irrégulier de la 3e déclinaison, nominatif féminin pluriel",
+      "sens": "les navires"
+     },
+     {
+      "mot": "καίονται",
+      "lemme": "καίω",
+      "analyse": "verbe, indicatif présent moyen-passif, 3e personne du pluriel",
+      "sens": "ils brûlent, ils sont en feu"
+     },
+     {
+      "mot": "ὡς",
+      "lemme": "ὡς",
+      "analyse": "conjonction",
+      "sens": "comme, à ce que"
+     },
+     {
+      "mot": "λέγουσιν",
+      "lemme": "λέγω",
+      "analyse": "verbe, indicatif présent actif, 3e personne du pluriel",
+      "sens": "ils disent"
+     },
+     {
+      "mot": "οἱ",
+      "lemme": "ὁ, ἡ, τό",
+      "analyse": "article, nominatif masculin pluriel",
+      "sens": "les"
+     },
+     {
+      "mot": "Πέρσαι",
+      "lemme": "Πέρσης, -ου, ὁ",
+      "analyse": "nom masculin de la 1re déclinaison, nominatif pluriel",
+      "sens": "les Perses"
+     }
+    ]
+   },
+   {
+    "texte": "οἱ Πέρσαι τὸν πορθμὸν κλείουσιν.",
+    "fr": "Les Perses ferment le détroit.",
+    "mots": [
+     {
+      "mot": "οἱ",
+      "lemme": "ὁ, ἡ, τό",
+      "analyse": "article, nominatif masculin pluriel",
+      "sens": "les"
+     },
+     {
+      "mot": "Πέρσαι",
+      "lemme": "Πέρσης, -ου, ὁ",
+      "analyse": "nom masculin de la 1re déclinaison, nominatif pluriel",
+      "sens": "les Perses"
+     },
+     {
+      "mot": "τὸν",
+      "lemme": "ὁ, ἡ, τό",
+      "analyse": "article, accusatif masculin singulier",
+      "sens": "le"
+     },
+     {
+      "mot": "πορθμὸν",
+      "lemme": "πορθμός, -οῦ, ὁ",
+      "analyse": "nom, accusatif masculin singulier, 2e déclinaison",
+      "sens": "le détroit, le passage"
+     },
+     {
+      "mot": "κλείουσιν",
+      "lemme": "κλείω (attique ancien : κλῄω)",
+      "analyse": "verbe, indicatif présent actif, 3e personne du pluriel",
+      "sens": "ils ferment"
+     }
+    ]
+   },
+   {
+    "texte": "αἱ νῆες τὸ ἔλαιον οὐ φέρουσιν.",
+    "fr": "Les navires ne transportent pas le pétrole.",
+    "mots": [
+     {
+      "mot": "αἱ",
+      "lemme": "ὁ, ἡ, τό",
+      "analyse": "article, nominatif féminin pluriel",
+      "sens": "les"
+     },
+     {
+      "mot": "νῆες",
+      "lemme": "ναῦς, νεώς, ἡ",
+      "analyse": "nom irrégulier de la 3e déclinaison, nominatif féminin pluriel",
+      "sens": "les navires"
+     },
+     {
+      "mot": "τὸ",
+      "lemme": "ὁ, ἡ, τό",
+      "analyse": "article, accusatif neutre singulier",
+      "sens": "le"
+     },
+     {
+      "mot": "ἔλαιον",
+      "lemme": "ἔλαιον, -ου, τό",
+      "analyse": "nom, accusatif neutre singulier, 2e déclinaison",
+      "sens": "l'huile (ici : le pétrole)",
+      "forge": true
+     },
+     {
+      "mot": "οὐ",
+      "lemme": "οὐ",
+      "analyse": "adverbe de négation",
+      "sens": "ne… pas"
+     },
+     {
+      "mot": "φέρουσιν",
+      "lemme": "φέρω",
+      "analyse": "verbe, indicatif présent actif, 3e personne du pluriel",
+      "sens": "ils portent, ils transportent"
+     }
+    ]
+   },
+   {
+    "texte": "οἱ δὲ ἔμποροι φοβοῦνται.",
+    "fr": "Et les marchands ont peur.",
+    "mots": [
+     {
+      "mot": "οἱ",
+      "lemme": "ὁ, ἡ, τό",
+      "analyse": "article, nominatif masculin pluriel",
+      "sens": "les"
+     },
+     {
+      "mot": "δὲ",
+      "lemme": "δέ",
+      "analyse": "particule, toujours en deuxième position",
+      "sens": "et, mais"
+     },
+     {
+      "mot": "ἔμποροι",
+      "lemme": "ἔμπορος, -ου, ὁ",
+      "analyse": "nom, nominatif masculin pluriel, 2e déclinaison",
+      "sens": "les marchands, les négociants"
+     },
+     {
+      "mot": "φοβοῦνται",
+      "lemme": "φοβέομαι",
+      "analyse": "verbe contracte en -έω, indicatif présent moyen, 3e personne du pluriel",
+      "sens": "ils ont peur"
+     }
+    ]
+   }
+  ],
+  "noteForges": "ἔλαιον désigne en grec l'huile d'olive. Le sens de « pétrole » est une extension moderne (le grec d'aujourd'hui dit πετρέλαιο, « huile de pierre »). Appeler les Iraniens οἱ Πέρσαι, en revanche, est d'un classicisme irréprochable.",
+  "ancre": {
+   "texte": "μέγα γὰρ τὸ τῆς θαλάσσης κράτος.",
+   "reference": "Thucydide, La Guerre du Péloponnèse, I, 143, 5 (discours de Périclès)",
+   "fr": "Car c'est une grande chose que la maîtrise de la mer.",
+   "note": "Thucydide écrit θαλάσσης avec deux sigmas, à l'ancienne ; l'attique courant dit θάλαττα. Vous reconnaissez l'article τό et le génitif τῆς. Citation contrôlée sur le titre d'une étude savante qui la reproduit avec sa référence."
+  },
+  "moderne": {
+   "original": "« Il faut imaginer Sisyphe heureux. »",
+   "source": "Albert Camus, Le Mythe de Sisyphe, 1942",
+   "texte": "δεῖ τὸν Σίσυφον εὐδαίμονα νομίζειν.",
+   "mots": [
+    {
+     "mot": "δεῖ",
+     "lemme": "δεῖ",
+     "analyse": "verbe impersonnel, indicatif présent, 3e personne du singulier ; suivi de l'accusatif et de l'infinitif",
+     "sens": "il faut"
+    },
+    {
+     "mot": "τὸν",
+     "lemme": "ὁ, ἡ, τό",
+     "analyse": "article, accusatif masculin singulier",
+     "sens": "le"
+    },
+    {
+     "mot": "Σίσυφον",
+     "lemme": "Σίσυφος, -ου, ὁ",
+     "analyse": "nom propre, accusatif masculin singulier, 2e déclinaison",
+     "sens": "Sisyphe"
+    },
+    {
+     "mot": "εὐδαίμονα",
+     "lemme": "εὐδαίμων, -ον",
+     "analyse": "adjectif de la 3e déclinaison, accusatif masculin singulier, attribut de Σίσυφον",
+     "sens": "heureux"
+    },
+    {
+     "mot": "νομίζειν",
+     "lemme": "νομίζω",
+     "analyse": "verbe, infinitif présent actif",
+     "sens": "considérer, tenir pour"
+    }
+   ],
+   "note": "Version faite pour ce journal. Camus rend au grec ce qu'il lui a pris : Sisyphe roulait déjà son rocher chez Homère, au chant XI de l'Odyssée."
+  }
+ },
+ "bibliotheque": [
+  {
+   "revue": "The New Yorker",
+   "livraison": "16 novembre",
+   "texte": "La couverture est consacrée au grand retournement démocrate des élections de mi-mandat."
+  },
+  {
+   "revue": "London Review of Books",
+   "livraison": "5 novembre",
+   "texte": "James Meek chez les démocrates de Detroit, Eyal Weizman sur la mort par algorithme, et un texte d'Anne Carson, « 9 October »."
+  },
+  {
+   "revue": "The New York Review of Books",
+   "livraison": "19 novembre",
+   "texte": "Verlyn Klinkenborg sur les fleuves, Fintan O'Toole sur Andy Burnham, Mark O'Connell sur J. D. Vance."
+  }
+ ],
+ "sources": [
+  {
+   "nom": "Euronews",
+   "url": "https://www.euronews.com/2026/11/03/philippe-jaenada-wins-2026-prix-goncourt-for-novel-linconnue-du-quai-de-javel"
+  },
+  {
+   "nom": "Livres Hebdo",
+   "url": "https://www.livreshebdo.fr/article/philippe-jaenada-remporte-le-prix-goncourt-2026"
+  },
+  {
+   "nom": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met"
+  },
+  {
+   "nom": "Le Devoir",
+   "url": "https://ledevoir.com/politique/quebec/1024280/combat-legislatif-francais-prepare-quebec"
+  },
+  {
+   "nom": "The Real Deal",
+   "url": "https://therealdeal.com/new-york/2026/11/09/criterion-calls-for-321-unit-development-in-bushwick/"
+  },
+  {
+   "nom": "Sortir à Paris",
+   "url": "https://www.sortiraparis.com/en/what-to-visit-in-paris/exhibit-museum/guides/56800-november-2026-exhibitions-the-must-see-shows-in-paris-and-ile-de-france"
+  },
+  {
+   "nom": "London Review of Books",
+   "url": "https://www.lrb.co.uk/"
+  },
+  {
+   "nom": "Rogue Classicism",
+   "url": "https://rogueclassicism.com/2026/11/10/rc-bulletin-november-10-2026/"
+  },
+  {
+   "nom": "Open-Meteo",
+   "url": "https://open-meteo.com/"
+  },
+  {
+   "nom": "The Independent, via Rogue Classicism",
+   "url": "https://rogueclassicism.com/2026/11/05/rc-bulletin-november-5-2026/"
+  },
+  {
+   "nom": "Literary Hub",
+   "url": "https://lithub.com/10-great-nonfiction-titles-to-read-in-november/"
+  },
+  {
+   "nom": "The Washington Post",
+   "url": "https://www.washingtonpost.com/world/2026/11/11/russia-ukraine-war-talks-kushner-witkoff/e7f4de2e-ddb3-11f1-912c-4fbb80d73f7f_story.html"
+  },
+  {
+   "nom": "Just Security",
+   "url": "https://www.justsecurity.org/164226/early-edition-november-12-2026/"
+  },
+  {
+   "nom": "NBC News",
+   "url": "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752"
+  },
+  {
+   "nom": "CNN",
+   "url": "https://www.cnn.com/2026/11/12/politics/live-news/trump-congress"
+  },
+  {
+   "nom": "AI Weekly",
+   "url": "https://aiweekly.co/ai-news-today"
+  },
+  {
+   "nom": "Radio-Canada",
+   "url": "https://ici.radio-canada.ca/article/info/2299873/gouvernement-transformation-sante-quebec-abolition"
+  },
+  {
+   "nom": "Sortir à Paris, 12 novembre",
+   "url": "https://www.sortiraparis.com/actualites/a-paris/articles/197669-que-faire-ce-jeudi-12-novembre-2026-a-paris-les-sorties-a-ne-pas-manquer"
+  },
+  {
+   "nom": "ABC7 New York",
+   "url": "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/"
+  },
+  {
+   "nom": "Commercial Observer",
+   "url": "https://commercialobserver.com/2026/11/mayor-nithya-raman-los-angeles-housing-development/"
+  },
+  {
+   "nom": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html"
+  },
+  {
+   "nom": "The Metropolitan Museum of Art",
+   "url": "https://www.metmuseum.org/art/collection/search/254587"
+  }
+ ],
+ "revision": 8,
+ "mare": {
+  "nouvelles": [
+   {
+    "titre": "Pompéi",
+    "texte": "Les fouilleurs ont retiré d'une armoire un flacon de parfum vieux de deux mille ans, que la presse britannique dit unique en son genre."
+   },
+   {
+    "titre": "Bosra",
+    "texte": "Dans le sud de la Syrie, les thermes romains livrent leur système de chauffage et la trace d'échanges avec les routes de la soie."
+   },
+   {
+    "titre": "Constantinople",
+    "texte": "Un manuscrit de l'Iliade venu de la bibliothèque du sultan Mehmed II, le conquérant de 1453, révèle de nouveaux indices sur son histoire. Le vainqueur de Byzance lisait Homère."
+   }
+  ],
+  "escale": {
+   "lieu": "Syracuse",
+   "region": "Sicile, sur la mer Ionienne",
+   "texte": "Des Corinthiens la fondèrent vers 733 avant notre ère sur l'îlot d'Ortygie, où une source d'eau douce, la fontaine Aréthuse, jaillit à quelques pas de la mer. Cicéron la disait la plus grande et la plus belle des cités grecques. C'est dans son Grand Port qu'Athènes perdit sa flotte en 413, et dans ses carrières, les latomies, que moururent les prisonniers ; Thucydide en a fait les pages les plus sombres de son histoire. Archimède y fut tué en 212, quand Rome prit la ville. La cathédrale d'aujourd'hui est un temple d'Athéna dont on a simplement muré les colonnes doriques : elles affleurent encore dans la nef.",
+   "voyage": "À voir à pied, tôt le matin : Ortygie, le marché, puis le théâtre grec de la Néapolis. Catane est à une heure de train."
+  }
+ },
+ "livres": {
+  "nouveautes": [
+   {
+    "genre": "Histoire",
+    "titre": "The Telephone: A New History",
+    "auteur": "James Gleick",
+    "texte": "L'auteur de The Information raconte l'objet qui, pendant un siècle, resta accroché au mur par un fil. On le retrouve sur plusieurs listes des meilleurs essais du mois. C'est le livre qu'il faut à qui regrette le temps où l'on ne pouvait être joint que chez soi."
+   },
+   {
+    "genre": "Histoire",
+    "titre": "Castles: A Fortified History of the World",
+    "auteur": "Dan Jones",
+    "texte": "Le médiéviste britannique fait le tour du monde par ses forteresses. L'ouvrage figure cette semaine parmi les mieux accueillis par la critique anglophone, aux côtés de The Pen: A Human History, de Simon Garfield, histoire de la plume et du stylo."
+   },
+   {
+    "genre": "Biographie · annoncée pour le 24 novembre",
+    "titre": "The Conversions of Edward Gibbon",
+    "auteur": "Martha Saxton",
+    "texte": "Une vie de l'historien du Déclin et chute de l'Empire romain, qui se fit catholique à Oxford, redevint protestant à Lausanne, et finit sceptique devant les ruines du Capitole."
+   }
+  ],
+  "relire": {
+   "titre": "Le Temps des offrandes",
+   "auteur": "Patrick Leigh Fermor, 1977",
+   "texte": "En décembre 1933, à dix-huit ans, il quitte Londres pour gagner Constantinople à pied, un volume d'Horace dans le sac. Il dort dans des granges et des châteaux, et récite des vers à qui veut l'entendre. Écrit quarante ans plus tard, c'est le plus beau livre de voyage du siècle, et le portrait d'une Europe qui n'existe plus."
+  }
+ },
+ "une": {
+  "rubrique": "Monde",
+  "titre": "Après Abou Dhabi, les émissaires américains chez Poutine",
+  "chapeau": "Deux jours de pourparlers n'ont produit qu'un échange de prisonniers. Steve Witkoff et Jared Kushner sont à Moscou pour tenter d'en tirer davantage.",
+  "paragraphes": [
+   "Steve Witkoff et Jared Kushner sont arrivés ce jeudi à Moscou, où Vladimir Poutine doit les recevoir. Les deux envoyés de la Maison-Blanche sortent de deux jours de négociations à Abou Dhabi, les premières entre délégations russe et ukrainienne depuis neuf mois, et n'en rapportent qu'un résultat : un échange de prisonniers de guerre « à grande échelle », que M. Kushner présente comme la plus grande libération humanitaire du conflit.",
+   "Les chiffres devaient être arrêtés aujourd'hui ; ils ne sont toujours pas publics. Volodymyr Zelensky avait parlé de mille contre mille, peut-être mille deux cents, et un responsable militaire russe d'un délai de deux à trois semaines. Le précédent échange, en février, portait sur 314 hommes. Le chef de la délégation russe, Vladimir Medinski, a confirmé l'accord sans en donner le détail.",
+   "Sur tout le reste, les positions n'ont pas bougé. Moscou exige le retrait ukrainien des régions de l'Est et refuse que les Européens prennent place à la table ; Kiev réclame des garanties de sécurité avant toute concession. Le négociateur ukrainien, Roustem Oumerov, reconnaît que « d'importantes divergences subsistent ». Le secrétaire d'État américain, Marco Rubio, prévient qu'une percée demandera du temps.",
+   "La guerre, elle, ne s'est pas interrompue pour autant. À Kiev, un drone russe a frappé cette nuit un immeuble d'habitation, tuant une femme et blessant cinq personnes, selon le maire. Les jours précédents, des frappes avaient visé des postes électriques ukrainiens, et des drones ukrainiens un terminal pétrolier russe. Après Moscou, les deux Américains doivent retrouver M. Zelensky à Dublin."
+  ],
+  "precede": "La Russie a envahi l'Ukraine en février 2022. Des rencontres à trois, avec Washington pour médiateur, se sont tenues cette année à Genève puis à Abou Dhabi ; elles n'ont jusqu'ici débouché que sur des échanges de prisonniers.",
+  "importe": "L'hiver approche et le réseau électrique ukrainien est de nouveau visé. Les Vingt-Sept doivent adopter lundi de nouvelles sanctions contre Moscou, et le Congrès américain change de majorité en janvier : chacun négocie en regardant le calendrier de l'autre."
+ },
+ "tour": [
+  {
+   "region": "Proche-Orient",
+   "texte": "Une frappe israélienne a touché l'hôpital Nasser, dans le sud de la bande de Gaza ; la défense civile du territoire, administrée par le Hamas, fait état de six morts. À Ankara, le président Erdogan a reçu son homologue iranien, Massoud Pezeshkian."
+  },
+  {
+   "region": "Asie",
+   "texte": "L'Indonésie entre dans une transition imprévue après la démission de son vice-président, dont l'éligibilité était contestée. Le G7 met en garde Pékin contre ses manœuvres autour de Taïwan."
+  },
+  {
+   "region": "Europe",
+   "texte": "Les pays nordiques travaillent à un accord de défense commun. En Italie, des écoles ont été évacuées après des alertes à la bombe envoyées par courriel ; une alerte du même ordre a touché une gare de Calais."
+  },
+  {
+   "region": "Amériques",
+   "texte": "Le pape Léon XIV est arrivé à Lima, au Pérou, où il fut longtemps missionnaire puis évêque."
+  },
+  {
+   "region": "Afrique",
+   "texte": "En République démocratique du Congo, l'épidémie d'Ebola en cours serait désormais la deuxième plus importante jamais enregistrée, selon une revue de presse que nous n'avons pas pu recouper."
+  }
+ ],
+ "dossiers": [
+  {
+   "titre": "La guerre d'Ukraine",
+   "etat": "Un échange de prisonniers est convenu, pas de cessez-le-feu ; les émissaires américains sont à Moscou.",
+   "dates": [
+    {
+     "date": "Février",
+     "texte": "Dernier échange en date : 314 prisonniers."
+    },
+    {
+     "date": "10-11 novembre",
+     "texte": "Pourparlers d'Abou Dhabi, les premiers entre les deux délégations depuis neuf mois."
+    },
+    {
+     "date": "12 novembre",
+     "texte": "Witkoff et Kushner à Moscou ; un drone russe tue une femme à Kiev."
+    },
+    {
+     "date": "À venir",
+     "texte": "Rencontre avec Zelensky à Dublin ; lundi, nouvelles sanctions européennes."
+    }
+   ]
+  },
+  {
+   "titre": "L'Iran et le détroit d'Ormuz",
+   "etat": "Le détroit reste fermé au trafic commercial ; Téhéran dément toute négociation.",
+   "dates": [
+    {
+     "date": "7 mai",
+     "texte": "Frappes américaines contre l'Iran."
+    },
+    {
+     "date": "8 juillet",
+     "texte": "La trêve provisoire est rompue après des tirs iraniens sur des navires marchands."
+    },
+    {
+     "date": "11 novembre",
+     "texte": "Mohsen Rezaei : le détroit ne rouvrira pas avant une réponse aux sept conditions iraniennes."
+    },
+    {
+     "date": "12 novembre",
+     "texte": "Le vice-président Vance envisagerait une rencontre directe, selon le Wall Street Journal."
+    }
+   ]
+  },
+  {
+   "titre": "Washington après les élections",
+   "etat": "Les démocrates prendront la Chambre et le Sénat en janvier ; la Maison-Blanche conteste d'avance leurs enquêtes.",
+   "dates": [
+    {
+     "date": "3 novembre",
+     "texte": "Élections de mi-mandat : environ 255 sièges démocrates à la Chambre."
+    },
+    {
+     "date": "Semaine suivante",
+     "texte": "Mike Johnson renonce à diriger la minorité ; Hakeem Jeffries est pressenti pour présider la Chambre."
+    },
+    {
+     "date": "11 novembre",
+     "texte": "Lettre du conseiller juridique de la présidence au futur président de la commission de contrôle."
+    },
+    {
+     "date": "12 novembre",
+     "texte": "Scott Colom gagne le Mississippi : au moins 55 sénateurs démocrates."
+    }
+   ]
+  },
+  {
+   "titre": "Le Québec du Parti québécois",
+   "etat": "Le gouvernement St-Pierre Plamondon s'installe ; la langue et la santé ouvrent le bal.",
+   "dates": [
+    {
+     "date": "5 octobre",
+     "texte": "Le PQ remporte l'élection avec 60 sièges."
+    },
+    {
+     "date": "Fin octobre",
+     "texte": "Éric Duhaime dénonce les « chicanes constitutionnelles » du nouveau gouvernement."
+    },
+    {
+     "date": "Novembre",
+     "texte": "Pascal Bérubé prépare la refonte de la Charte de la langue française ; la ministre de la Santé hésite sur le sort de Santé Québec."
+    },
+    {
+     "date": "Juin 2027",
+     "texte": "Échéance au-delà de laquelle les lois 96 et 101 pourraient être contestées."
+    }
+   ]
+  },
+  {
+   "titre": "Qui gouverne l'intelligence artificielle",
+   "etat": "Les États commencent à légiférer pendant que les laboratoires courent vers la Bourse.",
+   "dates": [
+    {
+     "date": "4 novembre",
+     "texte": "Le lauréat du Goncourt reconnaît avoir utilisé l'IA dans son roman."
+    },
+    {
+     "date": "Cette semaine",
+     "texte": "L'Australie annonce un régulateur de la sûreté de l'IA ; la loi de l'État de New York entre en vigueur."
+    },
+    {
+     "date": "11 novembre",
+     "texte": "Anthropic aurait commencé la tournée de présentation de son entrée en Bourse."
+    }
+   ]
+  }
+ ],
+ "comprendre": {
+  "terme": "L'échange de prisonniers",
+  "paragraphes": [
+   "On échange des captifs depuis qu'on en fait. En 425 avant notre ère, Athènes prit à Sphactérie, devant Pylos, 292 hoplites, dont environ 120 Spartiates : elle les garda quatre ans comme otages, et ne les rendit qu'à la paix de Nicias, en 421. Aux XVIIe et XVIIIe siècles, les armées européennes signaient des « cartels », véritables tarifs où un colonel valait tant de soldats.",
+   "Le droit actuel est celui de la troisième convention de Genève, de 1949. Elle impose de libérer et de rapatrier les prisonniers « sans délai après la fin des hostilités actives ». Tant que l'on se bat, rien n'oblige à les échanger : chaque échange est un accord particulier, et c'est pourquoi il sert si souvent de premier pas, ou de seul pas, dans une négociation."
+  ]
+ },
+ "oeuvre": {
+  "etape": 1,
+  "periode": "Les Cyclades, âge du bronze",
+  "titre": "Le Joueur de harpe assis",
+  "artiste": "Art des Cyclades",
+  "date": "vers 2800-2700 avant notre ère",
+  "technique": "Marbre, 29 cm de haut avec la harpe",
+  "lieu": "The Metropolitan Museum of Art, New York (47.100.1), domaine public",
+  "paragraphes": [
+   "Notre cours commence sur une île. Vers 2800 avant notre ère, deux mille ans avant le Parthénon, des sculpteurs des Cyclades taillent le marbre de Naxos et de Paros avec des outils de pierre et de l'émeri. Ils n'ont pas d'écriture, et nous ne savons d'eux que ce qu'ils ont laissé dans leurs tombes.",
+   "La plupart de leurs figures sont des femmes debout, bras croisés, plates comme des planches. Celle-ci est rare : un musicien assis sur une chaise à haut dossier, la tête levée, tenant une harpe dont le cadre se termine en bec d'oiseau. C'est l'une des plus anciennes représentations d'un musicien que nous possédions, et la preuve que ces artisans, quand ils le voulaient, maîtrisaient les trois dimensions : regardez le vide entre les bras, le siège et l'instrument, obtenu en évidant un seul bloc.",
+   "Ce marbre nous semble pur parce qu'il est nu. Il ne l'était pas : des traces de pigment montrent que les yeux, la bouche et les cheveux étaient peints. Le goût moderne pour la blancheur des Cyclades est un contresens fécond, qui a nourri Brancusi, Modigliani et Picasso.",
+   "Une ombre plane sur ces objets. Presque tous sont sortis de fouilles clandestines, sans que l'on ait noté dans quelle tombe ni auprès de qui ils reposaient. Nous admirons des formes dont nous avons détruit le sens."
+  ],
+  "regarder": [
+   "Le vide : l'espace entre le bras, la harpe et la cuisse est aussi travaillé que le marbre.",
+   "La tête renversée, comme si le musicien chantait.",
+   "La chaise, meuble minutieux dans un art qui supprime d'ordinaire tout détail."
+  ],
+  "terme": {
+   "mot": "ronde-bosse",
+   "definition": "Sculpture entièrement dégagée du bloc, dont on peut faire le tour, par opposition au relief, qui reste attaché à un fond."
+  },
+  "suite": "Un cours en deux cents œuvres, une par jour, des Cyclades à 1950. Demain : la Crète des palais."
+ },
+ "lettre": {
+  "paragraphes": [
+   "Cher ami, il pleut ce matin sur New York, me dit-on, et ici le brouillard n'a pas quitté la cour ; j'ai allumé la lampe à huit heures, comme en décembre. Sur la table, Thucydide est resté ouvert au livre VII, à la page des carrières de Syracuse. Vous verrez pourquoi en arrivant au cabinet.",
+   "Les hommes d'État de ce jeudi échangent des prisonniers faute de savoir faire la paix, ce qui est très exactement ce que faisaient les Athéniens. Commencez par le joueur de harpe : il a quatre mille huit cents ans et il chante encore. Puis le reste, sans vous presser. Je vous attends à la composition."
+  ],
+  "signature": "Votre vieux tuteur"
+ },
+ "disque": {
+  "oeuvre": "Intermezzo en mi bémol majeur, opus 117 no 1",
+  "compositeur": "Johannes Brahms, 1892",
+  "texte": "Brahms appelait ces trois pièces tardives « les berceuses de mes douleurs ». Celle-ci porte en épigraphe deux vers d'une berceuse écossaise traduite par Herder. Écoutez-la par Radu Lupu, pendant la grande lecture : la mélodie est cachée au milieu des accords, comme une voix qu'on entend d'une autre pièce."
+ },
+ "kiosque": [
+  {
+   "rubrique": "Le monde",
+   "articles": [
+    {
+     "titre": "Russia and Ukraine agree to a large prisoner exchange as talks end with no major breakthrough",
+     "source": "The Washington Post",
+     "url": "https://www.washingtonpost.com/world/2026/11/11/russia-ukraine-war-talks-kushner-witkoff/e7f4de2e-ddb3-11f1-912c-4fbb80d73f7f_story.html",
+     "texte": "Le récit le plus complet des deux jours d'Abou Dhabi."
+    },
+    {
+     "titre": "Abu Dhabi peace talks end with prisoner exchange agreement",
+     "source": "Euronews",
+     "url": "https://www.euronews.com/2026/11/11/abu-dhabi-peace-talks-end-with-prisoner-exchange-agreement-as-us-envoys-prepare-to-meet-pu",
+     "texte": "La même histoire vue d'Europe, avec la suite prévue à Moscou."
+    },
+    {
+     "titre": "Iran denies talks with US, says Hormuz will stay shut until demands are met",
+     "source": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met",
+     "texte": "Les sept conditions de Téhéran et l'état du détroit."
+    },
+    {
+     "titre": "Early Edition: November 12, 2026",
+     "source": "Just Security",
+     "url": "https://www.justsecurity.org/164226/early-edition-november-12-2026/",
+     "texte": "La revue de presse matinale des juristes de la sécurité nationale : dense et sans commentaire."
+    },
+    {
+     "titre": "‘City of immigrants’: who is Nithya Raman, the Los Angeles mayor-elect?",
+     "source": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/6/city-of-immigrants-who-is-nithya-raman-the-los-angeles-mayor-elect",
+     "texte": "Un portrait de la nouvelle maire, pour qui n'a pas suivi la campagne."
+    }
+   ]
+  },
+  {
+   "rubrique": "Washington",
+   "articles": [
+    {
+     "titre": "White House warns congressional Democrats: investigating us may be a crime",
+     "source": "NBC News",
+     "url": "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752",
+     "texte": "La lettre de Will Scharf et la réponse des futurs présidents de commission."
+    },
+    {
+     "titre": "Democrats expand their Senate majority as Trump escalates threats",
+     "source": "CNN",
+     "url": "https://www.cnn.com/2026/11/12/politics/live-news/trump-congress",
+     "texte": "Le fil de la journée au Capitole."
+    },
+    {
+     "titre": "Congressional Democrats target Trump's “pardon industrial complex”",
+     "source": "CBS News",
+     "url": "https://www.cbsnews.com/news/democrats-congress-trump-pardon-industrial-complex/",
+     "texte": "Un projet de loi pour encadrer le droit de grâce."
+    }
+   ]
+  },
+  {
+   "rubrique": "Villes et bâtisseurs",
+   "articles": [
+    {
+     "titre": "Brooklyn building collapse: 8 dead, 17 hurt in Flatbush",
+     "source": "ABC7 New York",
+     "url": "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/",
+     "texte": "Le point le plus récent sur l'effondrement et l'enquête."
+    },
+    {
+     "titre": "Can Nithya Raman break L.A.'s development gridlock?",
+     "source": "Commercial Observer",
+     "url": "https://commercialobserver.com/2026/11/mayor-nithya-raman-los-angeles-housing-development/",
+     "texte": "Ce que les promoteurs attendent, et redoutent, de la nouvelle maire."
+    },
+    {
+     "titre": "LA's new mayor is Nithya Raman, housing developers' friend and foe",
+     "source": "Bisnow",
+     "url": "https://www.bisnow.com/news/los-angeles/commercial-real-estate/new-la-mayor-nithya-raman-housing-developer-friend-and-foe",
+     "texte": "Le même sujet, côté immobilier commercial."
+    },
+    {
+     "titre": "Manhattan office makes a comeback",
+     "source": "The Real Deal",
+     "url": "https://therealdeal.com/national/2026/11/08/manhattans-office-comeback/",
+     "texte": "Le loyer record du 625 Madison et le retour des bureaux."
+    },
+    {
+     "titre": "City advances 21-story Forest Hills tower with 390 apartments on top of the subway",
+     "source": "6sqft",
+     "url": "https://www.6sqft.com/city-advances-21-story-forest-hills-tower-with-390-apartments-on-top-of-the-subway/",
+     "texte": "Un cas d'école de densité au-dessus d'une station."
+    },
+    {
+     "titre": "Criterion calls for 321-unit development in Bushwick",
+     "source": "The Real Deal",
+     "url": "https://therealdeal.com/new-york/2026/11/09/criterion-calls-for-321-unit-development-in-bushwick/",
+     "texte": "Une demande de rezonage typique de l'après-Gowanus."
+    }
+   ]
+  },
+  {
+   "rubrique": "Intelligence artificielle et marchés",
+   "articles": [
+    {
+     "titre": "Nvidia stock falls 9% as investors await Jensen Huang's fate",
+     "source": "CNBC",
+     "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+     "texte": "La crise de gouvernance du groupe le plus cher du monde."
+    },
+    {
+     "titre": "New AI regulator announced, as government considers criminal law change",
+     "source": "The Conversation",
+     "url": "https://theconversation.com/new-ai-regulator-announced-as-government-considers-criminal-law-change-to-keep-erring-frontier-companies-in-line-296274",
+     "texte": "Des universitaires australiens expliquent le projet de Canberra."
+    },
+    {
+     "titre": "AI News Today",
+     "source": "AI Weekly",
+     "url": "https://aiweekly.co/ai-news-today",
+     "texte": "Le relevé quotidien des annonces, à lire en diagonale."
+    }
+   ]
+  },
+  {
+   "rubrique": "Lettres et idées",
+   "articles": [
+    {
+     "titre": "Goncourt 2026 winner Philippe Jaenada admits using AI in novel to “play with reader”",
+     "source": "Euronews",
+     "url": "https://www.euronews.com/2026/11/04/goncourt-2026-winner-philippe-jaenada-admits-using-ai-in-novel-sparking-ai-debate-in-liter",
+     "texte": "Le point de départ de notre grande lecture."
+    },
+    {
+     "titre": "Philippe Jaenada remporte le prix Goncourt 2026",
+     "source": "Livres Hebdo",
+     "url": "https://www.livreshebdo.fr/article/philippe-jaenada-remporte-le-prix-goncourt-2026",
+     "texte": "Le décompte des voix et les coulisses de Drouant."
+    },
+    {
+     "titre": "10 great nonfiction titles to read in November",
+     "source": "Literary Hub",
+     "url": "https://lithub.com/10-great-nonfiction-titles-to-read-in-november/",
+     "texte": "Gleick, Hermione Lee et les autres essais du mois."
+    },
+    {
+     "titre": "London Review of Books, 5 November",
+     "source": "London Review of Books",
+     "url": "https://www.lrb.co.uk/",
+     "texte": "James Meek à Detroit, Eyal Weizman, Anne Carson."
+    },
+    {
+     "titre": "The Substack stars: 21 newsletters your favorite writers can't get enough of",
+     "source": "Cultured",
+     "url": "https://culturedmag.com/article/2026/02/25/substack-top-newsletters-2025/",
+     "texte": "Pour choisir vos prochaines lettres."
+    }
+   ]
+  },
+  {
+   "rubrique": "Antiquité et art",
+   "articles": [
+    {
+     "titre": "Marble seated harp player",
+     "source": "The Metropolitan Museum of Art",
+     "url": "https://www.metmuseum.org/art/collection/search/254587",
+     "texte": "La notice du musée sur l'œuvre de la leçon du jour, avec six autres vues."
+    },
+    {
+     "titre": "RC Bulletin, November 10",
+     "source": "Rogue Classicism",
+     "url": "https://rogueclassicism.com/2026/11/10/rc-bulletin-november-10-2026/",
+     "texte": "Tout ce qui s'est écrit cette semaine sur le monde antique."
+    },
+    {
+     "titre": "Antiquitas, the ancient world newsletter",
+     "source": "Antiquitas",
+     "url": "https://antiquitasweekly.substack.com/about",
+     "texte": "Histoire, art, langues et monnaies, chaque semaine."
+    }
+   ]
+  },
+  {
+   "rubrique": "France et Québec",
+   "articles": [
+    {
+     "titre": "Un combat législatif sur le français se prépare à Québec",
+     "source": "Le Devoir",
+     "url": "https://ledevoir.com/politique/quebec/1024280/combat-legislatif-francais-prepare-quebec",
+     "texte": "La refonte de la Charte et l'échéance de juin 2027."
+    },
+    {
+     "titre": "« C'est mal parti », selon Éric Duhaime",
+     "source": "Le Devoir",
+     "url": "https://ledevoir.com/politique/quebec/1024169/c-est-mal-parti-gouvernement-pequiste-selon-duhaime",
+     "texte": "L'opposition conservatrice au nouveau gouvernement."
+    },
+    {
+     "titre": "Le gouvernement veut maintenant transformer Santé Québec plutôt que l'abolir",
+     "source": "Radio-Canada",
+     "url": "https://ici.radio-canada.ca/article/info/2299873/gouvernement-transformation-sante-quebec-abolition",
+     "texte": "Une promesse de campagne qui vacille."
+    },
+    {
+     "titre": "Que faire ce jeudi 12 novembre à Paris ?",
+     "source": "Sortir à Paris",
+     "url": "https://www.sortiraparis.com/actualites/a-paris/articles/197669-que-faire-ce-jeudi-12-novembre-2026-a-paris-les-sorties-a-ne-pas-manquer",
+     "texte": "Paris Photo, les expositions et le reste."
+    }
+   ]
+  },
+  {
+   "rubrique": "Voyages",
+   "articles": [
+    {
+     "titre": "Love night trains? This new map shows all the sleeper services running across Europe",
+     "source": "Euronews",
+     "url": "https://www.euronews.com/travel/2026/06/04/love-night-trains-this-new-map-shows-all-the-sleeper-services-running-across-europe-in-202",
+     "texte": "La carte de tous les trains de nuit du continent."
+    },
+    {
+     "titre": "European Sleeper : Bruxelles-Milan, Paris-Berlin et Prague",
+     "source": "HourRail",
+     "url": "https://www.hourrail.voyage/en/blog/european-sleeper-train-de-nuit-europe",
+     "texte": "Les lignes, les horaires et la manière de réserver."
+    }
+   ]
+  }
+ ],
+ "flanerie": {
+  "paris": {
+   "quartier": "IIe arrondissement",
+   "titre": "De la galerie Vivienne à la salle Ovale",
+   "paragraphes": [
+    "Prenez le café debout, au comptoir du Nemours, sous les colonnes de la place Colette, à l'heure où les garçons sortent encore les chaises. Puis entrez au Palais-Royal par la galerie de droite. À neuf heures le jardin appartient aux joggeurs et aux jardiniers ; les tilleuls sont taillés en rideau, et l'on entend la fontaine d'un bout à l'autre.",
+    "Sortez par le nord, traversez la rue des Petits-Champs et poussez la grille de la galerie Vivienne. Elle date de 1823 : une mosaïque au sol, une verrière, une rotonde, et ce silence particulier des passages avant l'ouverture des boutiques. Au fond, la librairie Jousseaume occupe les deux côtés de l'allée depuis 1826. On y trouve des Budé d'occasion à couverture jaune pour le grec, saumon pour le latin.",
+    "Gardez la matinée pour la Bibliothèque nationale, à deux pas, rue Vivienne. La salle Ovale est ouverte à tous, sans carte, depuis 2022 : vingt mille volumes en libre accès sous une verrière immense. Demandez ensuite à voir, par la porte vitrée, la salle Labrouste, celle de 1868, avec ses seize colonnes de fonte minces comme des tiges et ses neuf coupoles de faïence. C'est là que l'architecture de fer a appris à être légère."
+   ],
+   "etapes": [
+    {
+     "nom": "Le Nemours",
+     "adresse": "2, place Colette, Paris Ier",
+     "texte": "Un express au comptoir, face à la Comédie-Française."
+    },
+    {
+     "nom": "Galerie Vivienne",
+     "adresse": "Entrée au 4, rue des Petits-Champs, Paris IIe",
+     "texte": "Le plus beau des passages couverts, 1823."
+    },
+    {
+     "nom": "Librairie Jousseaume",
+     "adresse": "45-47, galerie Vivienne",
+     "texte": "Livres anciens et d'occasion depuis 1826."
+    },
+    {
+     "nom": "BnF Richelieu, salle Ovale",
+     "adresse": "5, rue Vivienne, Paris IIe",
+     "texte": "Entrée libre. La salle Labrouste se regarde depuis le seuil."
+    }
+   ]
+  },
+  "italie": {
+   "lieu": "Bologne",
+   "titre": "Une osteria où l'on ne sert que du vin",
+   "paragraphes": [
+    "Dans le vicolo Ranocchi, derrière la piazza Maggiore, l'Osteria del Sole sert à boire depuis 1465 et n'a jamais servi à manger. On achète donc sa mortadelle et son parmesan chez les charcutiers du Quadrilatero, à vingt mètres, on déplie le papier sur une table de bois commune, et l'on commande au verre.",
+    "L'après-midi se passe à l'Archiginnasio, l'ancien siège de l'université, bâti en 1563 : des milliers de blasons d'étudiants peints sur les voûtes, une bibliothèque, et un théâtre anatomique tout en bois de sapin où l'on disséquait sous le regard d'Hippocrate et de Galien."
+   ],
+   "commande": "un verre de pignoletto frizzante, le blanc des collines de Bologne ; avant cela, le matin, un caffè au banco, bu en trois gorgées."
+  },
+  "newyork": [
+   {
+    "nom": "Albertine",
+    "genre": "librairie française",
+    "adresse": "972 Fifth Avenue, dans l'hôtel Payne Whitney",
+    "texte": "Deux étages de livres français sous un plafond peint de constellations. On y lit sans que personne ne vous demande rien."
+   },
+   {
+    "nom": "The Morgan Library",
+    "genre": "bibliothèque et musée",
+    "adresse": "225 Madison Avenue",
+    "texte": "La bibliothèque de Pierpont Morgan, trois étages de reliures derrière des grilles de bronze, et toujours un manuscrit ouvert sous vitrine."
+   },
+   {
+    "nom": "La Mercerie",
+    "genre": "café dans un magasin",
+    "adresse": "53 Howard Street, au Roman and Williams Guild",
+    "texte": "Un petit déjeuner à la française au milieu des meubles et de la vaisselle que l'on peut acheter : ce que New York a de plus proche d'un concept store parisien."
+   },
+   {
+    "nom": "Buvette",
+    "genre": "gastrothèque",
+    "adresse": "42 Grove Street, West Village",
+    "texte": "Un comptoir, des tartines, un verre de vin dès le matin si l'on y tient. Vérifiez les horaires avant de vous déplacer."
+   }
+  ]
+ }
+}
