@@ -1,0 +1,74 @@
+{
+  "ajoute": "2026-11-12",
+  "auteur": "Xénophon",
+  "extrait": "Δαρείου καὶ Παρυσάτιδος γίγνονται παῖδες δύο, πρεσβύτερος μὲν Ἀρταξέρξης, νεώτερος δὲ Κῦρος· ἐπεὶ δὲ ἠσθένει Δαρεῖος καὶ ὑπώπτευε τελευτὴν τοῦ βίου, ἐβούλετο τὼ",
+  "genre": "Grec",
+  "id": "ana-01",
+  "langue": "grc",
+  "licence": "texte grec CC BY-SA ; traduction anglaise de C. L. Brownson (1922), domaine public",
+  "minutes": 12,
+  "mots": 558,
+  "ordre": 1,
+  "sections": [
+    {
+      "g": "Δαρείου καὶ Παρυσάτιδος γίγνονται παῖδες δύο, πρεσβύτερος μὲν Ἀρταξέρξης, νεώτερος δὲ Κῦρος· ἐπεὶ δὲ ἠσθένει Δαρεῖος καὶ ὑπώπτευε τελευτὴν τοῦ βίου, ἐβούλετο τὼ παῖδε ἀμφοτέρω παρεῖναι.",
+      "r": "1.1",
+      "t": "Darius and Parysatis had two sons born to them, of whom the elder was Artaxerxes and the younger Cyrus. Now when Darius lay sick and suspected that the end of his life was near, he wished to have both his sons with him."
+    },
+    {
+      "g": "ὁ μὲν οὖν πρεσβύτερος παρὼν ἐτύγχανε· Κῦρον δὲ μεταπέμπεται ἀπὸ τῆς ἀρχῆς ἧς αὐτὸν σατράπην ἐποίησε, καὶ στρατηγὸν δὲ αὐτὸν ἀπέδειξε πάντων ὅσοι ἐς Καστωλοῦ πεδίον ἁθροίζονται. ἀναβαίνει οὖν ὁ Κῦρος λαβὼν Τισσαφέρνην ὡς φίλον, καὶ τῶν Ἑλλήνων ἔχων ὁπλίτας ἀνέβη τριακοσίους, ἄρχοντα δὲ αὐτῶν Ξενίαν Παρράσιον.",
+      "r": "1.2",
+      "t": "The elder, as it chanced, was with him already; but Cyrus he summoned from the province over which he had made him satrap, and he had also appointed him commander of all the forces that muster in the plain of Castolus. Cyrus accordingly went up to his father, taking with him Tissaphernes as a friend and accompanied by three hundred Greek hoplites, under the command of Xenias of Parrhasia."
+    },
+    {
+      "g": "ἐπεὶ δὲ ἐτελεύτησε Δαρεῖος καὶ κατέστη εἰς τὴν βασιλείαν Ἀρταξέρξης, Τισσαφέρνης διαβάλλει τὸν Κῦρον πρὸς τὸν ἀδελφὸν ὡς ἐπιβουλεύοι αὐτῷ. ὁ δὲ πείθεται καὶ συλλαμβάνει Κῦρον ὡς ἀποκτενῶν· ἡ δὲ μήτηρ ἐξαιτησαμένη αὐτὸν ἀποπέμπει πάλιν ἐπὶ τὴν ἀρχήν.",
+      "r": "1.3",
+      "t": "When Darius had died and Artaxerxes had become established as king, Tissaphernes falsely accused Cyrus to his brother of plotting against him. And Artaxerxes, believing the accusation, arrested Cyrus, with the intention of putting him to death; his mother, however, made intercession for him, and sent him back again to his province."
+    },
+    {
+      "g": "ὁ δʼ ὡς ἀπῆλθε κινδυνεύσας καὶ ἀτιμασθείς, βουλεύεται ὅπως μήποτε ἔτι ἔσται ἐπὶ τῷ ἀδελφῷ, ἀλλά, ἢν δύνηται, βασιλεύσει ἀντʼ ἐκείνου. Παρύσατις μὲν δὴ ἡ μήτηρ ὑπῆρχε τῷ Κύρῳ, φιλοῦσα αὐτὸν μᾶλλον ἢ τὸν βασιλεύοντα Ἀρταξέρξην.",
+      "r": "1.4",
+      "t": "Now when Cyrus had thus returned, after his danger and disgrace, he set about planning that he might never again be in the power of his brother, but, if possible, might be king in his stead. He had, in the first place, the support of Parysatis, his mother, for she loved him better than the son who was king, Artaxerxes."
+    },
+    {
+      "g": "ὅστις δʼ ἀφικνεῖτο τῶν παρὰ βασιλέως πρὸς αὐτὸν πάντας οὕτω διατιθεὶς ἀπεπέμπετο ὥστε αὐτῷ μᾶλλον φίλους εἶναι ἢ βασιλεῖ. καὶ τῶν παρʼ ἑαυτῷ δὲ βαρβάρων ἐπεμελεῖτο ὡς πολεμεῖν τε ἱκανοὶ εἴησαν καὶ εὐνοϊκῶς ἔχοιεν αὐτῷ.",
+      "r": "1.5",
+      "t": "Again, when any of the King’s court came to visit him, he treated them all in such a way that when he sent them back they were more devoted to him than to the King. He also took care that the barbarians of his own province should be capable soldiers and should feel kindly toward him."
+    },
+    {
+      "g": "τὴν δὲ Ἑλληνικὴν δύναμιν ἥθροιζεν ὡς μάλιστα ἐδύνατο ἐπικρυπτόμενος, ὅπως ὅτι ἀπαρασκευότατον λάβοι βασιλέα. ὧδε οὖν ἐποιεῖτο τὴν συλλογήν. ὁπόσας εἶχε φυλακὰς ἐν ταῖς πόλεσι παρήγγειλε τοῖς φρουράρχοις ἑκάστοις λαμβάνειν ἄνδρας Πελοποννησίους ὅτι πλείστους καὶ βελτίστους, ὡς ἐπιβουλεύοντος Τισσαφέρνους ταῖς πόλεσι. καὶ γὰρ ἦσαν αἱ Ἰωνικαὶ πόλεις Τισσαφέρνους τὸ ἀρχαῖον ἐκ βασιλέως δεδομέναι, τότε δὲ ἀφειστήκεσαν πρὸς Κῦρον πᾶσαι πλὴν Μιλήτου·",
+      "r": "1.6",
+      "t": "Lastly, as regards his Greek force, he proceeded to collect it with the utmost secrecy, so that he might take the King as completely unprepared as possible. It was in the following way, then, that he gathered this force: In the first place, he sent orders to the commanders of all the garrisons he had in the cities to enlist as many Peloponnesian soldiers of the best sort as they severally could, on the plea that Tissaphernes had designs upon their cities. For, in fact, the Ionian cities had originally belonged to Tissaphernes, by gift of the King, but at that time all of them except Miletus had revolted and gone over to Cyrus."
+    },
+    {
+      "g": "ἐν Μιλήτῳ δὲ Τισσαφέρνης προαισθόμενος τὰ αὐτὰ ταῦτα βουλευομένους ἀποστῆναι πρὸς Κῦρον, τοὺς μὲν αὐτῶν ἀπέκτεινε τοὺς δʼ ἐξέβαλεν. ὁ δὲ Κῦρος ὑπολαβὼν τοὺς φεύγοντας συλλέξας στράτευμα ἐπολιόρκει Μίλητον καὶ κατὰ γῆν καὶ κατὰ θάλατταν καὶ ἐπειρᾶτο κατάγειν τοὺς ἐκπεπτωκότας. καὶ αὕτη αὖ ἄλλη πρόφασις ἦν αὐτῷ τοῦ ἁθροίζειν στράτευμα.",
+      "r": "1.7",
+      "t": "The people of Miletus also were planning to do the very same thing, namely, to go over to Cyrus, but Tissaphernes, finding out about it in time, put some of them to death and banished others. Cyrus thereupon took the exiles under his protection, collected an army, and laid siege to Miletus both by land and by sea, and endeavoured to restore the exiles to their city; and this, again, made him another pretext for gathering an army."
+    },
+    {
+      "g": "πρὸς δὲ βασιλέα πέμπων ἠξίου ἀδελφὸς ὢν αὐτοῦ δοθῆναι οἷ ταύτας τὰς πόλεις μᾶλλον ἢ Τισσαφέρνην ἄρχειν αὐτῶν, καὶ ἡ μήτηρ συνέπραττεν αὐτῷ ταῦτα· ὥστε βασιλεὺς τὴν μὲν πρὸς ἑαυτὸν ἐπιβουλὴν οὐκ ᾐσθάνετο, Τισσαφέρνει δʼ ἐνόμιζε πολεμοῦντα αὐτὸν ἀμφὶ τὰ στρατεύματα δαπανᾶν· ὥστε οὐδὲν ἤχθετο αὐτῶν πολεμούντων. καὶ γὰρ ὁ Κῦρος ἀπέπεμπε τοὺς γιγνομένους δασμοὺς βασιλεῖ ἐκ τῶν πόλεων ὧν Τισσαφέρνους ἐτύγχανεν ἔχων.",
+      "r": "1.8",
+      "t": "Meanwhile he sent to the King and urged, on the ground that he was his brother, that these Ionian cities should be given to him instead of remaining under the rule of Tissaphernes, and his mother co-operated with him in this. The result was that the King failed to perceive the plot against himself, but believed that Cyrus was spending money on his troops because he was at war with Tissaphernes. Consequently he was not at all displeased at their being at war, the less so because Cyrus regularly remitted to the King the tribute which came in from the cities he chanced to have that belonged to Tissaphernes."
+    },
+    {
+      "g": "ἄλλο δὲ στράτευμα αὐτῷ συνελέγετο ἐν Χερρονήσῳ τῇ κατʼ ἀντιπέρας Ἀβύδου τόνδε τὸν τρόπον. Κλέαρχος Λακεδαιμόνιος φυγὰς ἦν· τούτῳ συγγενόμενος ὁ Κῦρος ἠγάσθη τε αὐτὸν καὶ δίδωσιν αὐτῷ μυρίους δαρεικούς. ὁ δὲ λαβὼν τὸ χρυσίον στράτευμα συνέλεξεν ἀπὸ τούτων τῶν χρημάτων καὶ ἐπολέμει ἐκ Χερρονήσου ὁρμώμενος τοῖς Θρᾳξὶ τοῖς ὑπὲρ Ἑλλήσποντον οἰκοῦσι καὶ ὠφέλει τοὺς Ἕλληνας· ὥστε καὶ χρήματα συνεβάλλοντο αὐτῷ εἰς τὴν τροφὴν τῶν στρατιωτῶν αἱ Ἑλλησποντιακαὶ πόλεις ἑκοῦσαι. τοῦτο δʼ αὖ οὕτω τρεφόμενον ἐλάνθανεν αὐτῷ τὸ στράτευμα.",
+      "r": "1.9",
+      "t": "Still another army was being collected for him in the Chersonese which is opposite Abydus, in the following manner: Clearchus was a Lacedaemonian exile; Cyrus, making his acquaintance, came to admire him, and gave him ten thousand darics. And Clearchus, taking the gold, collected an army by means of this money, and using the Chersonese as a base of operations, proceeded to make war upon the Thracians who dwell beyond the Hellespont, thereby aiding the Greeks. Consequently, the Hellespontine cities of their own free will sent Clearchus contributions of money for the support of his troops. So it was that this army also was being secretly maintained for Cyrus."
+    },
+    {
+      "g": "Ἀρίστιππος δὲ ὁ Θετταλὸς ξένος ὢν ἐτύγχανεν αὐτῷ, καὶ πιεζόμενος ὑπὸ τῶν οἴκοι ἀντιστασιωτῶν ἔρχεται πρὸς τὸν Κῦρον καὶ αἰτεῖ αὐτὸν εἰς δισχιλίους ξένους καὶ τριῶν μηνῶν μισθόν, ὡς οὕτως περιγενόμενος ἂν τῶν ἀντιστασιωτῶν. ὁ δὲ Κῦρος δίδωσιν αὐτῷ εἰς τετρακισχιλίους καὶ ἓξ μηνῶν μισθόν, καὶ δεῖται αὐτοῦ μὴ πρόσθεν καταλῦσαι πρὸς τοὺς ἀντιστασιώτας πρὶν ἂν αὐτῷ συμβουλεύσηται. οὕτω δὲ αὖ τὸ ἐν Θετταλίᾳ ἐλάνθανεν αὐτῷ τρεφόμενον στράτευμα.",
+      "r": "1.10",
+      "t": "Again, Aristippus the Thessalian chanced to be a friend of Cyrus, and since he was hard pressed by his political opponents at home, he came to Cyrus and asked him for three months’ pay for two thousand mercenaries, urging that in this way he should get the better of his opponents. And Cyrus gave him six months’ pay for four thousand, and requested him not to come to terms with his opponents until he had consulted with him. Thus the army in Thessaly, again, was being secretly maintained for him."
+    },
+    {
+      "g": "Πρόξενον δὲ τὸν Βοιώτιον ξένον ὄντα ἐκέλευσε λαβόντα ἄνδρας ὅτι πλείστους παραγενέσθαι, ὡς ἐς Πισίδας βουλόμενος στρατεύεσθαι, ὡς πράγματα παρεχόντων τῶν Πισιδῶν τῇ ἑαυτοῦ χώρᾳ. Σοφαίνετον δὲ τὸν Στυμφάλιον καὶ Σωκράτην τὸν Ἀχαιόν, ξένους ὄντας καὶ τούτους, ἐκέλευσεν ἄνδρας λαβόντας ἐλθεῖν ὅτι πλείστους, ὡς πολεμήσων Τισσαφέρνει σὺν τοῖς φυγάσι τοῖς Μιλησίων. καὶ ἐποίουν οὕτως οὗτοι.",
+      "r": "1.11",
+      "t": "Furthermore, Cyrus directed Proxenus the Boeotian, who was a friend of his, to come to him with as many men as he could get, saying that he wished to undertake a campaign against the Pisidians, because, as he said, they were causing trouble to his province. He also directed Sophaenetus the Stymphalian and Socrates the Achaean, who were likewise friends of his, to come with as many men as they could get, saying that he intended to make war upon Tissaphernes with the aid of the Milesian exiles; and they proceeded to carry out his directions."
+    }
+  ],
+  "serie": "Anabase",
+  "source": "Perseus Digital Library",
+  "soustitre": "Dix mille Grecs au cœur de l’Empire perse. Le livre des débutants depuis deux siècles : phrases courtes, vocabulaire militaire, récit.",
+  "titre": "Anabase · livre I, chapitre 1",
+  "url": "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0032.tlg006.perseus-grc2"
+}

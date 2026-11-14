@@ -1,0 +1,69 @@
+{
+  "ajoute": "2026-11-12",
+  "auteur": "Lysias",
+  "extrait": "περὶ πολλοῦ ἂν ποιησαίμην, ὦ ἄνδρες, τὸ τοιούτους ὑμᾶς ἐμοὶ δικαστὰς περὶ τούτου τοῦ πράγματος γενέσθαι, οἷοίπερ ἂν ὑμῖν αὐτοῖς εἴητε τοιαῦτα πεπονθότες· εὖ γὰρ",
+  "genre": "Grec",
+  "id": "lys-01",
+  "langue": "grc",
+  "licence": "texte grec CC BY-SA ; traduction anglaise de W. R. M. Lamb (1930), domaine public aux États-Unis",
+  "minutes": 11,
+  "mots": 475,
+  "ordre": 1,
+  "sections": [
+    {
+      "g": "περὶ πολλοῦ ἂν ποιησαίμην, ὦ ἄνδρες, τὸ τοιούτους ὑμᾶς ἐμοὶ δικαστὰς περὶ τούτου τοῦ πράγματος γενέσθαι, οἷοίπερ ἂν ὑμῖν αὐτοῖς εἴητε τοιαῦτα πεπονθότες· εὖ γὰρ οἶδʼ ὅτι, εἰ τὴν αὐτὴν γνώμην περὶ τῶν ἄλλων ἔχοιτε, ἥνπερ περὶ ὑμῶν αὐτῶν, οὐκ ἂν εἴη ὅστις οὐκ ἐπὶ τοῖς γεγενημένοις ἀγανακτοίη, ἀλλὰ πάντες ἂν περὶ τῶν τὰ τοιαῦτα ἐπιτηδευόντων τὰς ζημίας μικρὰς ἡγοῖσθε.",
+      "r": "1",
+      "t": "I should be only too pleased, sirs, to have you so disposed towards me in judging this case as you would be to yourselves, if you found yourselves in my plight. For I am sure that, if you had the same feelings about others as about yourselves, not one of you but would be indignant at what has been done; you would all regard the penalties appointed for those who resort to such practices as too mild."
+    },
+    {
+      "g": "καὶ ταῦτα οὐκ ἂν εἴη μόνον παρʼ ὑμῖν οὕτως ἐγνωσμένα, ἀλλʼ ἐν ἁπάσῃ τῇ Ἑλλάδι· περὶ τούτου γὰρ μόνου τοῦ ἀδικήματος καὶ ἐν δημοκρατίᾳ καὶ ὀλιγαρχίᾳ ἡ αὐτὴ τιμωρία τοῖς ἀσθενεστάτοις πρὸς τοὺς τὰ μέγιστα δυναμένους ἀποδέδοται, ὥστε τὸν χείριστον τῶν αὐτῶν τυγχάνειν τῷ βελτίστῳ· οὕτως, ὦ ἄνδρες, ταύτην τὴν ὕβριν ἅπαντες ἄνθρωποι δεινοτάτην ἡγοῦνται.",
+      "r": "2",
+      "t": "And these feelings would be found, not only among you, but in the whole of Greece : for in the case of this crime alone, under both democracy and oligarchy, the same requital is accorded to the weakest against the strongest, so that the lowest gets the same treatment as the highest. Thus you see, sirs, how all men abominate this outrage."
+    },
+    {
+      "g": "περὶ μὲν οὖν τοῦ μεγέθους τῆς ζημίας ἅπαντας ὑμᾶς νομίζω τὴν αὐτὴν διάνοιαν ἔχειν, καὶ οὐδένα οὕτως ὀλιγώρως διακεῖσθαι, ὅστις οἴεται δεῖν συγγνώμης τυγχάνειν ἢ μικρᾶς ζημίας ἀξίους ἡγεῖται τοὺς τῶν τοιούτων ἔργων αἰτίους· ἡγοῦμαι δέ,",
+      "r": "3",
+      "t": "Well, I conceive that, in regard to the severity of the penalty, you are all of the same mind, and that not one of you is so easygoing as to think it right that men who are guilty of such acts should obtain pardon, or to presume that slight penalties suffice for their deserts."
+    },
+    {
+      "g": "ὦ ἄνδρες, τοῦτό με δεῖν ἐπιδεῖξαι, ὡς ἐμοίχευεν Ἐρατοσθένης τὴν γυναῖκα τὴν ἐμὴν καὶ ἐκείνην τε διέφθειρε καὶ τοὺς παῖδας τοὺς ἐμοὺς ᾔσχυνε καὶ ἐμὲ αὐτὸν ὕβρισεν εἰς τὴν οἰκίαν τὴν ἐμὴν εἰσιών, καὶ οὔτε ἔχθρα ἐμοὶ καὶ ἐκείνῳ οὐδεμία ἦν πλὴν ταύτης, οὔτε χρημάτων ἕνεκα ἔπραξα ταῦτα, ἵνα πλούσιος ἐκ πένητος γένωμαι, οὔτε ἄλλου κέρδους οὐδενὸς πλὴν τῆς κατὰ τοὺς νόμους τιμωρίας.",
+      "r": "4",
+      "t": "But I take it, sirs, that what I have to show is that Eratosthenes had an intrigue with my wife, and not only corrupted her but inflicted disgrace upon my children and an outrage on myself by entering my house; that this was the one and only enmity between him and me; that I have not acted thus for the sake of money, so as to raise myself from poverty to wealth; and that all I seek to gain is the requital accorded by our laws."
+    },
+    {
+      "g": "ἐγὼ τοίνυν ἐξ ἀρχῆς ὑμῖν ἅπαντα ἐπιδείξω τὰ ἐμαυτοῦ πράγματα, οὐδὲν παραλείπων, ἀλλὰ λέγων τἀληθῆ· ταύτην γὰρ ἐμαυτῷ μόνην ἡγοῦμαι σωτηρίαν, ἐὰν ὑμῖν εἰπεῖν ἅπαντα δυνηθῶ τὰ πεπραγμένα.",
+      "r": "5",
+      "t": "I shall therefore set forth to you the whole of my story from the beginning; I shall omit nothing, but will tell the truth. For I consider that my own sole deliverance rests on my telling you, if I am able, the whole of what has occurred."
+    },
+    {
+      "g": "ἐγὼ γάρ, ὦ Ἀθηναῖοι, ἐπειδὴ ἔδοξέ μοι γῆμαι καὶ γυναῖκα ἠγαγόμην εἰς τὴν οἰκίαν, τὸν μὲν ἄλλον χρόνον οὕτω διεκείμην ὥστε μήτε λυπεῖν μήτε λίαν ἐπʼ ἐκείνῃ εἶναι ὅ τι ἂν ἐθέλῃ ποιεῖν, ἐφύλαττόν τε ὡς οἷόν τε ἦν, καὶ προσεῖχον τὸν νοῦν ὥσπερ εἰκὸς ἦν. ἐπειδὴ δέ μοι παιδίον γίγνεται, ἐπίστευον ἤδη καὶ πάντα τὰ ἐμαυτοῦ ἐκείνῃ παρέδωκα, ἡγούμενος ταύτην οἰκειότητα μεγίστην εἶναι· ἐν μὲν οὖν τῷ πρώτῳ χρόνῳ,",
+      "r": "6",
+      "t": "When I, Athenians, decided to marry, and brought a wife into my house, for some time I was disposed neither to vex her nor to leave her too free to do just as she pleased; I kept a watch on her as far as possible, with such observation of her as was reasonable. But when a child was born to me, thence-forward I began to trust her, and placed all my affairs in her hands, presuming that we were now in perfect intimacy."
+    },
+    {
+      "g": "ὦ Ἀθηναῖοι, πασῶν ἦν βελτίστη· καὶ γὰρ οἰκονόμος δεινὴ καὶ φειδωλὸς ἀγαθὴ καὶ ἀκριβῶς πάντα διοικοῦσα· ἐπειδὴ δέ μοι ἡ μήτηρ ἐτελεύτησε, πάντων τῶν κακῶν ἀποθανοῦσα αἰτία μοι γεγένηται.",
+      "r": "7",
+      "t": "It is true that in the early days, Athenians, she was the most excellent of wives; she was a clever, frugal housekeeper, and kept everything in the nicest order. But as soon as I lost my mother, her death became the cause of all my troubles."
+    },
+    {
+      "g": "ἐπʼ ἐκφορὰν γὰρ αὐτῇ ἀκολουθήσασα ἡ ἐμὴ γυνὴ ὑπὸ τούτου τοῦ ἀνθρώπου ὀφθεῖσα, χρόνῳ διαφθείρεται· ἐπιτηρῶν γὰρ τὴν θεράπαιναν τὴν εἰς τὴν ἀγορὰν βαδίζουσαν καὶ λόγους προσφέρων ἀπώλεσεν αὐτήν.",
+      "r": "8",
+      "t": "For it was in attending her funeral that my wife was seen by this man, who in time corrupted her. He looked out for the servant-girl who went to market, and so paid addresses to her mistress by which he wrought her ruin."
+    },
+    {
+      "g": "πρῶτον μὲν οὖν, ὦ ἄνδρες,(δεῖ γὰρ καὶ ταῦθʼ ὑμῖν διηγήσασθαι) οἰκίδιον ἔστι μοι διπλοῦν, ἴσα ἔχον τὰ ἄνω τοῖς κάτω κατὰ τὴν γυναικωνῖτιν καὶ κατὰ τὴν ἀνδρωνῖτιν. ἐπειδὴ δὲ τὸ παιδίον ἐγένετο ἡμῖν, ἡ μήτηρ αὐτὸ ἐθήλαζεν· ἵνα δὲ μή, ὁπότε λοῦσθαι δέοι, κινδυνεύῃ κατὰ τῆς κλίμακος καταβαίνουσα, ἐγὼ μὲν ἄνω διῃτώμην, αἱ δὲ γυναῖκες κάτω.",
+      "r": "9",
+      "t": "Now in the first place I must tell you, sirs (for I am obliged to give you these particulars), my dwelling is on two floors, the upper being equal in space to the lower, with the women’s quarters above and the men’s below. When the child was born to us, its mother suckled it; and in order that, each time that it had to be washed, she might avoid the risk of descending by the stairs, I used to live above, and the women below."
+    },
+    {
+      "g": "καὶ οὕτως ἤδη συνειθισμένον ἦν, ὥστε πολλάκις ἡ γυνὴ ἀπῄει κάτω καθευδήσουσα ὡς τὸ παιδίον, ἵνα τὸν τιτθὸν αὐτῷ διδῷ καὶ μὴ βοᾷ. καὶ ταῦτα πολὺν χρόνον οὕτως ἐγίγνετο, καὶ ἐγὼ οὐδέποτε ὑπώπτευσα, ἀλλʼ οὕτως ἠλιθίως διεκείμην, ὥστε ᾤμην τὴν ἐμαυτοῦ γυναῖκα πασῶν σωφρονεστάτην εἶναι τῶν ἐν τῇ πόλει.",
+      "r": "10",
+      "t": "By this time it had become such an habitual thing that my wife would often leave me and go down to sleep with the child, so as to be able to give it the breast and stop its crying. Things went on in this way for a long time, and I never suspected, but was simple-minded enough to suppose that my own was the chastest wife in the city."
+    }
+  ],
+  "serie": "Sur le meurtre d’Ératosthène",
+  "source": "Perseus Digital Library",
+  "soustitre": "Un mari athénien explique au tribunal pourquoi il a tué l’amant de sa femme. Le grec le plus simple et le plus vivant qui soit.",
+  "titre": "Sur le meurtre d’Ératosthène · § 1–10",
+  "url": "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0540.tlg001.perseus-grc2"
+}

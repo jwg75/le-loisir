@@ -1,0 +1,124 @@
+{
+  "ajoute": "2026-11-12",
+  "auteur": "Xénophon",
+  "extrait": "ἐνταῦθα ἔμεινεν ὁ Κῦρος καὶ ἡ στρατιὰ ἡμέρας εἴκοσιν· οἱ γὰρ στρατιῶται οὐκ ἔφασαν ἰέναι τοῦ πρόσω· ὑπώπτευον γὰρ ἤδη ἐπὶ βασιλέα ἰέναι· μισθωθῆναι δὲ οὐκ ἐπὶ τ",
+  "genre": "Grec",
+  "id": "ana-03",
+  "langue": "grc",
+  "licence": "texte grec CC BY-SA ; traduction anglaise de C. L. Brownson (1922), domaine public",
+  "minutes": 24,
+  "mots": 1058,
+  "ordre": 3,
+  "sections": [
+    {
+      "g": "ἐνταῦθα ἔμεινεν ὁ Κῦρος καὶ ἡ στρατιὰ ἡμέρας εἴκοσιν· οἱ γὰρ στρατιῶται οὐκ ἔφασαν ἰέναι τοῦ πρόσω· ὑπώπτευον γὰρ ἤδη ἐπὶ βασιλέα ἰέναι· μισθωθῆναι δὲ οὐκ ἐπὶ τούτῳ ἔφασαν. πρῶτος δὲ Κλέαρχος τοὺς αὑτοῦ στρατιώτας ἐβιάζετο ἰέναι· οἱ δʼ αὐτόν τε ἔβαλλον καὶ τὰ ὑποζύγια τὰ ἐκείνου, ἐπεὶ ἄρξαιντο προϊέναι.",
+      "r": "3.1",
+      "t": "Cyrus and his army remained here at Tarsus twenty days, for the soldiers refused to go any farther; for they suspected by this time that they were going against the King, and they said they had not been hired for that. Clearchus was the first to try to force his men to go on, but they pelted him and his pack-animals with stones as often as they began to go forward."
+    },
+    {
+      "g": "Κλέαρχος δὲ τότε μὲν μικρὸν ἐξέφυγε μὴ καταπετρωθῆναι, ὕστερον δʼ ἐπεὶ ἔγνω ὅτι οὐ δυνήσεται βιάσασθαι, συνήγαγεν ἐκκλησίαν τῶν αὑτοῦ στρατιωτῶν. καὶ πρῶτον μὲν ἐδάκρυε πολὺν χρόνον ἑστώς· οἱ δὲ ὁρῶντες ἐθαύμαζον καὶ ἐσιώπων· εἶτα δὲ ἔλεξε τοιάδε.",
+      "r": "3.2",
+      "t": "At that time Clearchus narrowly escaped being stoned to death; but afterwards, when he realized that he could not accomplish anything by force, he called a meeting of his own troops. And first he stood and wept for a long time, while his men watched him in wonder and were silent; then he spoke as follows:"
+    },
+    {
+      "g": "ἄνδρες στρατιῶται, μὴ θαυμάζετε ὅτι χαλεπῶς φέρω τοῖς παροῦσι πράγμασιν. ἐμοὶ γὰρ ξένος Κῦρος ἐγένετο καί με φεύγοντα ἐκ τῆς πατρίδος τά τε ἄλλα ἐτίμησε καὶ μυρίους ἔδωκε δαρεικούς· οὓς ἐγὼ λαβὼν οὐκ εἰς τὸ ἴδιον κατεθέμην ἐμοὶ οὐδὲ καθηδυπάθησα, ἀλλʼ εἰς ὑμᾶς ἐδαπάνων.",
+      "r": "3.3",
+      "t": "Fellow-soldiers, do not wonder that I am distressed at the present situation. For Cyrus became my friend and not only honoured me, an exile from my fatherland, in various ways, but gave me ten thousand darics. And I, receiving this money, did not lay it up for my own personal use or squander it in pleasure, but I proceeded to expend it on you."
+    },
+    {
+      "g": "καὶ πρῶτον μὲν πρὸς τοὺς Θρᾷκας ἐπολέμησα, καὶ ὑπὲρ τῆς Ἑλλάδος ἐτιμωρούμην μεθʼ ὑμῶν, ἐκ τῆς Χερρονήσου αὐτοὺς ἐξελαύνων βουλομένους ἀφαιρεῖσθαι τοὺς ἐνοικοῦντας Ἕλληνας τὴν γῆν. ἐπειδὴ δὲ Κῦρος ἐκάλει, λαβὼν ὑμᾶς ἐπορευόμην, ἵνα εἴ τι δέοιτο ὠφελοίην αὐτὸν ἀνθʼ ὧν εὖ ἔπαθον ὑπʼ ἐκείνου.",
+      "r": "3.4",
+      "t": "First I went to war with the Thracians, and for the sake of Greece I inflicted punishment upon them with your aid, driving them out of the Chersonese when they wanted to deprive the Greeks who dwelt there of their land. Then when Cyru s’ summons came, I took you with me and set out, in order that, if he had need of me, I might give him aid in return for the benefits I had received from him."
+    },
+    {
+      "g": "ἐπεὶ δὲ ὑμεῖς οὐ βούλεσθε συμπορεύεσθαι, ἀνάγκη δή μοι ἢ ὑμᾶς προδόντα τῇ Κύρου φιλίᾳ χρῆσθαι ἢ πρὸς ἐκεῖνον ψευσάμενον μεθʼ ὑμῶν εἶναι. εἰ μὲν δὴ δίκαια ποιήσω οὐκ οἶδα, αἱρήσομαι δʼ οὖν ὑμᾶς καὶ σὺν ὑμῖν ὅ τι ἂν δέῃ πείσομαι. καὶ οὔποτε ἐρεῖ οὐδεὶς ὡς ἐγὼ Ἕλληνας ἀγαγὼν εἰς τοὺς βαρβάρους, προδοὺς τοὺς Ἕλληνας τὴν τῶν βαρβάρων φιλίαν εἱλόμην,",
+      "r": "3.5",
+      "t": "But you now do not wish to continue the march with me; so it seems that I must either desert you and continue to enjoy Cyru s’ friendship, or prove false to him and remain with you. Whether I shall be doing what is right, I know not, but at any rate I shall choose you and with you shall suffer whatever I must. And never shall any man say that I, after leading Greeks into the land of the barbarians, betrayed the Greeks and chose the friendship of the barbarians;"
+    },
+    {
+      "g": "ἀλλʼ ἐπεὶ ὑμεῖς ἐμοὶ οὐ θέλετε πείθεσθαι, ἐγὼ σὺν ὑμῖν ἕψομαι καὶ ὅ τι ἂν δέῃ πείσομαι. νομίζω γὰρ ὑμᾶς ἐμοὶ εἶναι καὶ πατρίδα καὶ φίλους καὶ συμμάχους, καὶ σὺν ὑμῖν μὲν ἂν οἶμαι εἶναι τίμιος ὅπου ἂν ὦ, ὑμῶν δὲ ἔρημος ὢν οὐκ ἂν ἱκανὸς οἶμαι εἶναι οὔτʼ ἂν φίλον ὠφελῆσαι οὔτʼ ἂν ἐχθρὸν ἀλέξασθαι. ὡς ἐμοῦ οὖν ἰόντος ὅπῃ ἂν καὶ ὑμεῖς οὕτω τὴν γνώμην ἔχετε.",
+      "r": "3.6",
+      "t": "nay, since you do not care to obey me, I shall follow with you and suffer whatever I must. For I consider that you are to me both fatherland and friends and allies; with you I think I shall be honoured wherever I may be, bereft of you I do not think I shall be able either to aid a friend or to ward off a foe. Be sure, therefore, that wherever you go, I shall go also."
+    },
+    {
+      "g": "ταῦτα εἶπεν· οἱ δὲ στρατιῶται οἵ τε αὐτοῦ ἐκείνου καὶ οἱ ἄλλοι ταῦτα ἀκούσαντες ὅτι οὐ φαίη παρὰ βασιλέα πορεύεσθαι ἐπῄνεσαν· παρὰ δὲ Ξενίου καὶ Πασίωνος πλείους ἢ δισχίλιοι λαβόντες τὰ ὅπλα καὶ τὰ σκευοφόρα ἐστρατοπεδεύσαντο παρὰ Κλεάρχῳ.",
+      "r": "3.7",
+      "t": "Such were his words. And the soldiers—not only his own men, but the rest also—when they heard that he said he would not go on to the King’s capital, commended him; and more than two thousand of the troops under Xenias and Pasion took their arms and their baggage train and encamped with Clearchus."
+    },
+    {
+      "g": "Κῦρος δὲ τούτοις ἀπορῶν τε καὶ λυπούμενος μετεπέμπετο τὸν Κλέαρχον· ὁ δὲ ἰέναι μὲν οὐκ ἤθελε, λάθρᾳ δὲ τῶν στρατιωτῶν πέμπων αὐτῷ ἄγγελον ἔλεγε θαρρεῖν ὡς καταστησομένων τούτων εἰς τὸ δέον. μεταπέμπεσθαι δʼ ἐκέλευεν αὐτόν· αὐτὸς δʼ οὐκ ἔφη ἰέναι.",
+      "r": "3.8",
+      "t": "But Cyrus, perplexed and distressed by this situation, sent repeatedly for Clearchus. Clearchus refused to go to him, but without the knowledge of the soldiers he sent a messenger and told him not to be discouraged, because, he said, this matter would be settled in the right way. He directed Cyrus, however, to keep on sending for him, though he himself, he said, would refuse to go."
+    },
+    {
+      "g": "μετὰ δὲ ταῦτα συναγαγὼν τούς θʼ ἑαυτοῦ στρατιώτας καὶ τοὺς προσελθόντας αὐτῷ καὶ τῶν ἄλλων τὸν βουλόμενον, ἔλεξε τοιάδε. ἄνδρες στρατιῶται, τὰ μὲν δὴ Κύρου δῆλον ὅτι οὕτως ἔχει πρὸς ἡμᾶς ὥσπερ τὰ ἡμέτερα πρὸς ἐκεῖνον· οὔτε γὰρ ἡμεῖς ἐκείνου ἔτι στρατιῶται, ἐπεί γε οὐ συνεπόμεθα αὐτῷ, οὔτε ἐκεῖνος ἔτι ἡμῖν μισθοδότης.",
+      "r": "3.9",
+      "t": "After this Clearchus gathered together his own soldiers, those who had come over to him, and any others who wanted to be present, and spoke as follows: Fellow-soldiers, it is clear that the relation of Cyrus to us is precisely the same as ours to him; that is, we are no longer his soldiers, since we decline to follow him, and likewise he is no longer our paymaster."
+    },
+    {
+      "g": "ὅτι μέντοι ἀδικεῖσθαι νομίζει ὑφʼ ἡμῶν οἶδα· ὥστε καὶ μεταπεμπομένου αὐτοῦ οὐκ ἐθέλω ἐλθεῖν, τὸ μὲν μέγιστον αἰσχυνόμενος ὅτι σύνοιδα ἐμαυτῷ πάντα ἐψευσμένος αὐτόν, ἔπειτα καὶ δεδιὼς μὴ λαβών με δίκην ἐπιθῇ ὧν νομίζει ὑπʼ ἐμοῦ ἠδικῆσθαι.",
+      "r": "3.10",
+      "t": "I know, however, that he considers himself wronged by us. Therefore, although he keeps sending for me, I decline to go, chiefly, it is true, from a feeling of shame, because I am conscious that I have proved utterly false to him, but, besides that, from fear that he may seize me and inflict punishment upon me for the wrongs he thinks he has suffered at my hands."
+    },
+    {
+      "g": "ἐμοὶ οὖν δοκεῖ οὐχ ὥρα εἶναι ἡμῖν καθεύδειν οὐδʼ ἀμελεῖν ἡμῶν αὐτῶν, ἀλλὰ βουλεύεσθαι ὅ τι χρὴ ποιεῖν ἐκ τούτων. καὶ ἕως γε μένομεν αὐτοῦ σκεπτέον μοι δοκεῖ εἶναι ὅπως ἀσφαλέστατα μενοῦμεν, εἴ τε ἤδη δοκεῖ ἀπιέναι, ὅπως ἀσφαλέστατα ἄπιμεν, καὶ ὅπως τὰ ἐπιτήδεια ἕξομεν· ἄνευ γὰρ τούτων οὔτε στρατηγοῦ οὔτε ἰδιώτου ὄφελος οὐδέν.",
+      "r": "3.11",
+      "t": "In my opinion, therefore, it is no time for us to be sleeping or unconcerned about ourselves; we should rather be considering what course we ought to follow under the present circumstances. And so long as we remain here we must consider, I think, how we can remain most safely; or, again, if we count it best to depart at once, how we are to depart most safely and how we shall secure provisions—for without provisions neither general nor private is of any use."
+    },
+    {
+      "g": "ὁ δʼ ἀνὴρ πολλοῦ μὲν ἄξιος ᾧ ἂν φίλος ᾖ, χαλεπώτατος δʼ ἐχθρὸς ᾧ ἂν πολέμιος ᾖ, ἔχει δὲ δύναμιν καὶ πεζὴν καὶ ἱππικὴν καὶ ναυτικὴν ἣν πάντες ὁμοίως ὁρῶμέν τε καὶ ἐπιστάμεθα· καὶ γὰρ οὐδὲ πόρρω δοκοῦμέν μοι αὐτοῦ καθῆσθαι. ὥστε ὥρα λέγειν ὅ τι τις γιγνώσκει ἄριστον εἶναι. ταῦτα εἰπὼν ἐπαύσατο.",
+      "r": "3.12",
+      "t": "And remember that while this Cyrus is a valuable friend when he is your friend, he is a most dangerous foe when he is your enemy; furthermore, he has an armament—infantry and cavalry and fleet—which we all alike see and know about; for I take it that our camp is not very far away from him. It is time, then, to propose whatever plan any one of you deems best. With these words he ceased speaking."
+    },
+    {
+      "g": "ἐκ δὲ τούτου ἀνίσταντο οἱ μὲν ἐκ τοῦ αὐτομάτου, λέξοντες ἃ ἐγίγνωσκον, οἱ δὲ καὶ ὑπʼ ἐκείνου ἐγκέλευστοι, ἐπιδεικνύντες οἵα εἴη ἡ ἀπορία ἄνευ τῆς Κύρου γνώμης καὶ μένειν καὶ ἀπιέναι.",
+      "r": "3.13",
+      "t": "Thereupon various speakers arose, some of their own accord to express the opinions they held, but others at the instigation of Clearchus to make clear the difficulty of either remaining or departing without the consent of Cyrus."
+    },
+    {
+      "g": "εἷς δὲ δὴ εἶπε προσποιούμενος σπεύδειν ὡς τάχιστα πορεύεσθαι εἰς τὴν Ἑλλάδα στρατηγοὺς μὲν ἑλέσθαι ἄλλους ὡς τάχιστα, εἰ μὴ βούλεται Κλέαρχος ἀπάγειν· τὰ δʼ ἐπιτήδειʼ ἀγοράζεσθαι (ἡ δʼ ἀγορὰ ἦν ἐν τῷ βαρβαρικῷ στρατεύματι) καὶ συσκευάζεσθαι· ἐλθόντας δὲ Κῦρον αἰτεῖν πλοῖα, ὡς ἀποπλέοιεν· ἐὰν δὲ μὴ διδῷ ταῦτα, ἡγεμόνα αἰτεῖν Κῦρον ὅστις διὰ φιλίας τῆς χώρας ἀπάξει. ἐὰν δὲ μηδὲ ἡγεμόνα διδῷ, συντάττεσθαι τὴν ταχίστην, πέμψαι δὲ καὶ προκαταληψομένους τὰ ἄκρα, ὅπως μὴ φθάσωσι μήτε Κῦρος μήτε οἱ Κίλικες καταλαβόντες, ὧν πολλοὺς καὶ πολλὰ χρήματα ἔχομεν ἀνηρπακότες. οὗτος μὲν τοιαῦτα εἶπε· μετὰ δὲ τοῦτον Κλέαρχος εἶπε τοσοῦτον.",
+      "r": "3.14",
+      "t": "One man in particular, pretending to be in a hurry to proceed back to Greece with all speed, proposed that they should choose other generals as quickly as possible, in case Clearchus did not wish to lead them back; secondly, that they should buy provisions—the market was in the barbarian army!—and pack up their baggage; then, to go to Cyrus and ask for vessels to sail away in; and if he would not give them vessels, to ask him for a guide to lead them homeward through a country that was friendly; and if he would not give them a guide, either, to form in line of battle with all speed and likewise to send a force to occupy the mountain heights in advance, in order that neither Cyrus nor the Cilicians should forestall them— and we have in our possession, he said, many of these Cilicians and much of their property that we have seized as plunder. Such were the words of this speaker."
+    },
+    {
+      "g": "ὡς μὲν στρατηγήσοντα ἐμὲ ταύτην τὴν στρατηγίαν μηδεὶς ὑμῶν λεγέτω· πολλὰ γὰρ ἐνορῶ διʼ ἃ ἐμοὶ τοῦτο οὐ ποιητέον· ὡς δὲ τῷ ἀνδρὶ ὃν ἂν ἕλησθε πείσομαι ᾗ δυνατὸν μάλιστα, ἵνα εἰδῆτε ὅτι καὶ ἄρχεσθαι ἐπίσταμαι ὥς τις καὶ ἄλλος μάλιστα ἀνθρώπων.",
+      "r": "3.15",
+      "t": "After him Clearchus said merely this: Let no one among you speak of me as the man who is to hold this command, for I see many reasons why I should not do so; say rather that I shall obey to the best of my ability the man whom you choose, in order that you may know that I understand as well as any other person in the world how to be a subordinate also."
+    },
+    {
+      "g": "μετὰ τοῦτον ἄλλος ἀνέστη, ἐπιδεικνὺς μὲν τὴν εὐήθειαν τοῦ τὰ πλοῖα αἰτεῖν κελεύοντος, ὥσπερ πάλιν τὸν στόλον Κύρου ποιουμένου, ἐπιδεικνὺς δὲ ὡς εὔηθες εἴη ἡγεμόνα αἰτεῖν παρὰ τούτου ᾧ λυμαινόμεθα τὴν πρᾶξιν. εἰ δὲ καὶ τῷ ἡγεμόνι πιστεύσομεν ὃν ἂν Κῦρος διδῷ, τί κωλύει καὶ τὰ ἄκρα ἡμῖν κελεύειν Κῦρον προκαταλαβεῖν;",
+      "r": "3.16",
+      "t": "After he had spoken another man arose to point out the foolishness of the speaker who had urged them to ask for vessels, just as if Cyrus were going home again, and to point out also how foolish it was to ask for a guide from this man whose enterprise we are ruining. Indeed, if we propose to trust the guide that Cyrus gives us, what is to hinder us from directing Cyrus also to occupy the heights for us in advance?"
+    },
+    {
+      "g": "ἐγὼ γὰρ ὀκνοίην μὲν ἂν εἰς τὰ πλοῖα ἐμβαίνειν ἃ ἡμῖν δοίη, μὴ ἡμᾶς ταῖς τριήρεσι καταδύσῃ, φοβοίμην δʼ ἂν τῷ ἡγεμόνι ὃν δοίη ἕπεσθαι, μὴ ἡμᾶς ἀγάγῃ ὅθεν οὐκ ἔσται ἐξελθεῖν· βουλοίμην δʼ ἂν ἄκοντος ἀπιὼν Κύρου λαθεῖν αὐτὸν ἀπελθών· ὃ οὐ δυνατόν ἐστιν.",
+      "r": "3.17",
+      "t": "For my part, I should hesitate to embark on the vessels that he might give us, for fear of his sinking us with his war-ships, and I should be afraid to follow the guide that he might give, for fear of his leading us to a place from which it will not be possible to escape; my choice would be, in going off without Cyru s’ consent, to go off without his knowledge—and that is not possible."
+    },
+    {
+      "g": "ἀλλʼ ἐγώ φημι ταῦτα μὲν φλυαρίας εἶναι· δοκεῖ δέ μοι ἄνδρας ἐλθόντας πρὸς Κῦρον οἵτινες ἐπιτήδειοι σὺν Κλεάρχῳ ἐρωτᾶν ἐκεῖνον τί βούλεται ἡμῖν χρῆσθαι· καὶ ἐὰν μὲν ἡ πρᾶξις ᾖ παραπλησία οἵᾳπερ καὶ πρόσθεν ἐχρῆτο τοῖς ξένοις, ἕπεσθαι καὶ ἡμᾶς καὶ μὴ κακίους εἶναι τῶν πρόσθεν τούτῳ συναναβάντων·",
+      "r": "3.18",
+      "t": "Now in my own opinion the plans just proposed are nonsense; rather, I think we should send to Cyrus men of the proper sort, along with Clearchus, to ask him what use he wishes to make of us; and if his enterprise is like the sort of one in which he employed mercenaries before, I think that we also should follow him and not be more cowardly than those who went up with him on the former occasion;"
+    },
+    {
+      "g": "ἐὰν δὲ μείζων ἡ πρᾶξις τῆς πρόσθεν φαίνηται καὶ ἐπιπονωτέρα καὶ ἐπικινδυνοτέρα, ἀξιοῦν ἢ πείσαντα ἡμᾶς ἄγειν ἢ πεισθέντα πρὸς φιλίαν ἀφιέναι· οὕτω γὰρ καὶ ἑπόμενοι ἂν φίλοι αὐτῷ καὶ πρόθυμοι ἑποίμεθα καὶ ἀπιόντες ἀσφαλῶς ἂν ἀπίοιμεν· ὅ τι δʼ ἂν πρὸς ταῦτα λέγῃ ἀπαγγεῖλαι δεῦρο· ἡμᾶς δʼ ἀκούσαντας πρὸς ταῦτα βουλεύεσθαι.",
+      "r": "3.19",
+      "t": "if, however, his enterprise is found to be greater and more laborious and more dangerous than the former one, we ought to demand that he should either offer sufficient persuasion and lead us on with him, or yield to our persuasion and let us go home in friendship; for in this way, if we should follow him, we should follow as friends and zealous supporters, and if we should go back, we should go back in safety. I propose, further, that our representatives should report back to us whatever reply he may make, and that we after hearing it should deliberate about the matter."
+    },
+    {
+      "g": "ἔδοξε ταῦτα, καὶ ἄνδρας ἑλόμενοι σὺν Κλεάρχῳ πέμπουσιν οἳ ἠρώτων Κῦρον τὰ δόξαντα τῇ στρατιᾷ. ὁ δʼ ἀπεκρίνατο ὅτι ἀκούει Ἀβροκόμαν ἐχθρὸν ἄνδρα ἐπὶ τῷ Εὐφράτῃ ποταμῷ εἶναι, ἀπέχοντα δώδεκα σταθμούς· πρὸς τοῦτον οὖν ἔφη βούλεσθαι ἐλθεῖν· κἂν μὲν ᾖ ἐκεῖ, τὴν δίκην ἔφη χρῄζειν ἐπιθεῖναι αὐτῷ, ἦν ἢν δὲ φύγῃ, ἡμεῖς ἐκεῖ πρὸς ταῦτα βουλευσόμεθα.",
+      "r": "3.20",
+      "t": "This plan was adopted, and they chose representatives and sent them with Clearchus; and they proceeded to put to Cyrus the questions resolved upon by the army. He replied that he had heard that Abrocomas, a foe of his, was at the Euphrates river, twelve stages distant. It was against him, therefore, he said, that he desired to march. And if he were there, he wished to inflict due punishment upon him; but if he has fled, he continued, we will deliberate about the matter then and there."
+    },
+    {
+      "g": "ἀκούσαντες δὲ ταῦτα οἱ αἱρετοὶ ἀγγέλλουσι τοῖς στρατιώταις· τοῖς δὲ ὑποψία μὲν ἦν ὅτι ἄγει πρὸς βασιλέα, ὅμως δὲ ἐδόκει ἕπεσθαι. προσαιτοῦσι δὲ μισθόν· ὁ δὲ Κῦρος ὑπισχνεῖται ἡμιόλιον πᾶσι δώσειν οὗ πρότερον ἔφερον, ἀντὶ δαρεικοῦ τρία ἡμιδαρεικὰ τοῦ μηνὸς τῷ στρατιώτῃ· ὅτι δὲ ἐπὶ βασιλέα ἄγοι οὐδὲ ἐνταῦθα ἤκουσεν οὐδεὶς ἐν τῷ γε φανερῷ.",
+      "r": "3.21",
+      "t": "Upon hearing this reply the deputies reported it to the soldiers, and they, while suspecting that Cyrus was leading them against the King, nevertheless thought it best to follow him. They asked, however, for more pay, and Cyrus promised to give them all half as much again as they had been receiving before, namely, a daric and a half a month to each man instead of a daric; but as regards the suspicion that he was leading them against the King, no one heard it expressed even then—at any rate, not openly."
+    }
+  ],
+  "serie": "Anabase",
+  "source": "Perseus Digital Library",
+  "soustitre": "",
+  "titre": "Anabase · livre I, chapitre 3",
+  "url": "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0032.tlg006.perseus-grc2"
+}

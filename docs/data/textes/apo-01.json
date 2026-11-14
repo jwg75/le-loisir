@@ -1,0 +1,114 @@
+{
+  "ajoute": "2026-11-12",
+  "auteur": "Platon",
+  "extrait": "ὅτι μὲν ὑμεῖς, ὦ ἄνδρες Ἀθηναῖοι, πεπόνθατε ὑπὸ τῶν ἐμῶν κατηγόρων, οὐκ οἶδα· ἐγὼ δʼ οὖν καὶ αὐτὸς ὑπʼ αὐτῶν ὀλίγου ἐμαυτοῦ ἐπελαθόμην, οὕτω πιθανῶς ἔλεγον. καί",
+  "genre": "Grec",
+  "id": "apo-01",
+  "langue": "grc",
+  "licence": "texte grec CC BY-SA ; traduction anglaise de H. N. Fowler (1914), domaine public",
+  "minutes": 29,
+  "mots": 1300,
+  "ordre": 1,
+  "sections": [
+    {
+      "g": "ὅτι μὲν ὑμεῖς, ὦ ἄνδρες Ἀθηναῖοι, πεπόνθατε ὑπὸ τῶν ἐμῶν κατηγόρων, οὐκ οἶδα· ἐγὼ δʼ οὖν καὶ αὐτὸς ὑπʼ αὐτῶν ὀλίγου ἐμαυτοῦ ἐπελαθόμην, οὕτω πιθανῶς ἔλεγον. καίτοι ἀληθές γε ὡς ἔπος εἰπεῖν οὐδὲν εἰρήκασιν. μάλιστα δὲ αὐτῶν ἓν ἐθαύμασα τῶν πολλῶν ὧν ἐψεύσαντο, τοῦτο ἐν ᾧ ἔλεγον ὡς χρῆν ὑμᾶς εὐλαβεῖσθαι μὴ ὑπʼ ἐμοῦ ἐξαπατηθῆτε",
+      "r": "17a",
+      "t": "How you, men of Athens, have been affected by my accusers, I do not know; but I, for my part, almost forgot my own identity, so persuasively did they talk; and yet there is hardly a word of truth in what they have said. But I was most amazed by one of the many lies that they told—when they said that you must be on your guard not to be deceived by me,"
+    },
+    {
+      "g": "ὡς δεινοῦ ὄντος λέγειν. τὸ γὰρ μὴ αἰσχυνθῆναι ὅτι αὐτίκα ὑπʼ ἐμοῦ ἐξελεγχθήσονται ἔργῳ, ἐπειδὰν μηδʼ ὁπωστιοῦν φαίνωμαι δεινὸς λέγειν, τοῦτό μοι ἔδοξεν αὐτῶν ἀναισχυντότατον εἶναι, εἰ μὴ ἄρα δεινὸν καλοῦσιν οὗτοι λέγειν τὸν τἀληθῆ λέγοντα· εἰ μὲν γὰρ τοῦτο λέγουσιν, ὁμολογοίην ἂν ἔγωγε οὐ κατὰ τούτους εἶναι ῥήτωρ. οὗτοι μὲν οὖν, ὥσπερ ἐγὼ λέγω, ἤ τι ἢ οὐδὲν ἀληθὲς εἰρήκασιν, ὑμεῖς δέ μου ἀκούσεσθε πᾶσαν τὴν ἀλήθειαν—οὐ μέντοι μὰ Δία, ὦ ἄνδρες Ἀθηναῖοι, κεκαλλιεπημένους γε λόγους, ὥσπερ οἱ τούτων,",
+      "r": "17b",
+      "t": "because I was a clever speaker. For I thought it the most shameless part of their conduct that they are not ashamed because they will immediately be convicted by me of falsehood by the evidence of fact, when I show myself to be not in the least a clever speaker, unless indeed they call him a clever speaker who speaks the truth; for if this is what they mean, I would agree that I am an orator—not after their fashion. Now they, as I say, have said little or nothing true; but you shall hear from me nothing but the truth. Not, however, men of Athens, speeches finely tricked out with words and phrases,"
+    },
+    {
+      "g": "ῥήμασί τε καὶ ὀνόμασιν οὐδὲ κεκοσμημένους, ἀλλʼ ἀκούσεσθε εἰκῇ λεγόμενα τοῖς ἐπιτυχοῦσιν ὀνόμασιν—πιστεύω γὰρ δίκαια εἶναι ἃ λέγω—καὶ μηδεὶς ὑμῶν προσδοκησάτω ἄλλως· οὐδὲ γὰρ ἂν δήπου πρέποι, ὦ ἄνδρες, τῇδε τῇ ἡλικίᾳ ὥσπερ μειρακίῳ πλάττοντι λόγους εἰς ὑμᾶς εἰσιέναι. καὶ μέντοι καὶ πάνυ, ὦ ἄνδρες Ἀθηναῖοι, τοῦτο ὑμῶν δέομαι καὶ παρίεμαι· ἐὰν διὰ τῶν αὐτῶν λόγων ἀκούητέ μου ἀπολογουμένου διʼ ὧνπερ εἴωθα λέγειν καὶ ἐν ἀγορᾷ ἐπὶ τῶν τραπεζῶν, ἵνα ὑμῶν πολλοὶ ἀκηκόασι, καὶ ἄλλοθι, μήτε",
+      "r": "17c",
+      "t": "as theirs are, nor carefully arranged, but you will hear things said at random with the words that happen to occur to me. For I trust that what I say is just; and let none of you expect anything else. For surely it would not be fitting for one of my age to come before you like a youngster making up speeches. And, men of Athens, I urgently beg and beseech you if you hear me making my defence with the same words with which I have been accustomed to speak both in the market place at the bankers tables, where many of you have heard me, and elsewhere,"
+    },
+    {
+      "g": "θαυμάζειν μήτε θορυβεῖν τούτου ἕνεκα. ἔχει γὰρ οὑτωσί. νῦν ἐγὼ πρῶτον ἐπὶ δικαστήριον ἀναβέβηκα, ἔτη γεγονὼς ἑβδομήκοντα· ἀτεχνῶς οὖν ξένως ἔχω τῆς ἐνθάδε λέξεως. ὥσπερ οὖν ἄν, εἰ τῷ ὄντι ξένος ἐτύγχανον ὤν, συνεγιγνώσκετε δήπου ἄν μοι εἰ ἐν ἐκείνῃ τῇ φωνῇ τε καὶ τῷ τρόπῳ",
+      "r": "17d",
+      "t": "not to be surprised or to make a disturbance on this account. For the fact is that this is the first time I have come before the court, although I am seventy years old; I am therefore an utter foreigner to the manner of speech here. Hence, just as you would, of course, if I were really a foreigner, pardon me if I spoke in that dialect and that manner"
+    },
+    {
+      "g": "ἔλεγον ἐν οἷσπερ ἐτεθράμμην, καὶ δὴ καὶ νῦν τοῦτο ὑμῶν δέομαι δίκαιον, ὥς γέ μοι δοκῶ, τὸν μὲν τρόπον τῆς λέξεως ἐᾶν—ἴσως μὲν γὰρ χείρων, ἴσως δὲ βελτίων ἂν εἴη—αὐτὸ δὲ τοῦτο σκοπεῖν καὶ τούτῳ τὸν νοῦν προσέχειν, εἰ δίκαια λέγω ἢ μή· δικαστοῦ μὲν γὰρ αὕτη ἀρετή, ῥήτορος δὲ τἀληθῆ λέγειν. πρῶτον μὲν οὖν δίκαιός εἰμι ἀπολογήσασθαι, ὦ ἄνδρες Ἀθηναῖοι, πρὸς τὰ πρῶτά μου ψευδῆ κατηγορημένα καὶ τοὺς πρώτους κατηγόρους, ἔπειτα δὲ πρὸς τὰ ὕστερον καὶ τοὺς",
+      "r": "18a",
+      "t": "in which I had been brought up, so now I make this request of you, a fair one, as it seems to me, that you disregard the manner of my speech—for perhaps it might be worse and perhaps better—and observe and pay attention merely to this, whether what I say is just or not; for that is the virtue of a judge, and an orator’s virtue is to speak the truth. First then it is right for me to defend myself against the first false accusations brought against me, and the first accusers, and then against the later accusations and the later accusers."
+    },
+    {
+      "g": "ὑστέρους. ἐμοῦ γὰρ πολλοὶ κατήγοροι γεγόνασι πρὸς ὑμᾶς καὶ πάλαι πολλὰ ἤδη ἔτη καὶ οὐδὲν ἀληθὲς λέγοντες, οὓς ἐγὼ μᾶλλον φοβοῦμαι ἢ τοὺς ἀμφὶ Ἄνυτον, καίπερ ὄντας καὶ τούτους δεινούς· ἀλλʼ ἐκεῖνοι δεινότεροι, ὦ ἄνδρες, οἳ ὑμῶν τοὺς πολλοὺς ἐκ παίδων παραλαμβάνοντες ἔπειθόν τε καὶ κατηγόρουν ἐμοῦ μᾶλλον οὐδὲν ἀληθές, ὡς ἔστιν τις Σωκράτης σοφὸς ἀνήρ, τά τε μετέωρα φροντιστὴς καὶ τὰ ὑπὸ γῆς πάντα ἀνεζητηκὼς καὶ τὸν ἥττω λόγον κρείττω",
+      "r": "18b",
+      "t": "For many accusers have risen up against me before you, who have been speaking for a long time, many years already, and saying nothing true; and I fear them more than Anytus and the rest, though these also are dangerous; but those others are more dangerous, gentlemen, who gained your belief, since they got hold of most of you in childhood, and accused me without any truth, saying, There is a certain Socrates, a wise man, a ponderer over the things in the air and one who has investigated the things beneath the earth and who makes the weaker argument the stronger. These, men of Athens,"
+    },
+    {
+      "g": "ποιῶν. οὗτοι, ὦ ἄνδρες Ἀθηναῖοι, οἱ ταύτην τὴν φήμην κατασκεδάσαντες, οἱ δεινοί εἰσίν μου κατήγοροι· οἱ γὰρ ἀκούοντες ἡγοῦνται τοὺς ταῦτα ζητοῦντας οὐδὲ θεοὺς νομίζειν. ἔπειτά εἰσιν οὗτοι οἱ κατήγοροι πολλοὶ καὶ πολὺν χρόνον ἤδη κατηγορηκότες, ἔτι δὲ καὶ ἐν ταύτῃ τῇ ἡλικίᾳ λέγοντες πρὸς ὑμᾶς ἐν ᾗ ἂν μάλιστα ἐπιστεύσατε, παῖδες ὄντες ἔνιοι ὑμῶν καὶ μειράκια, ἀτεχνῶς ἐρήμην κατηγοροῦντες ἀπολογουμένου οὐδενός. ὃ δὲ πάντων ἀλογώτατον, ὅτι οὐδὲ τὰ",
+      "r": "18c",
+      "t": "who have spread abroad this report, are my dangerous enemies. For those who hear them think that men who investigate these matters do not even believe in gods. Besides, these accusers are many and have been making their accusations already for a long time, and moreover they spoke to you at an age at which you would believe them most readily (some of you in youth, most of you in childhood), and the case they prosecuted went utterly by default, since nobody appeared in defence. But the most unreasonable thing of all is this, that it is not even possible"
+    },
+    {
+      "g": "ὀνόματα οἷόν τε αὐτῶν εἰδέναι καὶ εἰπεῖν, πλὴν εἴ τις κωμῳδοποιὸς τυγχάνει ὤν. ὅσοι δὲ φθόνῳ καὶ διαβολῇ χρώμενοι ὑμᾶς ἀνέπειθον—οἱ δὲ καὶ αὐτοὶ πεπεισμένοι ἄλλους πείθοντες—οὗτοι πάντες ἀπορώτατοί εἰσιν· οὐδὲ γὰρ ἀναβιβάσασθαι οἷόν τʼ ἐστὶν αὐτῶν ἐνταυθοῖ οὐδʼ ἐλέγξαι οὐδένα, ἀλλʼ ἀνάγκη ἀτεχνῶς ὥσπερ σκιαμαχεῖν ἀπολογούμενόν τε καὶ ἐλέγχειν μηδενὸς ἀποκρινομένου. ἀξιώσατε οὖν καὶ ὑμεῖς, ὥσπερ ἐγὼ λέγω, διττούς μου τοὺς κατηγόρους γεγονέναι, ἑτέρους μὲν τοὺς ἄρτι κατηγορήσαντας, ἑτέρους δὲ",
+      "r": "18d",
+      "t": "to know and speak their names, except when one of them happens to be a writer of comedies. And all those who persuaded you by means of envy and slander—and some also persuaded others because they had been themselves persuaded—all these are most difficult to cope with; for it is not even possible to call any of them up here and cross-question him, but I am compelled in making my defence to fight, as it were, absolutely with shadows and to cross-question when nobody answers. Be kind enough, then, to bear in mind, as I say, that there are two classes"
+    },
+    {
+      "g": "τοὺς πάλαι οὓς ἐγὼ λέγω, καὶ οἰήθητε δεῖν πρὸς ἐκείνους πρῶτόν με ἀπολογήσασθαι· καὶ γὰρ ὑμεῖς ἐκείνων πρότερον ἠκούσατε κατηγορούντων καὶ πολὺ μᾶλλον ἢ τῶνδε τῶν ὕστερον. εἶεν· ἀπολογητέον δή, ὦ ἄνδρες Ἀθηναῖοι, καὶ ἐπιχειρητέον",
+      "r": "18e",
+      "t": "of my accusers—one those who have just brought their accusation, the other those who, as I was just saying, brought it long ago, and consider that I must defend myself first against the latter; for you heard them making their charges first and with much greater force than these who made them later. Well, then, I must make a defence, men of Athens,"
+    },
+    {
+      "g": "ὑμῶν ἐξελέσθαι τὴν διαβολὴν ἣν ὑμεῖς ἐν πολλῷ χρόνῳ ἔσχετε ταύτην ἐν οὕτως ὀλίγῳ χρόνῳ. βουλοίμην μὲν οὖν ἂν τοῦτο οὕτως γενέσθαι, εἴ τι ἄμεινον καὶ ὑμῖν καὶ ἐμοί, καὶ πλέον τί με ποιῆσαι ἀπολογούμενον· οἶμαι δὲ αὐτὸ χαλεπὸν εἶναι, καὶ οὐ πάνυ με λανθάνει οἷόν ἐστιν. ὅμως τοῦτο μὲν ἴτω ὅπῃ τῷ θεῷ φίλον, τῷ δὲ νόμῳ πειστέον καὶ ἀπολογητέον. ἀναλάβωμεν οὖν ἐξ ἀρχῆς τίς ἡ κατηγορία ἐστὶν ἐξ ἧς",
+      "r": "19a",
+      "t": "and must try in so short a time to remove from you this prejudice which you have been for so long a time acquiring. Now I wish that this might turn out so, if it is better for you and for me, and that I might succeed with my defence; but I think it is difficult, and I am not at all deceived about its nature. But nevertheless, let this be as is pleasing to God, the law must be obeyed and I must make a defence. Now let us take up from the beginning the question, what the accusation is from which the false prejudice against me has arisen, in which"
+    },
+    {
+      "g": "ἡ ἐμὴ διαβολὴ γέγονεν, ᾗ δὴ καὶ πιστεύων Μέλητός με ἐγράψατο τὴν γραφὴν ταύτην. εἶεν· τί δὴ λέγοντες διέβαλλον οἱ διαβάλλοντες; ὥσπερ οὖν κατηγόρων τὴν ἀντωμοσίαν δεῖ ἀναγνῶναι αὐτῶν· Σωκράτης ἀδικεῖ καὶ περιεργάζεται ζητῶν τά τε ὑπὸ γῆς καὶ οὐράνια καὶ τὸν ἥττω λόγον κρείττω",
+      "r": "19b",
+      "t": "Meletus trusted when he brought this suit against me. What did those who aroused the prejudice say to arouse it? I must, as it were, read their sworn statement as if they were plaintiffs: Socrates is a criminal and a busybody, investigating the things beneath the earth and in the heavens and making the weaker argument stronger and"
+    },
+    {
+      "g": "ποιῶν καὶ ἄλλους ταὐτὰ ταῦτα διδάσκων. τοιαύτη τίς ἐστιν· ταῦτα γὰρ ἑωρᾶτε καὶ αὐτοὶ ἐν τῇ Ἀριστοφάνους κωμῳδίᾳ, Σωκράτη τινὰ ἐκεῖ περιφερόμενον, φάσκοντά τε ἀεροβατεῖν καὶ ἄλλην πολλὴν φλυαρίαν φλυαροῦντα, ὧν ἐγὼ οὐδὲν οὔτε μέγα οὔτε μικρὸν πέρι ἐπαΐω. καὶ οὐχ ὡς ἀτιμάζων λέγω τὴν τοιαύτην ἐπιστήμην, εἴ τις περὶ τῶν τοιούτων σοφός ἐστιν—μή πως ἐγὼ ὑπὸ Μελήτου τοσαύτας δίκας φεύγοιμι— ἀλλὰ γὰρ ἐμοὶ τούτων, ὦ ἄνδρες Ἀθηναῖοι, οὐδὲν μέτεστιν.",
+      "r": "19c",
+      "t": "teaching others these same things. Something of that sort it is. For you yourselves saw these things in Aristophanes’ comedy, a Socrates being carried about there, proclaiming that he was treading on air and uttering a vast deal of other nonsense, about which I know nothing, either much or little. And I say this, not to cast dishonor upon such knowledge, if anyone is wise about such matters (may I never have to defend myself against Meletus on so great a charge as that!),—but I, men of Athens, have nothing to do with these things."
+    },
+    {
+      "g": "μάρτυρας δὲ αὖ ὑμῶν τοὺς πολλοὺς παρέχομαι, καὶ ἀξιῶ ὑμᾶς ἀλλήλους διδάσκειν τε καὶ φράζειν, ὅσοι ἐμοῦ πώποτε ἀκηκόατε διαλεγομένου—πολλοὶ δὲ ὑμῶν οἱ τοιοῦτοί εἰσιν— φράζετε οὖν ἀλλήλοις εἰ πώποτε ἢ μικρὸν ἢ μέγα ἤκουσέ τις ὑμῶν ἐμοῦ περὶ τῶν τοιούτων διαλεγομένου, καὶ ἐκ τούτου γνώσεσθε ὅτι τοιαῦτʼ ἐστὶ καὶ τἆλλα περὶ ἐμοῦ ἃ οἱ πολλοὶ λέγουσιν. ἀλλὰ γὰρ οὔτε τούτων οὐδέν ἐστιν, οὐδέ γʼ εἴ τινος ἀκηκόατε ὡς ἐγὼ παιδεύειν ἐπιχειρῶ ἀνθρώπους καὶ χρήματα",
+      "r": "19d",
+      "t": "And I offer as witnesses most of yourselves, and I ask you to inform one another and to tell, all those of you who ever heard me conversing—and there are many such among you—now tell, if anyone ever heard me talking much or little about such matters. And from this you will perceive that such are also the other things that the multitude say about me. But in fact none of these things are true, and if you have heard from anyone that I undertake to teach"
+    },
+    {
+      "g": "πράττομαι, οὐδὲ τοῦτο ἀληθές. ἐπεὶ καὶ τοῦτό γέ μοι δοκεῖ καλὸν εἶναι, εἴ τις οἷός τʼ εἴη παιδεύειν ἀνθρώπους ὥσπερ Γοργίας τε ὁ Λεοντῖνος καὶ Πρόδικος ὁ Κεῖος καὶ Ἱππίας ὁ Ἠλεῖος. τούτων γὰρ ἕκαστος, ὦ ἄνδρες, οἷός τʼ ἐστὶν ἰὼν εἰς ἑκάστην τῶν πόλεων τοὺς νέους—οἷς ἔξεστι τῶν ἑαυτῶν πολιτῶν προῖκα συνεῖναι ᾧ ἂν βούλωνται—τούτους πείθουσι",
+      "r": "19e",
+      "t": "people and that I make money by it, that is not true either. Although this also seems to me to be a fine thing, if one might be able to teach people, as Gorgias of Leontini and Prodicus of Ceos and Hippias of Elis are. For each of these men, gentlemen, is able to go into any one of the cities and persuade the young men, who can associate for nothing with whomsoever they wish among their own fellow citizens,"
+    },
+    {
+      "g": "τὰς ἐκείνων συνουσίας ἀπολιπόντας σφίσιν συνεῖναι χρήματα διδόντας καὶ χάριν προσειδέναι. ἐπεὶ καὶ ἄλλος ἀνήρ ἐστι Πάριος ἐνθάδε σοφὸς ὃν ἐγὼ ᾐσθόμην ἐπιδημοῦντα· ἔτυχον γὰρ προσελθὼν ἀνδρὶ ὃς τετέλεκε χρήματα σοφισταῖς πλείω ἢ σύμπαντες οἱ ἄλλοι, Καλλίᾳ τῷ Ἱππονίκου· τοῦτον οὖν ἀνηρόμην—ἐστὸν γὰρ αὐτῷ δύο ὑεῖ— ὦ Καλλία, ἦν δʼ ἐγώ, εἰ μέν σου τὼ ὑεῖ πώλω ἢ μόσχω ἐγενέσθην, εἴχομεν ἂν αὐτοῖν ἐπιστάτην λαβεῖν καὶ μισθώσασθαι ὃς",
+      "r": "20a",
+      "t": "to give up the association with those men and to associate with them and pay them money and be grateful besides. And there is also another wise man here, a Parian, who I learned was in town; for I happened to meet a man who has spent more on sophists than all the rest, Callias, the son of Hipponicus; so I asked him—for he has two sons— Callias, said I, if your two sons had happened to be two colts or two calves, we should be able to get and hire for them an overseer who would make them"
+    },
+    {
+      "g": "ἔμελλεν αὐτὼ καλώ τε κἀγαθὼ ποιήσειν τὴν προσήκουσαν ἀρετήν, ἦν δʼ ἂν οὗτος ἢ τῶν ἱππικῶν τις ἢ τῶν γεωργικῶν· νῦν δʼ ἐπειδὴ ἀνθρώπω ἐστόν, τίνα αὐτοῖν ἐν νῷ ἔχεις ἐπιστάτην λαβεῖν; τίς τῆς τοιαύτης ἀρετῆς, τῆς ἀνθρωπίνης τε καὶ πολιτικῆς, ἐπιστήμων ἐστίν; οἶμαι γάρ σε ἐσκέφθαι διὰ τὴν τῶν ὑέων κτῆσιν. ἔστιν τις, ἔφην ἐγώ, ἢ οὔ; πάνυ γε, ἦ δʼ ὅς. τίς, ἦν δʼ ἐγώ, καὶ ποδαπός, καὶ πόσου διδάσκει; Εὔηνος, ἔφη, ὦ Σώκρατες, Πάριος, πέντε μνῶν. καὶ ἐγὼ τὸν Εὔηνον ἐμακάρισα εἰ ὡς ἀληθῶς",
+      "r": "20b",
+      "t": "excellent in the kind of excellence proper to them; and he would be a horse-trainer or a husbandman; but now, since they are two human beings, whom have you in mind to get as overseer? Who has knowledge of that kind of excellence, that of a man and a citizen? For I think you have looked into the matter, because you have the sons. Is there anyone, said I, or not? Certainly, said he. Who, said I, and where from, and what is his price for his teaching? Evenus, he said, Socrates, from Paros, five minae. And I called Evenus blessed,"
+    },
+    {
+      "g": "ἔχοι ταύτην τὴν τέχνην καὶ οὕτως ἐμμελῶς διδάσκει. ἐγὼ γοῦν καὶ αὐτὸς ἐκαλλυνόμην τε καὶ ἡβρυνόμην ἂν εἰ ἠπιστάμην ταῦτα· ἀλλʼ οὐ γὰρ ἐπίσταμαι, ὦ ἄνδρες Ἀθηναῖοι. ὑπολάβοι ἂν οὖν τις ὑμῶν ἴσως· ἀλλʼ, ὦ Σώκρατες, τὸ σὸν τί ἐστι πρᾶγμα; πόθεν αἱ διαβολαί σοι αὗται γεγόνασιν; οὐ γὰρ δήπου σοῦ γε οὐδὲν τῶν ἄλλων περιττότερον πραγματευομένου ἔπειτα τοσαύτη φήμη τε καὶ λόγος γέγονεν, εἰ μή τι ἔπραττες ἀλλοῖον ἢ οἱ πολλοί. λέγε οὖν ἡμῖν τί",
+      "r": "20c",
+      "t": "if he really had this art and taught so reasonably. I myself should be vain and put on airs, if I understood these things; but I do not understand them, men of Athens. Now perhaps someone might rejoin: But, Socrates, what is the trouble about you? Whence have these prejudices against you arisen? For certainly this great report and talk has not arisen while you were doing nothing more out of the way than the rest, unless you were doing something other than most people; so tell us"
+    },
+    {
+      "g": "ἐστιν, ἵνα μὴ ἡμεῖς περὶ σοῦ αὐτοσχεδιάζωμεν. ταυτί μοι δοκεῖ δίκαια λέγειν ὁ λέγων, κἀγὼ ὑμῖν πειράσομαι ἀποδεῖξαι τί ποτʼ ἐστὶν τοῦτο ὃ ἐμοὶ πεποίηκεν τό τε ὄνομα καὶ τὴν διαβολήν. ἀκούετε δή. καὶ ἴσως μὲν δόξω τισὶν ὑμῶν παίζειν· εὖ μέντοι ἴστε, πᾶσαν ὑμῖν τὴν ἀλήθειαν ἐρῶ. ἐγὼ γάρ, ὦ ἄνδρες Ἀθηναῖοι, διʼ οὐδὲν ἀλλʼ ἢ διὰ σοφίαν τινὰ τοῦτο τὸ ὄνομα ἔσχηκα. ποίαν δὴ σοφίαν ταύτην; ἥπερ ἐστὶν ἴσως ἀνθρωπίνη σοφία· τῷ ὄντι γὰρ κινδυνεύω ταύτην εἶναι σοφός. οὗτοι δὲ τάχʼ ἄν, οὓς ἄρτι",
+      "r": "20d",
+      "t": "what it is, that we may not act unadvisedly in your case. The man who says this seems to me to be right, and I will try to show you what it is that has brought about my reputation and aroused the prejudice against me. So listen. And perhaps I shall seem to some of you to be joking; be assured, however, I shall speak perfect truth to you. The fact is, men of Athens, that I have acquired this reputation on account of nothing else than a sort of wisdom. What kind of wisdom is this? Just that which is perhaps human wisdom. For perhaps I really am wise in this wisdom; and these men, perhaps,"
+    },
+    {
+      "g": "ἔλεγον, μείζω τινὰ ἢ κατʼ ἄνθρωπον σοφίαν σοφοὶ εἶεν, ἢ οὐκ ἔχω τί λέγω· οὐ γὰρ δὴ ἔγωγε αὐτὴν ἐπίσταμαι, ἀλλʼ ὅστις φησὶ ψεύδεταί τε καὶ ἐπὶ διαβολῇ τῇ ἐμῇ λέγει. καί μοι, ὦ ἄνδρες Ἀθηναῖοι, μὴ θορυβήσητε, μηδʼ ἐὰν δόξω τι ὑμῖν μέγα λέγειν· οὐ γὰρ ἐμὸν ἐρῶ τὸν λόγον ὃν ἂν λέγω, ἀλλʼ εἰς ἀξιόχρεων ὑμῖν τὸν λέγοντα ἀνοίσω. τῆς γὰρ ἐμῆς, εἰ δή τίς ἐστιν σοφία καὶ οἵα, μάρτυρα ὑμῖν παρέξομαι τὸν θεὸν τὸν ἐν Δελφοῖς. Χαιρεφῶντα γὰρ ἴστε που. οὗτος",
+      "r": "20e",
+      "t": "of whom I was just speaking, might be wise in some wisdom greater than human, or I don’t know what to say; for I do not understand it, and whoever says I do, is lying and speaking to arouse prejudice against me. And, men of Athens, do not interrupt me with noise, even if I seem to you to be boasting; for the word which I speak is not mine, but the speaker to whom I shall refer it is a person of weight. For of my wisdom—if it is wisdom at all—and of its nature, I will offer you the god of Delphi as a witness. You know Chaerephon, I fancy."
+    }
+  ],
+  "serie": "Apologie de Socrate",
+  "source": "Perseus Digital Library",
+  "soustitre": "Le plaidoyer de Socrate devant ses juges, en 399. La prose la plus limpide de Platon : par où commencer.",
+  "titre": "Apologie de Socrate · 17–20",
+  "url": "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0059.tlg002.perseus-grc2"
+}

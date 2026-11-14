@@ -1,0 +1,119 @@
+{
+  "ajoute": "2026-11-12",
+  "auteur": "Platon",
+  "extrait": "ἀνθρώπων οὐδείς. ἀλλʼ ἐγὼ διὰ παντὸς τοῦ βίου δημοσίᾳ τε εἴ πού τι ἔπραξα τοιοῦτος φανοῦμαι, καὶ ἰδίᾳ ὁ αὐτὸς οὗτος, οὐδενὶ πώποτε συγχωρήσας οὐδὲν παρὰ τὸ δίκα",
+  "genre": "Grec",
+  "id": "apo-05",
+  "langue": "grc",
+  "licence": "texte grec CC BY-SA ; traduction anglaise de H. N. Fowler (1914), domaine public",
+  "minutes": 30,
+  "mots": 1339,
+  "ordre": 5,
+  "sections": [
+    {
+      "g": "ἀνθρώπων οὐδείς. ἀλλʼ ἐγὼ διὰ παντὸς τοῦ βίου δημοσίᾳ τε εἴ πού τι ἔπραξα τοιοῦτος φανοῦμαι, καὶ ἰδίᾳ ὁ αὐτὸς οὗτος, οὐδενὶ πώποτε συγχωρήσας οὐδὲν παρὰ τὸ δίκαιον οὔτε ἄλλῳ οὔτε τούτων οὐδενὶ οὓς δὴ διαβάλλοντες ἐμέ φασιν ἐμοὺς μαθητὰς εἶναι. ἐγὼ δὲ διδάσκαλος μὲν οὐδενὸς πώποτʼ ἐγενόμην· εἰ δέ τίς μου λέγοντος καὶ τὰ ἐμαυτοῦ πράττοντος ἐπιθυμοῖ ἀκούειν, εἴτε νεώτερος εἴτε πρεσβύτερος, οὐδενὶ πώποτε ἐφθόνησα, οὐδὲ χρήματα μὲν λαμβάνων διαλέγομαι",
+      "r": "33a",
+      "t": "any other man. But you will find that through all my life, both in public, if I engaged in any public activity, and in private, I have always been the same as now, and have never yielded to any one wrongly, whether it were any other person or any of those who are said by my traducers to be my pupils. But I was never any one’s teacher. If any one, whether young or old, wishes to hear me speaking and pursuing my mission, I have never objected,"
+    },
+    {
+      "g": "μὴ λαμβάνων δὲ οὔ, ἀλλʼ ὁμοίως καὶ πλουσίῳ καὶ πένητι παρέχω ἐμαυτὸν ἐρωτᾶν, καὶ ἐάν τις βούληται ἀποκρινόμενος ἀκούειν ὧν ἂν λέγω. καὶ τούτων ἐγὼ εἴτε τις χρηστὸς γίγνεται εἴτε μή, οὐκ ἂν δικαίως τὴν αἰτίαν ὑπέχοιμι, ὧν μήτε ὑπεσχόμην μηδενὶ μηδὲν πώποτε μάθημα μήτε ἐδίδαξα· εἰ δέ τίς φησι παρʼ ἐμοῦ πώποτέ τι μαθεῖν ἢ ἀκοῦσαι ἰδίᾳ ὅτι μὴ καὶ οἱ ἄλλοι πάντες, εὖ ἴστε ὅτι οὐκ ἀληθῆ λέγει. ἀλλὰ διὰ τί δή ποτε μετʼ ἐμοῦ χαίρουσί τινες πολὺν",
+      "r": "33b",
+      "t": "nor do I converse only when I am paid and not otherwise, but I offer myself alike to rich and poor; I ask questions, and whoever wishes may answer and hear what I say. And whether any of them turns out well or ill, I should not justly be held responsible, since I never promised or gave any instruction to any of them; but if any man says that he ever learned or heard anything privately from me, which all the others did not, be assured that he is lying. But why then do some people love"
+    },
+    {
+      "g": "χρόνον διατρίβοντες; ἀκηκόατε, ὦ ἄνδρες Ἀθηναῖοι, πᾶσαν ὑμῖν τὴν ἀλήθειαν ἐγὼ εἶπον· ὅτι ἀκούοντες χαίρουσιν ἐξεταζομένοις τοῖς οἰομένοις μὲν εἶναι σοφοῖς, οὖσι δʼ οὔ. ἔστι γὰρ οὐκ ἀηδές. ἐμοὶ δὲ τοῦτο, ὡς ἐγώ φημι, προστέτακται ὑπὸ τοῦ θεοῦ πράττειν καὶ ἐκ μαντείων καὶ ἐξ ἐνυπνίων καὶ παντὶ τρόπῳ ᾧπέρ τίς ποτε καὶ ἄλλη θεία μοῖρα ἀνθρώπῳ καὶ ὁτιοῦν προσέταξε πράττειν. ταῦτα, ὦ ἄνδρες Ἀθηναῖοι, καὶ ἀληθῆ ἐστιν καὶ εὐέλεγκτα. εἰ γὰρ δὴ ἔγωγε τῶν νέων",
+      "r": "33c",
+      "t": "to spend much of their time with me? You have heard the reason, men of Athens; for I told you the whole truth; it is because they like to listen when those are examined who think they are wise and are not so; for it is amusing. But, as I believe, I have been commanded to do this by the God through oracles and dreams and in every way in which any man was ever commanded by divine power to do anything whatsoever. This, Athenians, is true and easily tested. For if I am corrupting some of the young men"
+    },
+    {
+      "g": "τοὺς μὲν διαφθείρω τοὺς δὲ διέφθαρκα, χρῆν δήπου, εἴτε τινὲς αὐτῶν πρεσβύτεροι γενόμενοι ἔγνωσαν ὅτι νέοις οὖσιν αὐτοῖς ἐγὼ κακὸν πώποτέ τι συνεβούλευσα, νυνὶ αὐτοὺς ἀναβαίνοντας ἐμοῦ κατηγορεῖν καὶ τιμωρεῖσθαι· εἰ δὲ μὴ αὐτοὶ ἤθελον, τῶν οἰκείων τινὰς τῶν ἐκείνων, πατέρας καὶ ἀδελφοὺς καὶ ἄλλους τοὺς προσήκοντας, εἴπερ ὑπʼ ἐμοῦ τι κακὸν ἐπεπόνθεσαν αὐτῶν οἱ οἰκεῖοι, νῦν μεμνῆσθαι καὶ τιμωρεῖσθαι. πάντως δὲ πάρεισιν αὐτῶν πολλοὶ ἐνταυθοῖ οὓς ἐγὼ ὁρῶ, πρῶτον μὲν Κρίτων οὑτοσί, ἐμὸς ἡλικιώτης",
+      "r": "33d",
+      "t": "and have corrupted others, surely some of them who have grown older, if they recognize that I ever gave them any bad advice when they were young, ought now to have come forward to accuse me. Or if they did not wish to do it themselves, some of their relatives—fathers or brothers or other kinsfolk—ought now to tell the facts. And there are many of them present, whom I see; first Crito here,"
+    },
+    {
+      "g": "καὶ δημότης, Κριτοβούλου τοῦδε πατήρ, ἔπειτα Λυσανίας ὁ Σφήττιος, Αἰσχίνου τοῦδε πατήρ, ἔτι δʼ Ἀντιφῶν ὁ Κηφισιεὺς οὑτοσί, Ἐπιγένους πατήρ, ἄλλοι τοίνυν οὗτοι ὧν οἱ ἀδελφοὶ ἐν ταύτῃ τῇ διατριβῇ γεγόνασιν, Νικόστρατος Θεοζοτίδου, ἀδελφὸς Θεοδότου—καὶ ὁ μὲν Θεόδοτος τετελεύτηκεν, ὥστε οὐκ ἂν ἐκεῖνός γε αὐτοῦ καταδεηθείη—καὶ Παράλιος ὅδε, ὁ Δημοδόκου, οὗ ἦν Θεάγης ἀδελφός· ὅδε δὲ",
+      "r": "33e",
+      "t": "who is of my own age and my own deme and father of Critobulus, who is also present; then there is Lysanias the Sphettian, father of Aeschines, who is here; and also Antiphon of Cephisus, father of Epigenes. Then here are others whose brothers joined in my conversations, Nicostratus, son of Theozotides and brother of Theodotus (now Theodotus is dead, so he could not stop him by entreaties), and Paralus, son of Demodocus; Theages was his brother; and"
+    },
+    {
+      "g": "Ἀδείμαντος, ὁ Ἀρίστωνος, οὗ ἀδελφὸς οὑτοσὶ Πλάτων, καὶ Αἰαντόδωρος, οὗ Ἀπολλόδωρος ὅδε ἀδελφός. καὶ ἄλλους πολλοὺς ἐγὼ ἔχω ὑμῖν εἰπεῖν, ὧν τινα ἐχρῆν μάλιστα μὲν ἐν τῷ ἑαυτοῦ λόγῳ παρασχέσθαι Μέλητον μάρτυρα· εἰ δὲ τότε ἐπελάθετο, νῦν παρασχέσθω—ἐγὼ παραχωρῶ—καὶ λεγέτω εἴ τι ἔχει τοιοῦτον. ἀλλὰ τούτου πᾶν τοὐναντίον εὑρήσετε, ὦ ἄνδρες, πάντας ἐμοὶ βοηθεῖν ἑτοίμους τῷ διαφθείροντι, τῷ κακὰ ἐργαζομένῳ τοὺς οἰκείους αὐτῶν, ὥς φασι Μέλητος καὶ",
+      "r": "34a",
+      "t": "Adimantus, son of Aristo, whose brother is Plato here; and Aeantodorus, whose brother Apollodorus is present. And I can mention to you many others, some one of whom Meletus ought certainly to have produced as a witness in his speech; but if he forgot it then, let him do so now; I yield the floor to him, and let him say, if he has any such testimony. But you will find that the exact opposite is the case, gentlemen, and that they are all ready to aid me, the man who corrupts and injures their relatives, as Meletus and Anytus say."
+    },
+    {
+      "g": "Ἄνυτος. αὐτοὶ μὲν γὰρ οἱ διεφθαρμένοι τάχʼ ἂν λόγον ἔχοιεν βοηθοῦντες· οἱ δὲ ἀδιάφθαρτοι, πρεσβύτεροι ἤδη ἄνδρες, οἱ τούτων προσήκοντες, τίνα ἄλλον ἔχουσι λόγον βοηθοῦντες ἐμοὶ ἀλλʼ ἢ τὸν ὀρθόν τε καὶ δίκαιον, ὅτι συνίσασι Μελήτῳ μὲν ψευδομένῳ, ἐμοὶ δὲ ἀληθεύοντι; εἶεν δή, ὦ ἄνδρες· ἃ μὲν ἐγὼ ἔχοιμʼ ἂν ἀπολογεῖσθαι, σχεδόν ἐστι ταῦτα καὶ ἄλλα ἴσως τοιαῦτα. τάχα δʼ ἄν τις",
+      "r": "34b",
+      "t": "Now those who are themselves corrupted might have some motive in aiding me; but what reason could their relatives have, who are not corrupted and are already older men, unless it be the right and true reason, that they know that Meletus is lying and I am speaking the truth? Well, gentlemen, this, and perhaps more like this, is about all I have to say in my defence. Perhaps some one among you may be offended"
+    },
+    {
+      "g": "ὑμῶν ἀγανακτήσειεν ἀναμνησθεὶς ἑαυτοῦ, εἰ ὁ μὲν καὶ ἐλάττω τουτουῒ τοῦ ἀγῶνος ἀγῶνα ἀγωνιζόμενος ἐδεήθη τε καὶ ἱκέτευσε τοὺς δικαστὰς μετὰ πολλῶν δακρύων, παιδία τε αὑτοῦ ἀναβιβασάμενος ἵνα ὅτι μάλιστα ἐλεηθείη, καὶ ἄλλους τῶν οἰκείων καὶ φίλων πολλούς, ἐγὼ δὲ οὐδὲν ἄρα τούτων ποιήσω, καὶ ταῦτα κινδυνεύων, ὡς ἂν δόξαιμι, τὸν ἔσχατον κίνδυνον. τάχʼ ἂν οὖν τις ταῦτα ἐννοήσας αὐθαδέστερον ἂν πρός με σχοίη καὶ ὀργισθεὶς αὐτοῖς τούτοις θεῖτο ἂν μετʼ",
+      "r": "34c",
+      "t": "when he remembers his own conduct, if he, even in a case of less importance than this, begged and besought the judges with many tears, and brought forward his children to arouse compassion, and many other friends and relatives; whereas I will do none of these things, though I am, apparently, in the very greatest danger. Perhaps some one with these thoughts in mind may be harshly disposed toward me and may cast his vote in anger. Now if any one of you is so disposed"
+    },
+    {
+      "g": "ὀργῆς τὴν ψῆφον. εἰ δή τις ὑμῶν οὕτως ἔχει—οὐκ ἀξιῶ μὲν γὰρ ἔγωγε, εἰ δʼ οὖν—ἐπιεικῆ ἄν μοι δοκῶ πρὸς τοῦτον λέγειν λέγων ὅτι ἐμοί, ὦ ἄριστε, εἰσὶν μέν πού τινες καὶ οἰκεῖοι· καὶ γὰρ τοῦτο αὐτὸ τὸ τοῦ Ὁμήρου, οὐδʼ ἐγὼ ἀπὸ δρυὸς οὐδʼ ἀπὸ πέτρης πέφυκα ἀλλʼ ἐξ ἀνθρώπων, ὥστε καὶ οἰκεῖοί μοί εἰσι καὶ ὑεῖς γε, ὦ ἄνδρες Ἀθηναῖοι, τρεῖς, εἷς μὲν μειράκιον ἤδη, δύο δὲ παιδία· ἀλλʼ ὅμως οὐδένα αὐτῶν δεῦρο ἀναβιβασάμενος δεήσομαι ὑμῶν ἀποψηφίσασθαι. τί δὴ οὖν οὐδὲν τούτων ποιήσω; οὐκ αὐθαδιζόμενος, ὦ ἄνδρες",
+      "r": "34d",
+      "t": "—I do not believe there is such a person—but if there should be, I think I should be speaking fairly if I said to him, My friend, I too have relatives, for I am, as Homer has it, not born of an oak or a rock, but of human parents, so that I have relatives and, men of Athens, I have three sons, one nearly grown up, and two still children; but nevertheless I shall not bring any of them here and beg you to acquit me. And why shall I not do so? Not because I am stubborn, Athenians,"
+    },
+    {
+      "g": "Ἀθηναῖοι, οὐδʼ ὑμᾶς ἀτιμάζων, ἀλλʼ εἰ μὲν θαρραλέως ἐγὼ ἔχω πρὸς θάνατον ἢ μή, ἄλλος λόγος, πρὸς δʼ οὖν δόξαν καὶ ἐμοὶ καὶ ὑμῖν καὶ ὅλῃ τῇ πόλει οὔ μοι δοκεῖ καλὸν εἶναι ἐμὲ τούτων οὐδὲν ποιεῖν καὶ τηλικόνδε ὄντα καὶ τοῦτο τοὔνομα ἔχοντα, εἴτʼ οὖν ἀληθὲς εἴτʼ οὖν ψεῦδος, ἀλλʼ οὖν δεδογμένον",
+      "r": "34e",
+      "t": "or lack respect for you. Whether I fear death or not is another matter, but for the sake of my good name and yours and that of the whole state, I think it is not right for me to do any of these things in view of my age and my reputation, whether deserved or not; for at any rate the opinion prevails that Socrates"
+    },
+    {
+      "g": "γέ ἐστί τῳ Σωκράτη διαφέρειν τῶν πολλῶν ἀνθρώπων. εἰ οὖν ὑμῶν οἱ δοκοῦντες διαφέρειν εἴτε σοφίᾳ εἴτε ἀνδρείᾳ εἴτε ἄλλῃ ᾑτινιοῦν ἀρετῇ τοιοῦτοι ἔσονται, αἰσχρὸν ἂν εἴη· οἵουσπερ ἐγὼ πολλάκις ἑώρακά τινας ὅταν κρίνωνται, δοκοῦντας μέν τι εἶναι, θαυμάσια δὲ ἐργαζομένους, ὡς δεινόν τι οἰομένους πείσεσθαι εἰ ἀποθανοῦνται, ὥσπερ ἀθανάτων ἐσομένων ἂν ὑμεῖς αὐτοὺς μὴ ἀποκτείνητε· οἳ ἐμοὶ δοκοῦσιν αἰσχύνην τῇ πόλει περιάπτειν, ὥστʼ ἄν τινα καὶ τῶν ξένων",
+      "r": "35a",
+      "t": "is in some way superior to most men. If then those of you who are supposed to be superior either in wisdom or in courage or in any other virtue whatsoever are to behave in such a way, it would be disgraceful. Why, I have often seen men who have some reputation behaving in the strangest manner, when they were on trial, as if they thought they were going to suffer something terrible if they were put to death, just as if they would be immortal if you did not kill them. It seems to me that they are a disgrace to the state and that any stranger might say that those of the Athenians who excel"
+    },
+    {
+      "g": "ὑπολαβεῖν ὅτι οἱ διαφέροντες Ἀθηναίων εἰς ἀρετήν, οὓς αὐτοὶ ἑαυτῶν ἔν τε ταῖς ἀρχαῖς καὶ ταῖς ἄλλαις τιμαῖς προκρίνουσιν, οὗτοι γυναικῶν οὐδὲν διαφέρουσιν. ταῦτα γάρ, ὦ ἄνδρες Ἀθηναῖοι, οὔτε ὑμᾶς χρὴ ποιεῖν τοὺς δοκοῦντας καὶ ὁπῃοῦν τι εἶναι, οὔτʼ, ἂν ἡμεῖς ποιῶμεν, ὑμᾶς ἐπιτρέπειν, ἀλλὰ τοῦτο αὐτὸ ἐνδείκνυσθαι, ὅτι πολὺ μᾶλλον καταψηφιεῖσθε τοῦ τὰ ἐλεινὰ ταῦτα δράματα εἰσάγοντος καὶ καταγέλαστον τὴν πόλιν ποιοῦντος ἢ τοῦ ἡσυχίαν ἄγοντος. χωρὶς δὲ τῆς δόξης, ὦ ἄνδρες, οὐδὲ δίκαιόν μοι δοκεῖ",
+      "r": "35b",
+      "t": "in virtue, men whom they themselves honor with offices and other marks of esteem, are no better than women. Such acts, men of Athens, we who have any reputation at all ought not to commit, and if we commit them you ought not to allow it, but you should make it clear that you will be much more ready to condemn a man who puts before you such pitiable scenes and makes the city ridiculous than one who keeps quiet. But apart from the question of reputation, gentlemen, I think it is not right"
+    },
+    {
+      "g": "εἶναι δεῖσθαι τοῦ δικαστοῦ οὐδὲ δεόμενον ἀποφεύγειν, ἀλλὰ διδάσκειν καὶ πείθειν. οὐ γὰρ ἐπὶ τούτῳ κάθηται ὁ δικαστής, ἐπὶ τῷ καταχαρίζεσθαι τὰ δίκαια, ἀλλʼ ἐπὶ τῷ κρίνειν ταῦτα· καὶ ὀμώμοκεν οὐ χαριεῖσθαι οἷς ἂν δοκῇ αὐτῷ, ἀλλὰ δικάσειν κατὰ τοὺς νόμους. οὔκουν χρὴ οὔτε ἡμᾶς ἐθίζειν ὑμᾶς ἐπιορκεῖν οὔθʼ ὑμᾶς ἐθίζεσθαι· οὐδέτεροι γὰρ ἂν ἡμῶν εὐσεβοῖεν. μὴ οὖν ἀξιοῦτέ με, ὦ ἄνδρες Ἀθηναῖοι, τοιαῦτα δεῖν πρὸς ὑμᾶς πράττειν ἃ μήτε ἡγοῦμαι καλὰ εἶναι μήτε",
+      "r": "35c",
+      "t": "to implore the judge or to get acquitted by begging; we ought to inform and convince him. For the judge is not here to grant favors in matters of justice, but to give judgement; and his oath binds him not to do favors according to his pleasure, but to judge according to the laws; therefore, we ought not to get you into the habit of breaking your oaths, nor ought you to fall into that habit; for neither of us would be acting piously. Do not, therefore, men of Athens, demand of me that I act before you in a way which I consider neither honorable nor right nor pious,"
+    },
+    {
+      "g": "δίκαια μήτε ὅσια, ἄλλως τε μέντοι νὴ Δία πάντως καὶ ἀσεβείας φεύγοντα ὑπὸ Μελήτου τουτουΐ. σαφῶς γὰρ ἄν, εἰ πείθοιμι ὑμᾶς καὶ τῷ δεῖσθαι βιαζοίμην ὀμωμοκότας, θεοὺς ἂν διδάσκοιμι μὴ ἡγεῖσθαι ὑμᾶς εἶναι, καὶ ἀτεχνῶς ἀπολογούμενος κατηγοροίην ἂν ἐμαυτοῦ ὡς θεοὺς οὐ νομίζω. ἀλλὰ πολλοῦ δεῖ οὕτως ἔχειν· νομίζω τε γάρ, ὦ ἄνδρες Ἀθηναῖοι, ὡς οὐδεὶς τῶν ἐμῶν κατηγόρων, καὶ ὑμῖν ἐπιτρέπω καὶ τῷ θεῷ κρῖναι περὶ ἐμοῦ ὅπῃ μέλλει ἐμοί τε ἄριστα εἶναι καὶ ὑμῖν.",
+      "r": "35d",
+      "t": "especially when impiety is the very thing for which Meletus here has brought me to trial. For it is plain that if by persuasion and supplication I forced you to break your oaths I should teach you to disbelieve in the existence of the gods and in making my defence should accuse myself of not believing in them. But that is far from the truth; for I do believe in them, men of Athens, more than any of my accusers, and I entrust my case to you and to God to decide it as shall be best for me and for you."
+    },
+    {
+      "g": "τὸ μὲν μὴ ἀγανακτεῖν, ὦ ἄνδρες Ἀθηναῖοι, ἐπὶ τούτῳ",
+      "r": "35e",
+      "t": "I am not grieved, men of Athens,"
+    },
+    {
+      "g": "τῷ γεγονότι, ὅτι μου κατεψηφίσασθε, ἄλλα τέ μοι πολλὰ συμβάλλεται, καὶ οὐκ ἀνέλπιστόν μοι γέγονεν τὸ γεγονὸς τοῦτο, ἀλλὰ πολὺ μᾶλλον θαυμάζω ἑκατέρων τῶν ψήφων τὸν γεγονότα ἀριθμόν. οὐ γὰρ ᾠόμην ἔγωγε οὕτω παρʼ ὀλίγον ἔσεσθαι ἀλλὰ παρὰ πολύ· νῦν δέ, ὡς ἔοικεν, εἰ τριάκοντα μόναι μετέπεσον τῶν ψήφων, ἀπεπεφεύγη ἄν. Μέλητον μὲν οὖν, ὡς ἐμοὶ δοκῶ, καὶ νῦν ἀποπέφευγα, καὶ οὐ μόνον ἀποπέφευγα, ἀλλὰ παντὶ δῆλον τοῦτό γε, ὅτι εἰ μὴ ἀνέβη Ἄνυτος καὶ Λύκων κατηγορήσοντες ἐμοῦ, κἂν ὦφλε",
+      "r": "36a",
+      "t": "at this vote of condemnation you have cast against me, and that for many reasons, among them the fact that your decision was not a surprise to me. I am much more surprised by the number of votes for and against it; for I did not expect so small a majority, but a large one. Now, it seems, if only thirty votes had been cast the other way, I should have been acquitted. And so, I think, so far as Meletus is concerned, I have even now been acquitted, and not merely acquitted, but anyone can see that, if Anytus and Lycon had not come forward to accuse me, he would have been fined"
+    },
+    {
+      "g": "χιλίας δραχμάς, οὐ μεταλαβὼν τὸ πέμπτον μέρος τῶν ψήφων. τιμᾶται δʼ οὖν μοι ὁ ἀνὴρ θανάτου. εἶεν· ἐγὼ δὲ δὴ τίνος ὑμῖν ἀντιτιμήσομαι, ὦ ἄνδρες Ἀθηναῖοι; ἢ δῆλον ὅτι τῆς ἀξίας; τί οὖν; τ τί ἄξιός εἰμι παθεῖν ἢ ἀποτεῖσαι, ὅτι μαθὼν ἐν τῷ βίῳ οὐχ ἡσυχίαν ἦγον, ἀλλʼ ἀμελήσας ὧνπερ οἱ πολλοί, χρηματισμοῦ τε καὶ οἰκονομίας καὶ στρατηγιῶν καὶ δημηγοριῶν καὶ τῶν ἄλλων ἀρχῶν καὶ συνωμοσιῶν καὶ στάσεων τῶν ἐν τῇ πόλει γιγνομένων, ἡγησάμενος ἐμαυτὸν",
+      "r": "36b",
+      "t": "a thousand drachmas for not receiving a fifth part of the votes. And so the man proposes the penalty of death. Well, then, what shall I propose as an alternative? Clearly that which I deserve, shall I not? And what do I deserve to suffer or to pay, because in my life I did not keep quiet, but neglecting what most men care for—money-making and property, and military offices, and public speaking, and the various offices and plots and parties that come up in the state—and thinking that I was really too honorable"
+    },
+    {
+      "g": "ῷ ὄντι ἐπιεικέστερον εἶναι ἢ ὥστε εἰς ταῦτʼ ἰόντα σῴζεσθαι, ἐνταῦθα μὲν οὐκ ᾖα οἷ ἐλθὼν μήτε ὑμῖν μήτε ἐμαυτῷ ἔμελλον μηδὲν ὄφελος εἶναι, ἐπὶ δὲ τὸ ἰδίᾳ ἕκαστον ἰὼν εὐεργετεῖν τὴν μεγίστην εὐεργεσίαν, ὡς ἐγώ φημι, ἐνταῦθα ᾖα, ἐπιχειρῶν ἕκαστον ὑμῶν πείθειν μὴ πρότερον μήτε τῶν ἑαυτοῦ μηδενὸς ἐπιμελεῖσθαι πρὶν ἑαυτοῦ ἐπιμεληθείη ὅπως ὡς βέλτιστος καὶ φρονιμώτατος ἔσοιτο, μήτε τῶν τῆς πόλεως, πρὶν αὐτῆς τῆς πόλεως, τῶν τε ἄλλων οὕτω κατὰ τὸν",
+      "r": "36c",
+      "t": "to engage in those activities and live, refrained from those things by which I should have been of no use to you or to myself, and devoted myself to conferring upon each citizen individually what I regard as the greatest benefit? For I tried to persuade each of you to care for himself and his own perfection in goodness and wisdom rather than for any of his belongings, and for the state itself rather than for its interests, and to follow the same method in his care for other things. What, then, does such a man as I deserve?"
+    },
+    {
+      "g": "αὐτὸν τρόπον ἐπιμελεῖσθαι—τί οὖν εἰμι ἄξιος παθεῖν τοιοῦτος ὤν; ἀγαθόν τι, ὦ ἄνδρες Ἀθηναῖοι, εἰ δεῖ γε κατὰ τὴν ἀξίαν τῇ ἀληθείᾳ τιμᾶσθαι· καὶ ταῦτά γε ἀγαθὸν τοιοῦτον ὅτι ἂν πρέποι ἐμοί. τί οὖν πρέπει ἀνδρὶ πένητι εὐεργέτῃ δεομένῳ ἄγειν σχολὴν ἐπὶ τῇ ὑμετέρᾳ παρακελεύσει; οὐκ ἔσθʼ ὅτι μᾶλλον, ὦ ἄνδρες Ἀθηναῖοι, πρέπει οὕτως ὡς τὸν τοιοῦτον ἄνδρα ἐν πρυτανείῳ σιτεῖσθαι, πολύ γε μᾶλλον ἢ εἴ τις ὑμῶν ἵππῳ ἢ συνωρίδι ἢ ζεύγει νενίκηκεν Ὀλυμπίασιν· ὁ μὲν γὰρ ὑμᾶς ποιεῖ εὐδαίμονας δοκεῖν εἶναι, ἐγὼ δὲ",
+      "r": "36d",
+      "t": "Some good thing, men of Athens, if I must propose something truly in accordance with my deserts; and the good thing should be such as is fitting for me. Now what is fitting for a poor man who is your benefactor, and who needs leisure to exhort you? There is nothing, men of Athens, so fitting as that such a man be given his meals in the prytaneum. That is much more appropriate for me than for any of you who has won a race at the Olympic games with a pair of horses or a four-in-hand. For he makes you seem to be happy, whereas I make you happy in reality;"
+    },
+    {
+      "g": "εἶναι, καὶ ὁ μὲν τροφῆς οὐδὲν δεῖται, ἐγὼ δὲ δέομαι. εἰ οὖν δεῖ με κατὰ τὸ δίκαιον τῆς ἀξίας τιμᾶσθαι, τούτου",
+      "r": "36e",
+      "t": "and he is not at all in need of sustenance, but I am needy. So if I must propose a penalty in accordance with my deserts,"
+    }
+  ],
+  "serie": "Apologie de Socrate",
+  "source": "Perseus Digital Library",
+  "soustitre": "",
+  "titre": "Apologie de Socrate · 33–36",
+  "url": "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0059.tlg002.perseus-grc2"
+}

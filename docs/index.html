@@ -282,6 +282,16 @@ select{font:inherit;background:var(--paper);color:var(--ink);border:0;border-bot
 .dep li i{font-style:normal;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--spot);font-variant-numeric:lining-nums}
 .dep li b{display:block;font-family:var(--display);font-weight:500;font-size:1.2rem;line-height:1.18;margin:.1rem 0 .2rem}
 .dep li a{font-style:italic;color:var(--ink-soft);font-size:.95rem}
+.running a.back{text-decoration:none;font-size:.78rem;letter-spacing:.12em}
+.running a.tsf{text-decoration:none;color:#b3261e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:55%}
+.subnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:8;background:var(--paper);display:flex;gap:.4rem;overflow-x:auto;padding-block:.55rem;border-bottom:1px solid var(--rule);scrollbar-width:none;margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.subnav::-webkit-scrollbar{display:none}
+.subnav a{flex:none;text-decoration:none;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--rule);padding:.38rem .65rem;white-space:nowrap}
+.subnav a.hot{background:var(--ink);color:var(--paper)}
+[id^="s-"],#dep,#kiosque{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 3.4rem)}
+.dep .lg{font-style:normal;color:var(--spot)}
+.hist h3{font-family:var(--display);font-size:1.5rem;line-height:1.14;margin:.25rem 0 .5rem}
+.hist .yr{font-family:var(--display);font-size:2.4rem;line-height:1;color:var(--spot)}
 .next{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;text-decoration:none;border-block:1px solid var(--rule);padding-block:.9rem;margin-top:2.4rem}
 .next .t{font-family:var(--display);font-size:1.25rem;text-align:right}
 .fin{text-align:center;margin-top:2.6rem;border-top:3px double var(--rule);padding-top:1.1rem}
@@ -305,7 +315,7 @@ select{font:inherit;background:var(--paper);color:var(--ink);border:0;border-bot
 </style>
 
 <div class="sheet">
-  <div class="running" id="running" hidden><b>Le Loisir du Matin</b><span id="run-sec"></span></div>
+  <div class="running" id="running" hidden><a class="back" id="run-back" href="#une" hidden>‹ Retour</a><b id="run-title">Le Loisir du Matin</b><a class="tsf" id="run-tsf" href="#radio" hidden></a><span id="run-sec"></span></div>
   <div id="edition"><p class="wait" id="wait">L'édition du jour est sous presse. Elle paraît ici chaque matin.</p></div>
 </div>
 <audio id="tsf" preload="none"></audio>
@@ -322,8 +332,8 @@ select{font:inherit;background:var(--paper);color:var(--ink);border:0;border-bot
 <script>
 (function(){
 "use strict";
-var $ed=document.getElementById("edition"), sample=null, db=null, E=null, lieu="", PILE=[], pileReady=false, IMG=null, MUS=[], SALLE={}, DEP=null, CAT=[], catReady=false, BODY={}, BF={l:"",g:""};
-var VIEWS={une:["une","Savoir"],lecture:["lecture","Lire"],bibliotheque:["lecture","La bibliothèque"],lire:["lecture","La bibliothèque"],pile:["lecture","Ma pile"],portugais:["langues","Em português"],italien:["langues","In italiano"],grec:["langues","En grec attique"],cabinet:["langues","Le cabinet"],carnet:["langues","Le carnet"],musee:["regarder","Le musée"],oeuvre:["regarder","Histoire de l’art"],livres:["livres","Flâner"],radio:["radio","Écouter"]};
+var $ed=document.getElementById("edition"), sample=null, db=null, E=null, lieu="", PILE=[], pileReady=false, IMG=null, MUS=[], SALLE={}, DEP=null, HIST=null, HIMG=null, CURV="une", STATIC=!(window.claude&&window.claude.use), CAT=[], catReady=false, BODY={}, BF={l:"",g:""};
+var VIEWS={une:["une","Savoir"],lecture:["lecture","Lire"],bibliotheque:["lecture","La bibliothèque"],lire:["lecture","La bibliothèque"],pile:["lecture","Ma pile"],portugais:["langues","Em português"],italien:["langues","In italiano"],grec:["langues","En grec attique"],cabinet:["langues","Le cabinet"],carnet:["langues","Le carnet"],musee:["regarder","Le musée"],oeuvre:["regarder","Histoire de l’art"],livres:["livres","Flâner"],radio:["radio","Écouter"],histoire:["une","Histoire et contexte"]};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function fr(s){return esc(s).replace(/&#39;/g,"’").replace(/ ([:;!?»%$])/g," $1").replace(/« /g,"« ")}
 function ty(s){return esc(s).replace(/&#39;/g,"’")}
@@ -382,22 +392,29 @@ var STATIONS=[
  {pays:"New York et Londres",nom:"NPR",quoi:"the national programme",pos:86,url:"https://npr-ice.streamguys1.com/live.mp3"},
  {pays:"New York et Londres",nom:"BBC World Service",quoi:"London calling",pos:95,url:"https://stream.live.vc.bbcmedia.co.uk/bbc_world_service"}
 ], TSF={inline:true,i:-1};
-function tsfShow(i,state){var s=STATIONS[i], v=$("voyant"), n=$("tsf-now"), a=$("aiguille"), off=$("tsf-off");
+function tsfShow(i,state){var s=STATIONS[i], v=$("voyant"), n=$("tsf-now"), a=$("aiguille"), off=$("tsf-off"), rt=$("run-tsf");
   if(a&&s)a.style.left=s.pos+"%";
-  document.querySelectorAll("#ondes a").forEach(function(x){x.classList.toggle("on",+x.getAttribute("data-i")===i&&state!=="off")});
+  document.querySelectorAll("#ondes a").forEach(function(x){x.classList.toggle("on",+x.getAttribute("data-i")===i&&(state==="on"||state==="wait"))});
+  if(rt){rt.hidden=!(state==="on"&&s);if(s)rt.textContent="♪ "+s.nom;$("running").hidden=(CURV==="une"&&rt.hidden);$("run-title").hidden=!rt.hidden||!$("run-back").hidden}
   if(!v)return;
   v.classList.toggle("on",state==="on");
   if(state==="on"){n.innerHTML="À l’écoute<br><b>"+ty(s.nom)+"</b>";off.hidden=false}
   else if(state==="wait"){n.innerHTML="On cherche la station…<br><b>"+ty(s.nom)+"</b>";off.hidden=false}
-  else if(state==="out"){n.innerHTML="<b>"+ty(s.nom)+"</b><br>Touchez-la une seconde fois pour l’ouvrir dans une page à part.";off.hidden=true}
+  else if(state==="out"){n.innerHTML="<b>"+ty(s.nom)+"</b><br>Claude ne laisse pas passer le son dans cette page. Touchez la station une seconde fois pour l’ouvrir à part, ou écoutez depuis le site.";off.hidden=true}
+  else if(state==="fail"){n.innerHTML="<b>"+ty(s.nom)+"</b><br>Cette station ne répond pas pour l’instant. Essayez-en une autre.";off.hidden=true}
   else{n.textContent="Le poste est éteint. Choisissez une station.";off.hidden=true}}
 function tsfWire(){var au=$("tsf"), box=$("ondes");if(!box)return;
   box.addEventListener("click",function(ev){var a=ev.target.closest("a");if(!a)return;var i=+a.getAttribute("data-i"), s=STATIONS[i];
     TSF.i=i;
-    if(!TSF.inline||/\.m3u8$/.test(s.url)&&!au.canPlayType("application/vnd.apple.mpegurl")){tsfShow(i,"off");$("aiguille").style.left=s.pos+"%";return}
-    ev.preventDefault();tsfShow(i,"wait");
-    try{au.src=s.url;var p=au.play();if(p&&p.then)p.then(function(){if(TSF.i===i)tsfShow(i,"on")}).catch(function(){if(TSF.i===i){TSF.inline=false;tsfShow(i,"out")}})}catch(e){TSF.inline=false;tsfShow(i,"out")}});
-  au.addEventListener("error",function(){if(TSF.i>=0&&TSF.inline){TSF.inline=false;tsfShow(TSF.i,"out")}});
+    if(STATIC)ev.preventDefault();
+    else if(!TSF.inline){tsfShow(i,"off");$("aiguille").style.left=s.pos+"%";return}
+    else ev.preventDefault();
+    var bad=function(){if(TSF.i!==i)return;if(STATIC)tsfShow(i,"fail");else{TSF.inline=false;tsfShow(i,"out")}};
+    if(/\.m3u8$/.test(s.url)&&!au.canPlayType("application/vnd.apple.mpegurl")){bad();return}
+    tsfShow(i,"wait");
+    try{au.src=s.url;var p=au.play();if(p&&p.then)p.then(function(){if(TSF.i!==i)return;tsfShow(i,"on");
+      try{if("mediaSession" in navigator){navigator.mediaSession.metadata=new MediaMetadata({title:s.nom,artist:"Le Loisir du Matin",album:s.pays});navigator.mediaSession.setActionHandler("pause",function(){$("tsf-off").click()});navigator.mediaSession.setActionHandler("stop",function(){$("tsf-off").click()})}}catch(e){}}).catch(bad)}catch(e){bad()}});
+  au.addEventListener("error",function(){if(TSF.i>=0&&au.getAttribute("src")){var i=TSF.i;if(STATIC)tsfShow(i,"fail");else if(TSF.inline){TSF.inline=false;tsfShow(i,"out")}}});
   $("tsf-off").onclick=function(){try{au.pause();au.removeAttribute("src");au.load()}catch(e){}tsfShow(TSF.i,"off");TSF.i=-1};
   if(TSF.i>=0&&!au.paused)tsfShow(TSF.i,"on");
 }
@@ -423,6 +440,7 @@ function render(){
   h+='<section class="view" id="v-une"><div class="mast"><h1>Le Loisir du Matin</h1><p class="sub">Bulletin privé du Séminaire, en quatre langues, à lire sans se presser</p><p class="date">'+fr(E.dateline||"")+" · no "+(E.numero||1)+'</p><p class="date" style="margin-top:.25rem">'+esc(term(E.date))+'</p><p class="roman" lang="la">'+esc(romanDate(E.date))+"</p></div>";
   var O=E.oeuvre,U=E.une;
   if(E.lettre)h+='<div class="lettre">'+E.lettre.paragraphes.map(function(p){return "<p>"+fr(p)+"</p>"}).join("")+'<p class="sig">'+fr(E.lettre.signature||"Votre tuteur")+"</p>"+taste("Lettre du tuteur","lettre")+"</div>";
+  h+='<div class="subnav" id="subnav">'+[["dep","Dernière heure"],["s-lead","À la une"],["s-news","Nouvelles"],["s-tour","Monde"],["s-dossiers","Dossiers"],["kiosque","Kiosque"],["s-comprendre","Comprendre"]].map(function(x){return '<a href="#une" data-go="'+x[0]+'">'+x[1]+"</a>"}).join("")+'<a href="#histoire" class="hot">Histoire</a></div>';
   h+='<div class="dep" id="dep" hidden></div>';
   if(O)h+='<a class="frontis" href="#oeuvre"><img class="oeuvre-img" alt="'+esc(O.titre)+'" hidden><span class="label">Histoire de l’art · leçon '+esc(O.etape)+'</span><span class="t">'+fr(O.titre)+'</span><span class="l">'+fr(O.artiste)+", "+fr(O.date)+"</span></a>";
   h+='<div class="strip"><div><div class="label">Le temps qu’il fera</div><table>';
@@ -436,16 +454,16 @@ function render(){
   if((E.kiosque||[]).length)h+='<li><a href="#une" onclick="setTimeout(function(){var k=document.getElementById(\'kiosque\');if(k)k.scrollIntoView()},60)"><span class="t">Le kiosque</span><span class="l">à lire ailleurs</span></a></li>';
   h+='<li><a href="#bibliotheque"><span class="t">La bibliothèque</span><span class="l bib-n">pour lire longtemps</span></a></li>';
   h+="</ol></div>";
-  if(U){h+='<article class="lead"><div class="label">À la une · '+fr(U.rubrique||"Monde")+"</div><h2>"+fr(U.titre)+'</h2><p class="deck">'+fr(U.chapeau)+'</p><div class="body">'+U.paragraphes.map(function(p){return "<p>"+fr(p)+"</p>"}).join("")+'</div><div class="aside">'+(U.precede?'<div class="label">Ce qui précède</div><p>'+fr(U.precede)+"</p>":"")+(U.importe?'<div class="label">Pourquoi cela compte</div><p>'+fr(U.importe)+"</p>":"")+"</div>"+taste("À la une : "+(U.rubrique||"Monde"),U.titre)+"</article>"}
-  h+=vhead("Les nouvelles · en français","Ce qu’il faut savoir");
+  if(U){h+='<article class="lead" id="s-lead"><div class="label">À la une · '+fr(U.rubrique||"Monde")+"</div><h2>"+fr(U.titre)+'</h2><p class="deck">'+fr(U.chapeau)+'</p><div class="body">'+U.paragraphes.map(function(p){return "<p>"+fr(p)+"</p>"}).join("")+'</div><div class="aside">'+(U.precede?'<div class="label">Ce qui précède</div><p>'+fr(U.precede)+"</p>":"")+(U.importe?'<div class="label">Pourquoi cela compte</div><p>'+fr(U.importe)+"</p>":"")+"</div>"+taste("À la une : "+(U.rubrique||"Monde"),U.titre)+"</article>"}
+  h+='<div id="s-news"></div>'+vhead("Les nouvelles · en français","Ce qu’il faut savoir");
   ((E.fr||{}).breves||[]).forEach(function(b){h+='<article class="brief"><div class="label">'+fr(b.rubrique)+"</div><h3>"+fr(b.titre)+"</h3><p>"+fr(b.texte)+"</p>"+taste(b.rubrique,b.titre)+"</article>"});
-  if((E.tour||[]).length){h+='<div class="blk tour"><div class="label">Tour du monde</div><dl>';E.tour.forEach(function(t){h+="<dt>"+fr(t.region)+"</dt><dd>"+fr(t.texte)+"</dd>"});h+="</dl></div>"}
-  if((E.dossiers||[]).length){h+='<div class="blk"><div class="label">Les dossiers · où en est-on</div>';
+  if((E.tour||[]).length){h+='<div class="blk tour" id="s-tour"><div class="label">Tour du monde</div><dl>';E.tour.forEach(function(t){h+="<dt>"+fr(t.region)+"</dt><dd>"+fr(t.texte)+"</dd>"});h+="</dl></div>"}
+  if((E.dossiers||[]).length){h+='<div class="blk" id="s-dossiers"><div class="label">Les dossiers · où en est-on</div>';
     E.dossiers.forEach(function(x){h+='<details class="dossier"><summary><b>'+fr(x.titre)+"</b><span>"+fr(x.etat)+"</span></summary><ol>"+(x.dates||[]).map(function(y){return "<li><i>"+fr(y.date)+"</i>"+fr(y.texte)+"</li>"}).join("")+"</ol></details>"});h+="</div>"}
   if((E.kiosque||[]).length){var nk=0;E.kiosque.forEach(function(g){nk+=(g.articles||[]).length});
     h+='<div class="blk kiosk" id="kiosque"><div class="label">Le kiosque · '+nk+' lectures choisies ailleurs</div>';
     E.kiosque.forEach(function(g){h+='<details class="dossier"><summary><b>'+fr(g.rubrique)+"</b><span>"+(g.articles||[]).length+" articles"+(g.note?" · "+fr(g.note):"")+"</span></summary><ol>"+(g.articles||[]).map(function(a){return "<li>"+(/^https:\/\//.test(a.url)?'<a href="'+esc(a.url)+'" target="_blank" rel="noopener">'+ty(a.titre)+"</a>":ty(a.titre))+"<small>"+ty(a.source)+"</small><span>"+fr(a.texte)+"</span></li>"}).join("")+"</ol>"+taste("Kiosque",g.rubrique)+"</details>"});h+="</div>"}
-  if(E.comprendre)h+='<div class="blk"><div class="label">Pour comprendre</div><h3 style="font-family:var(--display);font-size:1.42rem;margin:.2rem 0 .4rem">'+fr(E.comprendre.terme)+"</h3>"+E.comprendre.paragraphes.map(function(p){return '<p style="margin-bottom:.5rem">'+fr(p)+"</p>"}).join("")+"</div>";
+  if(E.comprendre)h+='<div class="blk" id="s-comprendre"><div class="label">Pour comprendre</div><h3 style="font-family:var(--display);font-size:1.42rem;margin:.2rem 0 .4rem">'+fr(E.comprendre.terme)+"</h3>"+E.comprendre.paragraphes.map(function(p){return '<p style="margin-bottom:.5rem">'+fr(p)+"</p>"}).join("")+"</div>";
   if(L)h+=next("lecture",fr(L.titre));
   h+="</section>";
 
@@ -457,6 +475,9 @@ function render(){
     if(O.suite)h+='<p class="how" style="margin-top:1.2rem">'+fr(O.suite)+"</p>";
     h+=taste("Histoire de l’art : "+O.periode,O.titre)}
   h+=next("musee","Le musée")+"</section>";
+
+  /* ---- HISTOIRE ET CONTEXTE ---- */
+  h+='<section class="view hist" id="v-histoire" hidden><div id="hist-body"><p class="wait">Le cahier d’histoire s’écrit chaque matin.</p></div>'+next("musee","Le musée")+"</section>";
 
   /* ---- LE MUSÉE ---- */
   h+='<section class="view" id="v-musee" hidden>'+vhead("Le musée","Seize salles, des Cyclades aux avant-gardes")+(O?'<a class="frontis" href="#oeuvre" style="border-top:1px solid var(--rule)"><img class="oeuvre-img" alt="'+esc(O.titre)+'" hidden><span class="label">La leçon du jour · no '+esc(O.etape)+'</span><span class="t">'+fr(O.titre)+'</span><span class="l">'+fr(O.artiste)+", "+fr(O.date)+"</span></a>":"")+'<p class="how" style="text-align:center;margin-block:1rem">Entrez dans une salle : une période, ce qu’il faut en savoir, ses mots, et ses œuvres à regarder de près.</p><div id="mus-list"></div></section>';
@@ -485,10 +506,10 @@ function render(){
 
   /* ---- ITALIEN ---- */
   h+='<section class="view" id="v-italien" hidden>'+seg("italien");
-  if(E.it){h+=vhead("In italiano",ty(E.it.titre),"it")+'<div lang="it">';
+  if(E.it){h+=vhead("In italiano",ty(E.it.titre),"it")+'<p class="how" style="text-align:center;margin-bottom:1.1rem">Toccate una parola: touchez un mot pour sa glose.</p><div lang="it" data-lang="it" id="itbox">';
     var F=E.it.feuilleton;
-    if(F)h+='<div class="feuil"><div class="label" style="text-align:center">Il romanzo d’appendice</div><h3>'+ty(F.titre)+'</h3><p class="ep">Puntata '+esc(F.episode)+(F.chapitre?" · "+ty(F.chapitre):"")+'</p><div class="body">'+F.paragraphes.map(function(p){return "<p>"+ty(p)+"</p>"}).join("")+'</div><p class="seguira">(continua domani)</p>'+(F.precedent?'<details><summary>Nelle puntate precedenti</summary><p>'+ty(F.precedent)+"</p></details>":"")+taste("Feuilleton italien",F.titre)+"</div>";
-    E.it.articles.forEach(function(a){h+='<article class="piece"><h3>'+ty(a.titre)+"</h3>"+a.paragraphes.map(function(p){return "<p>"+ty(p)+"</p>"}).join("")+taste("Italiano",a.titre)+"</article>"});
+    if(F)h+='<div class="feuil"><div class="label" style="text-align:center">Il romanzo d’appendice</div><h3>'+ty(F.titre)+'</h3><p class="ep">Puntata '+esc(F.episode)+(F.chapitre?" · "+ty(F.chapitre):"")+'</p><div class="body">'+F.paragraphes.map(function(p){return "<p>"+words(p)+"</p>"}).join("")+'</div><p class="seguira">(continua domani)</p>'+(F.precedent?'<details><summary>Nelle puntate precedenti</summary><p>'+ty(F.precedent)+"</p></details>":"")+taste("Feuilleton italien",F.titre)+"</div>";
+    E.it.articles.forEach(function(a){h+='<article class="piece"><h3>'+ty(a.titre)+"</h3>"+a.paragraphes.map(function(p){return "<p>"+words(p)+"</p>"}).join("")+taste("Italiano",a.titre)+"</article>"});
     h+='</div><div class="ask"><div class="label">Una domanda</div><p class="q" lang="it">'+ty(E.it.question)+'</p><textarea id="it-answer" rows="3" lang="it" aria-label="Votre réponse en italien"></textarea><button class="act" id="it-check" hidden>Faire relire</button><div class="reply" id="it-reply"></div><details><summary>Une réponse possible</summary><p lang="it">'+ty(E.it.reponse)+"</p></details></div>"}
   h+=next("grec",fr((G||{}).titre||"En grec"))+"</section>";
 
@@ -560,7 +581,9 @@ function route(keep){
   if(tab==="langues"&&v!=="carnet")store("loisir:langue",v);
   document.querySelectorAll(".tabs a").forEach(function(a){var on=a.getAttribute("data-tab")===tab;if(on)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");
     if(a.getAttribute("data-tab")==="langues")a.setAttribute("href","#"+(store("loisir:langue")||"portugais"))});
-  $("running").hidden=(v==="une");$("run-sec").textContent=VIEWS[v][1];
+  var BACK={lire:(store("loisir:lire")||"").indexOf("t:")===0?"bibliotheque":"pile",bibliotheque:"lecture",pile:"lecture",oeuvre:"musee",carnet:"cabinet",histoire:"une"}, bk=BACK[v];
+  $("run-back").hidden=!bk;if(bk)$("run-back").setAttribute("href","#"+bk);$("run-title").hidden=!!bk;
+  CURV=v;$("running").hidden=(v==="une"&&$("run-tsf").hidden);$("run-sec").textContent=VIEWS[v][1];$("run-sec").hidden=!$("run-tsf").hidden&&v==="radio";
   $("slip").hidden=true;
   markSeen(v==="une"||v==="carnet"?"":v);
   if(v==="lire")drawLire();
@@ -579,11 +602,11 @@ function wire(){
   var pt=$("pt"), slip=$("slip"), slipT=$("slip-t"), cur=null;
   function showSlip(word,text){slipT.innerHTML="<b>"+esc(word)+"</b><br>"+text;slip.hidden=false}
   $("slip-x").onclick=function(){slip.hidden=true;if(cur)cur.classList.remove("now")};
-  (function(){var box=$("lire-body"), memo2={}, names={pt:"portugais",it:"italien",en:"anglais",fr:"français",grc:"grec"};
+  var glossOn=function(box){if(!box)return;var memo2={}, names={pt:"portugais",it:"italien",en:"anglais",fr:"français",grc:"grec"};
     var go=function(span){var raw=span.textContent, word=raw.toLowerCase(), lang=box.getAttribute("data-lang")||"en";
       if(cur)cur.classList.remove("now");cur=span;span.classList.add("on","now");
       if(memo2[lang+word]){showSlip(word,fr(memo2[lang+word]));return}
-      if(!sample){showSlip(word,"<i>glose indisponible dans cette vue</i>");return}
+      if(!sample){showSlip(word,"<i>"+(STATIC?"Les gloses à la demande demandent la version Claude ; ici, seuls les mots préparés du portugais du jour sont glosés.":"glose indisponible dans cette vue")+"</i>");return}
       showSlip(word,"<i>…</i>");
       if(span.parentNode.getAttribute("data-lang"))lang=span.parentNode.getAttribute("data-lang");
       (lang==="grc"?sample("Analyse le mot de grec ancien « "+raw+" » tel qu'il apparaît dans ce passage. Réponds en français, en deux lignes au plus, sous la forme : lemme (avec article ou temps primitifs utiles) ; analyse morphologique complète ; sens dans ce contexte. Rien d'autre.\n\nPassage : "+span.parentNode.textContent.slice(0,900)):sample((lang==="fr"?"Explique en français, en douze mots au plus, le sens du mot « "+raw+" » tel qu'il est employé dans ce passage.":"Donne en français le sens du mot "+names[lang]+" « "+raw+" » tel qu'il est employé dans ce passage.")+" Réponds par la glose seule, sans guillemets ni point final.\n\nPassage : "+span.parentNode.textContent.slice(0,700),{modelTier:"quick"}))
@@ -591,7 +614,9 @@ function wire(){
         .catch(function(e){if(cur===span)showSlip(word,"<i>"+fr(errCopy(e))+"</i>")})};
     box.addEventListener("click",function(ev){if(ev.target.classList.contains("w"))go(ev.target)});
     box.addEventListener("keydown",function(ev){if((ev.key==="Enter"||ev.key===" ")&&ev.target.classList.contains("w")){ev.preventDefault();go(ev.target)}});
-  })();
+  };
+  glossOn($("lire-body"));glossOn($("itbox"));glossOn($("dep"));
+  var sn=$("subnav");if(sn)sn.addEventListener("click",function(ev){var a=ev.target.closest("a[data-go]");if(!a)return;ev.preventDefault();var t=$(a.getAttribute("data-go"));if(t&&!t.hidden)t.scrollIntoView({block:"start"})});
   var pa=$("p-add"), pm=$("p-msg");
   pa.onclick=function(){
     var t=$("p-titre").value.trim(), x=$("p-texte").value.trim();
@@ -607,7 +632,7 @@ function wire(){
   $("pile-list").addEventListener("click",function(ev){var b=ev.target;if(b.tagName!=="BUTTON"||!db)return;
     if(b.getAttribute("data-sure")){db.doc("pile/"+b.getAttribute("data-id")).delete().catch(function(){})}
     else{b.setAttribute("data-sure","1");b.textContent="Confirmer"}});
-  drawPile();drawImage();tsfWire();drawBib();drawMus();drawDep();
+  drawPile();drawImage();tsfWire();drawBib();drawMus();drawDep();drawHist();
   var gs=$("grc-shelf");if(gs)gs.onclick=function(){BF.l="grc";BF.g="";setTimeout(function(){var c=$("bib-l");if(c)c.querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x.getAttribute("data-l")==="grc")});var g=$("bib-g");if(g)g.querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x.getAttribute("data-g")==="")});drawBib()},30)};
   ["bib-l","bib-g"].forEach(function(cid){var c=$(cid);if(c)c.onclick=function(ev){var b=ev.target;if(b.tagName!=="BUTTON")return;
     if(cid==="bib-l")BF.l=b.getAttribute("data-l");else BF.g=b.getAttribute("data-g");
@@ -698,7 +723,7 @@ function drawBib(){
   var hrs=0;CAT.forEach(function(x){hrs+=(x.minutes||0)});
   document.querySelectorAll(".bib-n").forEach(function(n){n.textContent=CAT.length?CAT.length+" textes, "+Math.round(hrs/60)+" heures de lecture":(db?"pour lire longtemps":"")});
   var el=$("bib-list");if(!el)return;
-  if(!db){el.innerHTML='<p class="how">La bibliothèque s’ouvre quand la page est reliée à votre compte Claude.</p>';return}
+  if(!db){el.innerHTML='<p class="how">On ouvre les rayons…</p>';return}
   if(!catReady){el.innerHTML='<p class="how">On ouvre les rayons…</p>';return}
   var L=lus(), ok=function(x){return (!BF.l||x.langue===BF.l)&&(!BF.g||(BF.g==="Programme"?!!x.programme:x.genre===BF.g))}, names={fr:"français",pt:"português",it:"italiano",en:"English",grc:"grec ancien"};
   var item=function(x){return '<li><a href="#lire" data-t="'+esc(x.id)+'"'+(L.indexOf(x.id)>=0?' class="lu"':"")+"><b>"+ty(x.titre)+"</b><span>"+ty([x.auteur,x.source,(x.minutes||1)+" min"].filter(Boolean).join(" · "))+"</span>"+(x.serie?(x.soustitre?'<span class="ex">'+ty(x.soustitre)+"</span>":""):'<span class="ex">'+ty((x.extrait||"").slice(0,150))+"…</span>")+"</a></li>"};
@@ -746,12 +771,26 @@ function drawTexte(id){
 function drawDep(){
   var el=$("dep");if(!el)return;
   if(!DEP||!E||!(DEP.items||[]).length||DEP.date<E.date){el.hidden=true;return}
-  el.hidden=false;
-  el.innerHTML='<div class="label">Dernière heure · mis à jour à '+fr(DEP.maj||"")+(DEP.date>E.date?" · "+fr(DEP.jour||""):"")+"</div><ol>"+DEP.items.slice(0,24).map(function(x){return "<li><i>"+fr(x.heure||"")+" · "+fr(x.rubrique||"")+"</i><b>"+fr(x.titre)+"</b>"+fr(x.texte)+(/^https:\/\//.test(x.url||"")?' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">'+ty(x.source||"source")+"</a>":"")+"</li>"}).join("")+"</ol>";
+  el.hidden=false;var LG={pt:"em português",it:"in italiano"};
+  el.innerHTML='<div class="label">Dernière heure · mis à jour à '+fr(DEP.maj||"")+(DEP.date>E.date?" · "+fr(DEP.jour||""):"")+"</div><ol>"+DEP.items.slice(0,30).map(function(x){var l=LG[x.langue]?x.langue:"";
+    return "<li><i>"+fr(x.heure||"")+" · "+fr(x.rubrique||"")+(l?' · <span class="lg">'+LG[l]+"</span>":"")+"</i>"+(l?'<b lang="'+l+'" data-lang="'+l+'">'+words(x.titre)+'</b><span lang="'+l+'" data-lang="'+l+'">'+words(x.texte)+"</span>":"<b>"+fr(x.titre)+"</b>"+fr(x.texte))+(/^https:\/\//.test(x.url||"")?' <a href="'+esc(x.url)+'" target="_blank" rel="noopener">'+ty(x.source||"source")+"</a>":"")+"</li>"}).join("")+"</ol>";
+}
+function drawHist(){
+  var el=$("hist-body");if(!el||!HIST)return;var H=HIST,h="",P=function(a){return (a||[]).map(function(p){return '<p style="margin-bottom:.55rem">'+fr(p)+"</p>"}).join("")};
+  h+=vhead("Histoire et contexte · "+fr(H.jour||""),"Le cahier d’histoire");
+  if(H.chronique){var c=H.chronique;h+='<div class="cab"><div class="label">Ce jour-là</div><p class="yr">'+esc(c.annee||"")+"</p><h3>"+fr(c.titre)+"</h3>"+(c.chapeau?'<p class="deck" style="text-align:left">'+fr(c.chapeau)+"</p>":"")+'<div class="body cap">'+(c.paragraphes||[]).map(function(p){return "<p>"+fr(p)+"</p>"}).join("")+"</div>"+taste("Histoire : chronique",c.titre)+"</div>"}
+  if((H.contextes||[]).length){h+='<div class="cab"><div class="label">D’où cela vient · l’actualité remise dans le temps</div>';H.contextes.forEach(function(x){h+='<h3 style="margin-top:1rem">'+fr(x.titre)+"</h3>"+(x.actualite?'<p class="how">'+fr(x.actualite)+"</p>":"")+P(x.paragraphes)});h+=taste("Histoire : contexte","contextes")+"</div>"}
+  if(H.batiment){var b=H.batiment;h+='<div class="cab"><div class="label">Architecture · un bâtiment à connaître</div><h3>'+fr(b.titre)+"<small>"+fr([b.lieu,b.architecte,b.date].filter(Boolean).join(" · "))+'</small></h3><figure class="plate"><img class="hist-img" alt="'+esc(b.titre)+'" hidden>'+(b.credit?'<figcaption>'+fr(b.credit)+"</figcaption>":"")+"</figure>"+P(b.paragraphes)+((b.regarder||[]).length?'<ul class="look">'+b.regarder.map(function(x){return "<li>"+fr(x)+"</li>"}).join("")+"</ul>":"")+taste("Histoire : architecture",b.titre)+"</div>"}
+  if(H.atelier){var w=H.atelier;h+='<div class="cab"><div class="label">Histoire de l’art · '+fr(w.rubrique||"une question")+"</div><h3>"+fr(w.titre)+"</h3>"+P(w.paragraphes)+taste("Histoire : art",w.titre)+"</div>"}
+  if(H.portrait){var p=H.portrait;h+='<div class="cab"><div class="label">Une vie</div><h3>'+fr(p.nom)+"<small>"+fr(p.dates||"")+"</small></h3>"+P(p.paragraphes)+taste("Histoire : portrait",p.nom)+"</div>"}
+  if((H.lexique||[]).length){h+='<div class="cab"><div class="label">Les mots de l’historien</div>';H.lexique.forEach(function(x){h+='<p class="item"><b>'+fr(x.mot)+".</b> "+fr(x.definition)+"</p>"});h+="</div>"}
+  el.innerHTML=h;
+  if(HIMG)el.querySelectorAll(".hist-img").forEach(function(i){i.src=HIMG;i.hidden=false});
+  else if(db&&H.date)db.doc("images/"+H.date+"-h").get().then(function(s){if(s.exists){var x=s.data()||{};if(typeof x.data==="string"&&x.data.indexOf("data:image/")===0){HIMG=x.data;el.querySelectorAll(".hist-img").forEach(function(i){i.src=HIMG;i.hidden=false})}}}).catch(function(){});
 }
 function drawMus(){
   var el=$("mus-list");if(!el)return;
-  if(!db){el.innerHTML='<p class="how">Le musée s’ouvre quand la page est reliée à votre compte Claude.</p>';return}
+  if(!db){el.innerHTML='<p class="how">On allume les salles…</p>';return}
   if(!MUS.length){el.innerHTML='<p class="how">On allume les salles…</p>';return}
   el.innerHTML=MUS.map(function(s){return '<details class="salle" data-s="'+esc(s.id)+'"><summary><i>'+numeral(s.ordre)+"</i><b>"+fr(s.titre)+"</b><span>"+fr(s.dates)+" · "+(s.oeuvres||[]).length+' œuvres</span></summary><div class="in"></div></details>'}).join("");
   el.querySelectorAll("details").forEach(function(d){d.addEventListener("toggle",function(){if(!d.open)return;var s=null;MUS.forEach(function(x){if(x.id===d.getAttribute("data-s"))s=x});var box=d.querySelector(".in");
@@ -789,25 +828,40 @@ function show(x,secours){
   E=JSON.parse(JSON.stringify(x));E._secours=!!secours;
   try{render();loadImage()}catch(e){$ed.innerHTML='<p class="wait">Cette édition n’a pas pu être composée. Elle sera réimprimée demain.</p>'}
 }
+function staticDb(){
+  function J(u){return fetch(u,{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
+  function snap(a){a=a||[];return {empty:!a.length,metadata:{fromCache:false},docs:a.map(function(d){return {id:d.id||"",data:function(){return d}}})}}
+  var one={editions:"data/edition.json",depeches:"data/depeches.json",histoire:"data/histoire.json",catalogue:"data/catalogue.json"}, no=function(){return Promise.reject({code:"unavailable"})};
+  return {
+    doc:function(p){var s=p.split("/"),u=null;
+      if(s[0]==="textes")u="data/textes/"+s[1]+".json";else if(s[0]==="salles")u="data/salles/"+s[1]+".json";else if(s[0]==="images")u=/-h$/.test(s[1])?"data/image-h.json":"data/image.json";
+      return {get:function(){return u?J(u).then(function(d){return {exists:!!d,data:function(){return d}}}):Promise.resolve({exists:false,data:function(){}})},set:no,update:no,delete:no}},
+    collection:function(c){var q={orderBy:function(){return q},limit:function(){return q},add:no,onSnapshot:function(f){
+      if(c==="musee")J("data/musee.json").then(function(a){f(snap(a||[]))});
+      else if(one[c])J(one[c]).then(function(d){f(snap(d?[d]:[]))});
+      else f(snap([]));
+      return function(){}}};return q}};
+}
+function attach(d,onEdition){
+  db=d;
+  db.doc("reglages/lecteur").get().then(function(s){if(s.exists){lieu=(s.data()||{}).lieu||"";var el=$("lieu");if(el&&!el.value&&lieu){el.value=lieu;el.dispatchEvent(new Event("change"))}}}).catch(function(){});
+  db.collection("pile").orderBy("ajoute","desc").limit(60).onSnapshot(function(s){pileReady=true;PILE=s.docs.map(function(x){var o=x.data()||{};return {id:x.id,titre:o.titre,source:o.source,langue:o.langue,texte:o.texte}});drawPile()},function(){pileReady=true;drawPile()});
+  db.collection("depeches").orderBy("date","desc").limit(1).onSnapshot(function(s){DEP=s.empty?null:(s.docs[0].data()||null);drawDep()},function(){});
+  db.collection("histoire").orderBy("date","desc").limit(1).onSnapshot(function(s){var x=s.empty?null:(s.docs[0].data()||null);if(x&&(!HIST||HIST.date!==x.date))HIMG=null;HIST=x;drawHist()},function(){});
+  db.collection("musee").orderBy("ordre").onSnapshot(function(s){MUS=s.docs.map(function(x){return x.data()||{}}).sort(function(a,b){return (a.ordre||0)-(b.ordre||0)});drawMus()},function(){});
+  db.collection("catalogue").onSnapshot(function(s){catReady=true;CAT=[];s.docs.forEach(function(x){((x.data()||{}).items||[]).forEach(function(i){CAT.push(i)})});drawBib();if($("v-lire")&&!$("v-lire").hidden)drawLire()},function(){catReady=true;drawBib()});
+  drawPile();loadImage();
+  db.collection("editions").orderBy("date","desc").limit(1).onSnapshot(function(snap){onEdition(true);if(!snap.empty)show(snap.docs[0].data(),false)},function(){onEdition(false)});
+}
 function start(){
   /* the last edition printed with the page itself, shown at once and whenever the archive cannot be reached */
   try{fetch("data/edition.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(x){if(x)show(x,true)}).catch(function(){})}catch(e){}
-  if(!window.claude||!window.claude.use)return;
+  if(STATIC){attach(staticDb(),function(){});return}
   window.claude.use("sample").then(function(s){sample=s;if(s&&E)showButtons()});
   var done=false, timer=setTimeout(function(){if(!done){var w=$("wait");if(w)w.textContent="L'édition tarde à arriver. Vérifiez la connexion, puis rouvrez la page."}},10000);
   window.claude.use("db").then(function(d){
     if(!d){done=true;clearTimeout(timer);var w0=$("wait");if(w0)w0.textContent="Ouvrez cette page avec votre compte Claude pour lire l'édition du jour.";return}
-    db=d;
-    db.doc("reglages/lecteur").get().then(function(s){if(s.exists){lieu=(s.data()||{}).lieu||"";var el=$("lieu");if(el&&!el.value&&lieu){el.value=lieu;el.dispatchEvent(new Event("change"))}}}).catch(function(){});
-    db.collection("pile").orderBy("ajoute","desc").limit(60).onSnapshot(function(s){pileReady=true;PILE=s.docs.map(function(x){var o=x.data()||{};return {id:x.id,titre:o.titre,source:o.source,langue:o.langue,texte:o.texte}});drawPile()},function(){pileReady=true;drawPile()});
-    db.collection("depeches").orderBy("date","desc").limit(1).onSnapshot(function(s){DEP=s.empty?null:(s.docs[0].data()||null);drawDep()},function(){});
-    db.collection("musee").orderBy("ordre").onSnapshot(function(s){MUS=s.docs.map(function(x){return x.data()||{}});drawMus()},function(){});
-    db.collection("catalogue").onSnapshot(function(s){catReady=true;CAT=[];s.docs.forEach(function(x){((x.data()||{}).items||[]).forEach(function(i){CAT.push(i)})});drawBib();if($("v-lire")&&!$("v-lire").hidden)drawLire()},function(){catReady=true;drawBib()});
-    drawPile();loadImage();
-    db.collection("editions").orderBy("date","desc").limit(1).onSnapshot(function(snap){
-      if(snap.empty){if(!snap.metadata.fromCache){done=true;clearTimeout(timer)}return}
-      done=true;clearTimeout(timer);show(snap.docs[0].data(),false);
-    },function(){done=true;clearTimeout(timer);var w=$("wait");if(w)w.textContent="L'édition n'a pas pu être chargée."});
+    attach(d,function(ok){done=true;clearTimeout(timer);if(!ok){var w=$("wait");if(w)w.textContent="L'édition n'a pas pu être chargée."}});
   });
 }
 start();
