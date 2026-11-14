@@ -1,5 +1,5 @@
 // Le Loisir du Matin: keeps the shell and the last edition available offline.
-const SHELL = "loisir-shell-2026-11-13";
+const SHELL = "loisir-shell-2026-11-14";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-180.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== SHELL && k !== "loisir-data").map(k => caches.delete(k)))).then(() => self.clients.claim())); });
